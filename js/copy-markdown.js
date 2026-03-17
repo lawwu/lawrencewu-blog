@@ -14,36 +14,32 @@
     btn.title = 'Copy post source as Markdown (.qmd)';
     btn.style.cssText = [
       'position:fixed',
-      'top:4.5rem',
+      'top:0.6rem',
       'right:1rem',
       'z-index:1000',
       'padding:0.35rem 0.85rem',
-      'background:transparent',
-      'color:#B5621E',
-      'border:1px solid rgba(181,98,30,0.35)',
+      'background:#fff',
+      'color:#333',
+      'border:1px solid #ccc',
       'border-radius:4px',
       'cursor:pointer',
-      'font-family:"JetBrains Mono",monospace',
-      'font-size:0.7rem',
-      'font-weight:500',
-      'letter-spacing:0.05em',
-      'text-transform:uppercase',
-      'opacity:0.8',
-      'transition:opacity 0.2s,background 0.2s,color 0.2s,border-color 0.2s',
-      'box-shadow:0 2px 8px rgba(0,0,0,0.08)',
-      'backdrop-filter:blur(8px)',
-      '-webkit-backdrop-filter:blur(8px)',
+      'font-family:Georgia,serif',
+      'font-size:0.75rem',
+      'font-weight:400',
+      'letter-spacing:0',
+      'text-transform:none',
+      'opacity:1',
+      'transition:background 0.2s,border-color 0.2s',
+      'box-shadow:0 1px 4px rgba(0,0,0,0.1)',
     ].join(';');
 
     btn.addEventListener('mouseenter', () => {
-      btn.style.opacity = '1';
-      btn.style.background = 'rgba(181,98,30,0.08)';
-      btn.style.borderColor = '#B5621E';
+      btn.style.background = '#f5f5f5';
+      btn.style.borderColor = '#999';
     });
     btn.addEventListener('mouseleave', () => {
-      btn.style.opacity = '0.8';
-      btn.style.background = 'transparent';
-      btn.style.borderColor = 'rgba(181,98,30,0.35)';
+      btn.style.background = '#fff';
+      btn.style.borderColor = '#ccc';
     });
 
     btn.addEventListener('click', async () => {

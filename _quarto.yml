@@ -34,7 +34,7 @@ format:
   html:
     theme: [cosmo, custom.scss]
     css: styles.css
-    mainfont: "Source Serif 4"
+    mainfont: "Georgia"
     monofont: "JetBrains Mono"
     fontsize: 1.05em
     linestretch: 1.75
