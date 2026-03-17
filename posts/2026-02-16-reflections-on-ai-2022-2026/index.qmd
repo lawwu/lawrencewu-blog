@@ -76,7 +76,7 @@ Using Claude Code was a tremendous unlock not only terms of accomplishing what I
     - [Claude Knowledge Work Plugins](https://github.com/anthropics/knowledge-work-plugins)
     - [Claude Code Plugins](https://github.com/anthropics/claude-code/tree/main/plugins)
 
-I realized the better I learn how to use this tool, Claude Code, the more effectively and efficiently I can do my job. So now I try and dedicate time to reading about developments in Claude Code, reading the CHANGELOG.md, reading about how others are using it like [Boris Cherny](https://x.com/bcherny/status/2021699851499798911), and [writing my own tips on how to use Claude Code](https://lawwu.github.io/posts/2026-02-11-claude-code-agentic-coding/).
+I realized the better I learn how to use this tool, Claude Code, the more effectively and efficiently I can do my job. So now I try and dedicate time to reading about developments in Claude Code, reading the CHANGELOG.md, reading about how others are using it like [Boris Cherny](https://x.com/bcherny/status/2021699851499798911), and [writing my own tips on how to use Claude Code](https://lawrencewu.net/posts/2026-02-11-claude-code-agentic-coding/).
 
 Some pitfalls I've encountered and lessons I've learned along the way:
 

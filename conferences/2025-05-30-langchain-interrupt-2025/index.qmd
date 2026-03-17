@@ -7,5 +7,5 @@ categories: ["Conference", "LangChain"]
 
 Some content related to the LangChain Conference:
 
-- <https://lawwu.github.io/posts/2025-05-30-langchain-interrupt-lwu-recap/>
-- <https://lawwu.github.io/posts/2025-05-23-langchain-interrupt-2025-recap/>
+- <https://lawrencewu.net/posts/2025-05-30-langchain-interrupt-lwu-recap/>
+- <https://lawrencewu.net/posts/2025-05-23-langchain-interrupt-2025-recap/>

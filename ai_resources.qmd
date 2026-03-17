@@ -26,7 +26,7 @@ I find email newsletters still to be a fantastic source of information. Easily s
 
 # YouTube
 
-Note, I don't always watch a YouTube video in full. It's easy to transcribe videos now ever since [Whisper](https://lawwu.github.io/posts/2023-11-15-whisper-transcripts/) came out. I transcribe some YouTube channels [here](https://lawwu.github.io/transcripts/), see the project called [transcripts](https://github.com/lawwu/transcripts). I'll also use [yt-dlp](https://github.com/yt-dlp/yt-dlp) to download videos and transcribe them with [MacWhisper](https://goodsnooze.gumroad.com/l/macwhisper).
+Note, I don't always watch a YouTube video in full. It's easy to transcribe videos now ever since [Whisper](https://lawrencewu.net/posts/2023-11-15-whisper-transcripts/) came out. I transcribe some YouTube channels [here](https://lawwu.github.io/transcripts/), see the project called [transcripts](https://github.com/lawwu/transcripts). I'll also use [yt-dlp](https://github.com/yt-dlp/yt-dlp) to download videos and transcribe them with [MacWhisper](https://goodsnooze.gumroad.com/l/macwhisper).
 
 - [@AndrejKarpathy](https://www.youtube.com/c/AndrejKarpathy)
 - [@ai-explained-](https://www.youtube.com/@ai-explained-)

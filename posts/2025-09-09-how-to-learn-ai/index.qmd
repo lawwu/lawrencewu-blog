@@ -35,7 +35,7 @@ For everyone I recommend this 1-hour talk by Andrej Karpathy as an introduction 
 
 ## Curate some trusted learning sources
 
-There is a ton of AI-related content. You'll need to curate a set of trusted sources that is appropriate to your level. I've compiled some of my favorite resources [here](https://lawwu.github.io/ai_resources.html).
+There is a ton of AI-related content. You'll need to curate a set of trusted sources that is appropriate to your level. I've compiled some of my favorite resources [here](https://lawrencewu.net/ai_resources.html).
 
 ## Take a course
 
@@ -89,7 +89,7 @@ AI Code Assistants have come a long way from Github Copilot in early 2023 which 
 
 ## Use Agentic Coding
 
-Claude Code was the first truly useful agentic coding tool. I started using it in [mid July](https://lawwu.github.io/posts/2025-07-18-starting-to-use-claude-code/) and wrote about it [here](https://lawwu.github.io/posts/2025-07-18-claude-code-camp/) and again [here](https://lawwu.github.io/posts/2025-08-14-armin-agentic-coding-ecosystem/). I use it daily now during work. It has largely replaced the AI Assistants in an IDE. The power of coding agents lies in the fact it lives on your machine in a terminal. They are given very generic tools like a `Bash` and `Edit` file tool. Paired with a powerful foundational LLM that has reasoning capabilities, you now have an agent that can create plans, choose which tools it will use, run those tools, see the output and debug anything that goes wrong. The amount of things you can do in `Bash` is mind-boggling given how many built in tools there are AND how many command line utilities there are. Some of the recent things I've done with Claude Code are:
+Claude Code was the first truly useful agentic coding tool. I started using it in [mid July](https://lawrencewu.net/posts/2025-07-18-starting-to-use-claude-code/) and wrote about it [here](https://lawrencewu.net/posts/2025-07-18-claude-code-camp/) and again [here](https://lawrencewu.net/posts/2025-08-14-armin-agentic-coding-ecosystem/). I use it daily now during work. It has largely replaced the AI Assistants in an IDE. The power of coding agents lies in the fact it lives on your machine in a terminal. They are given very generic tools like a `Bash` and `Edit` file tool. Paired with a powerful foundational LLM that has reasoning capabilities, you now have an agent that can create plans, choose which tools it will use, run those tools, see the output and debug anything that goes wrong. The amount of things you can do in `Bash` is mind-boggling given how many built in tools there are AND how many command line utilities there are. Some of the recent things I've done with Claude Code are:
 
 - created a presentation Quarto (basically creating powerpoint slides in Markdown) that I can convert to RevealJS or Powerpoint
 - explored data in Big Query (I actually didn't know there was a `bq` command line tool until Claude Code started using it to explore some Big Query tables)

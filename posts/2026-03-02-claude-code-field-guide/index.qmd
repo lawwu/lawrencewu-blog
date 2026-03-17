@@ -5,7 +5,7 @@ date: '2026-03-02'
 categories: [ai, "claude code"]
 ---
 
-I just wrapped up 15 days of Claude Code Tips. You can find them all [here](https://lawwu.github.io/posts/2026-02-11-claude-code-agentic-coding/).
+I just wrapped up 15 days of Claude Code Tips. You can find them all [here](https://lawrencewu.net/posts/2026-02-11-claude-code-agentic-coding/).
 
 I wanted to somehow keep this going so I've started a [Claude Code Field Guide](https://github.com/lawwu/claude-code-field-guide) where I'll document:
 

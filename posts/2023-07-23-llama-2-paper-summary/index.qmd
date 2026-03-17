@@ -7,7 +7,7 @@ categories: [ai, summary]
 
 # Llama2
 
-Llama2 was released by Meta on 2023-07-18. My first exposure to the model was [running it locally on my Mac](https://lawwu.github.io/posts/2023-07-20-llama-2-local/) and being blown away by the quality of the results. With most of the prompts I tried for simple questions, Llama2-Chat-13B was better than even ChatGPT. So I was naturally curious about the technical details of the Llama2 paper. In the post I'd like to summarize the [technical paper](https://ai.meta.com/research/publications/llama-2-open-foundation-and-fine-tuned-chat-models/).
+Llama2 was released by Meta on 2023-07-18. My first exposure to the model was [running it locally on my Mac](https://lawrencewu.net/posts/2023-07-20-llama-2-local/) and being blown away by the quality of the results. With most of the prompts I tried for simple questions, Llama2-Chat-13B was better than even ChatGPT. So I was naturally curious about the technical details of the Llama2 paper. In the post I'd like to summarize the [technical paper](https://ai.meta.com/research/publications/llama-2-open-foundation-and-fine-tuned-chat-models/).
 
 Note this write up isn't the only game in town:
 
