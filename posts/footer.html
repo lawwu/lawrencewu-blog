@@ -1,0 +1,33 @@
+<div id="post-footer">
+  <script>
+    (function () {
+      // Try to read the post date from Quarto's rendered metadata
+      var dateEl = document.querySelector('.date') ||
+                   document.querySelector('.quarto-title-meta-contents p') ||
+                   document.querySelector('meta[property="article:published_time"]');
+      var dateStr = '';
+      if (dateEl) {
+        var raw = dateEl.getAttribute('content') || dateEl.textContent;
+        var d = new Date(raw.trim());
+        if (!isNaN(d)) {
+          var months = ['January','February','March','April','May','June',
+                        'July','August','September','October','November','December'];
+          var day = d.getDate();
+          var suffix = (day === 1 || day === 21 || day === 31) ? 'st'
+                     : (day === 2 || day === 22) ? 'nd'
+                     : (day === 3 || day === 23) ? 'rd' : 'th';
+          dateStr = 'Posted ' + day + suffix + ' ' + months[d.getMonth()] + ' ' + d.getFullYear() + ' · ';
+        }
+      }
+
+      var footer = document.getElementById('post-footer');
+      footer.innerHTML =
+        '<p style="margin-top:2.5rem;padding-top:1rem;border-top:1px solid #e0e0e0;font-size:0.9rem;color:#555;">' +
+        dateStr +
+        'Follow me on <a href="https://twitter.com/law_wu">Twitter</a>, ' +
+        '<a href="https://www.linkedin.com/in/lawrencewu920/">LinkedIn</a> ' +
+        'or <a href="https://lawrencewu.substack.com/subscribe">subscribe to my newsletter</a>.' +
+        '</p>';
+    })();
+  </script>
+</div>
