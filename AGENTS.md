@@ -4,7 +4,7 @@ Guidance for coding agents (Claude Code, Codex, etc.) working in this repository
 
 ## Project
 
-Lawrence Wu's personal blog at <https://lawwu.github.io/blog.html>, built with [Quarto](https://quarto.org/).
+Lawrence Wu's personal blog at <https://lawrencewu.net/blog.html>, built with [Quarto](https://quarto.org/).
 
 ## Key Commands
 

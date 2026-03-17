@@ -77,7 +77,7 @@ Both of the above tasks I estimate would've taken me 2-3 days to do but it take 
 - ask Claude to make plans and write those plans in a markdown file in `docs/` with a date, e.g. `docs/plan_20250715_implement_feature_a.md` with 'ultrathink' which increases the thinking budget to the max
 - Then you can ask Claude Code to implement the plan
 - Make commits after each successful run of the agent
-- Though today I attended a Claude Code Camp hosted by Every. [I learned a ton](https://lawwu.github.io/posts/2025-07-18-claude-code-camp/) about aliases, slash commands, how you can trigger subagents in Claude Code and how to think about the 4 step loop of development: planning, delegating, assessing and codifying.
+- Though today I attended a Claude Code Camp hosted by Every. [I learned a ton](https://lawrencewu.net/posts/2025-07-18-claude-code-camp/) about aliases, slash commands, how you can trigger subagents in Claude Code and how to think about the 4 step loop of development: planning, delegating, assessing and codifying.
 
 ## Claude Code Utilities
 

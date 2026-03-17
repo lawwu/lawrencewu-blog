@@ -6,27 +6,27 @@ categories: [personal, "claude code"]
 image: "strava/stats.PNG"
 ---
 
-This is the first time I'm taking some time to do a year in review and posting it on my blog. Overall I've enjoyed the exercise of writing and sharing ideas about things I've learned across a variety of topics with others. The main categories I've written about thus far are about AI and personal finances. I wrote my first [book review](https://lawwu.github.io/posts/2025-11-24-little-theology-of-exercise/) and would like to write more of those. I'd like to also continue blogging next year.
+This is the first time I'm taking some time to do a year in review and posting it on my blog. Overall I've enjoyed the exercise of writing and sharing ideas about things I've learned across a variety of topics with others. The main categories I've written about thus far are about AI and personal finances. I wrote my first [book review](https://lawrencewu.net/posts/2025-11-24-little-theology-of-exercise/) and would like to write more of those. I'd like to also continue blogging next year.
 
 In this review, I'll go through [blogging](#blogging), [books](#books) I read, reflections in [Biblical counseling](#biblical-counseling), review of [personal finances](#personal-finances) this year, [running](#running) and [AI](#ai) (mainly some thoughts on [agentic coding and Claude Code](#agentic-coding)).
 
 ## Blogging
 
-I started blogging in 2023. The first post I wrote was about [useful Mac applications](https://lawwu.github.io/posts/2023-03-24-mac-apps/){target="_blank"}. I wrote 20 posts in 2023, 11 posts in 2024 and 16 posts in 2025. Right now I mostly share my posts on Facebook and LinkedIn. The most popular posts by views:
+I started blogging in 2023. The first post I wrote was about [useful Mac applications](https://lawrencewu.net/posts/2023-03-24-mac-apps/){target="_blank"}. I wrote 20 posts in 2023, 11 posts in 2024 and 16 posts in 2025. Right now I mostly share my posts on Facebook and LinkedIn. The most popular posts by views:
 
-- [2025-05-23: LangChain Interrupt Conference 2025 AI Recap](https://lawwu.github.io/posts/2025-05-23-langchain-interrupt-2025-recap/){target="_blank"}
-- [2025-12-19: Bunching Charitable Contributions in 2025](https://lawwu.github.io/posts/2025-12-19-bunching-strategy/){target="_blank"}
-- [2025-10-30: First Marathon Reflections](https://lawwu.github.io/posts/2025-10-30-first-marathon-reflections/){target="_blank"}
-- [2025-07-18: Claude Code Camp - hosted by Every](https://lawwu.github.io/posts/2025-07-18-claude-code-camp/){target="_blank"}
-- [2024-05-23: Finetuning LLMs with Axolotl](https://lawwu.github.io/posts/2024-05-23-first-axolotl-finetune/){target="_blank"}
+- [2025-05-23: LangChain Interrupt Conference 2025 AI Recap](https://lawrencewu.net/posts/2025-05-23-langchain-interrupt-2025-recap/){target="_blank"}
+- [2025-12-19: Bunching Charitable Contributions in 2025](https://lawrencewu.net/posts/2025-12-19-bunching-strategy/){target="_blank"}
+- [2025-10-30: First Marathon Reflections](https://lawrencewu.net/posts/2025-10-30-first-marathon-reflections/){target="_blank"}
+- [2025-07-18: Claude Code Camp - hosted by Every](https://lawrencewu.net/posts/2025-07-18-claude-code-camp/){target="_blank"}
+- [2024-05-23: Finetuning LLMs with Axolotl](https://lawrencewu.net/posts/2024-05-23-first-axolotl-finetune/){target="_blank"}
 
 The posts with the most engagement time:
 
-- [2025-05-27: Levels of AI Use](https://lawwu.github.io/posts/2025-05-27-levels-of-ai-use/){target="_blank"}
-- [2025-08-21: Why Companies Should Open Source and Host Their Own MCP Servers](https://lawwu.github.io/posts/2025-08-21-open-source-mcp-servers/){target="_blank"}
-- [2025-10-30: First Marathon Reflections](https://lawwu.github.io/posts/2025-10-30-first-marathon-reflections/){target="_blank"}
-- [2025-12-19: Bunching Charitable Contributions in 2025](https://lawwu.github.io/posts/2025-12-19-bunching-strategy/){target="_blank"}
-- [2024-09-20: Introduction to LangGraph Tutorial](https://lawwu.github.io/posts/2024-09-20-langgraph-tutorial/){target="_blank"}
+- [2025-05-27: Levels of AI Use](https://lawrencewu.net/posts/2025-05-27-levels-of-ai-use/){target="_blank"}
+- [2025-08-21: Why Companies Should Open Source and Host Their Own MCP Servers](https://lawrencewu.net/posts/2025-08-21-open-source-mcp-servers/){target="_blank"}
+- [2025-10-30: First Marathon Reflections](https://lawrencewu.net/posts/2025-10-30-first-marathon-reflections/){target="_blank"}
+- [2025-12-19: Bunching Charitable Contributions in 2025](https://lawrencewu.net/posts/2025-12-19-bunching-strategy/){target="_blank"}
+- [2024-09-20: Introduction to LangGraph Tutorial](https://lawrencewu.net/posts/2024-09-20-langgraph-tutorial/){target="_blank"}
 
 ## Books
 
@@ -36,7 +36,7 @@ Still really enjoy reading. I love reading because the author of the book you ar
 
 [![](../2025-11-24-little-theology-of-exercise/little_theology_of_exercise.jpg){width=200px}](https://amzn.to/4pc5Pc9){target="_blank"}
 
-Short read that changed my perspective on exercise from a merely physical activity that was good for my body (which it is) to something that instead is for my mind. Research shows exercise helps the brain and in turn I can use my mind to love God and love others (Matthew 22:37-38). I wrote a review of this book [here](https://lawwu.github.io/posts/2025-11-24-little-theology-of-exercise/).
+Short read that changed my perspective on exercise from a merely physical activity that was good for my body (which it is) to something that instead is for my mind. Research shows exercise helps the brain and in turn I can use my mind to love God and love others (Matthew 22:37-38). I wrote a review of this book [here](https://lawrencewu.net/posts/2025-11-24-little-theology-of-exercise/).
 
 ### [Andy David Naselli - How to Understand and Apply the New Testament](https://amzn.to/3LfW5zF){target="_blank"}
 
@@ -295,7 +295,7 @@ The Amex Platinum takes a fair amount of work to maximize it's rewards. I don't 
 
 ## Running
 
-Ran my [second half-marathon](https://lawwu.github.io/posts/2025-02-02-second-half-marathon/) and [first full-marathon](https://lawwu.github.io/posts/2025-10-30-first-marathon-reflections/) this year. Running continues to be my favorite form of cardio. God willing, hopefully I have many more years of running ahead of me.
+Ran my [second half-marathon](https://lawrencewu.net/posts/2025-02-02-second-half-marathon/) and [first full-marathon](https://lawrencewu.net/posts/2025-10-30-first-marathon-reflections/) this year. Running continues to be my favorite form of cardio. God willing, hopefully I have many more years of running ahead of me.
 
 ### Strava - Year in Sport
 
@@ -312,7 +312,7 @@ Ran my [second half-marathon](https://lawwu.github.io/posts/2025-02-02-second-ha
 
 ### Agentic Coding
 
-One of the big changes this year was the rise of agentic coding tools like Claude Code. I started using it in [July 2025](https://lawwu.github.io/posts/2025-07-18-starting-to-use-claude-code/) and have been using it almost daily since it came out. Anthropic has created an amazing tool. We've seen the underlying model improve. It's still hard to believe the intial release of Claude Code used Claude 3.7 Sonnet (I would've guessed this was last year)! We're now on Claude Opus 4.5. There has also been improvements in the Claude Code agentic harness too with todo lists, subagents, improvements to the system prompts, better tool calling, adding agent skills. Just look at the [CHANGELOG](https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md){target="_blank"} to look at all these improvements over time.
+One of the big changes this year was the rise of agentic coding tools like Claude Code. I started using it in [July 2025](https://lawrencewu.net/posts/2025-07-18-starting-to-use-claude-code/) and have been using it almost daily since it came out. Anthropic has created an amazing tool. We've seen the underlying model improve. It's still hard to believe the intial release of Claude Code used Claude 3.7 Sonnet (I would've guessed this was last year)! We're now on Claude Opus 4.5. There has also been improvements in the Claude Code agentic harness too with todo lists, subagents, improvements to the system prompts, better tool calling, adding agent skills. Just look at the [CHANGELOG](https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md){target="_blank"} to look at all these improvements over time.
 
 Some of the things I've used Claude Code for this year:
 
@@ -326,7 +326,7 @@ Some of the things I've used Claude Code for this year:
 - Adding graphs / visuals to my blg posts
 - Creating Github Actions
 - Creating and maintaining Cookiecutter templates for Python libraries and services
-- Scraping Long Beach Marathon data to get the total finishers in the last 15 years for this [post](https://lawwu.github.io/posts/2025-10-30-first-marathon-reflections/#lesson-3-running-is-getting-popular)
+- Scraping Long Beach Marathon data to get the total finishers in the last 15 years for this [post](https://lawrencewu.net/posts/2025-10-30-first-marathon-reflections/#lesson-3-running-is-getting-popular)
 
 Claude Code really does amplify and leverage a developer's (or even non-developer's) ideas. Whatever ideas you have, you can bring them into reality so much faster.
 
@@ -350,7 +350,7 @@ There are many world class software developers that now use tools like Claude Co
 It's fun to see how things have evolved in the last year just looking at Anthropic's Claude and Claude Code releated announcements:
 
 - [Feb 24, 2025 - Initial Claude Code Release alongside Claude 3.7 Sonnet](https://www.anthropic.com/news/claude-3-7-sonnet){target="_blank"} - [repo](https://github.com/anthropics/claude-code){target="_blank"} though this doesn't have the source code
-- [April 3, 2025 - Anthropic announces their first developer conference](https://www.anthropic.com/news/Introducing-code-with-claude){target="_blank"} - which I summarized the talks [here](https://lawwu.github.io/posts/2025-08-14-claude-code-conference-summary/).
+- [April 3, 2025 - Anthropic announces their first developer conference](https://www.anthropic.com/news/Introducing-code-with-claude){target="_blank"} - which I summarized the talks [here](https://lawrencewu.net/posts/2025-08-14-claude-code-conference-summary/).
 - [May 22, 2025 - Claude Sonnet and Opus 4 released](https://www.anthropic.com/news/claude-4){target="_blank"}
 - [August 5, 2025 - Claude Opus 4.1 released](https://www.anthropic.com/news/claude-opus-4-1){target="_blank"}
 - [August 26, 2025 - Claude Code Github Action 1.0 Release](https://github.com/anthropics/claude-code-action/){target="_blank"}

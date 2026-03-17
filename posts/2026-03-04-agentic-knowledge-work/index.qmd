@@ -38,7 +38,7 @@ You would:
 
 ## v2.0 Agent Frameworks
 
-I've had the opportunity to observe this transition first hand. I was a heavy LangChain and LangGraph user since that project started in 2024 and continued a heavy user in 2025 (I [attended their first conference](https://lawwu.github.io/posts/2025-05-30-langchain-interrupt-lwu-recap/) in early 2025). But Claude Code is a different beast. It's a complete different type of agentic harness. The reason it is different are a few:
+I've had the opportunity to observe this transition first hand. I was a heavy LangChain and LangGraph user since that project started in 2024 and continued a heavy user in 2025 (I [attended their first conference](https://lawrencewu.net/posts/2025-05-30-langchain-interrupt-lwu-recap/) in early 2025). But Claude Code is a different beast. It's a complete different type of agentic harness. The reason it is different are a few:
 
 - the underlying models have improved dramatically and now have reasoning capabilities
 - the base tools that Claude Code has access to are very generic. For example with the Bash tool, the agent literally has access to thousands of battle-tested programs (CLIs).
@@ -49,7 +49,7 @@ An analogy I like to give people is imagine you hired a contractor to retile you
 
 ![](./images/coding_agent.png)
 
-Since I [started using Claude Code regularly in July 2025](https://lawwu.github.io/posts/2025-07-18-starting-to-use-claude-code/), I've noticed a few things in my day-to-day job as a data scientist and data science manager:
+Since I [started using Claude Code regularly in July 2025](https://lawrencewu.net/posts/2025-07-18-starting-to-use-claude-code/), I've noticed a few things in my day-to-day job as a data scientist and data science manager:
 
 - Claude Code can do increasingly complicated tasks
 - I no longer am concerned about prompting currently with tricks like "As an expert X" or "Think step step" that were necessary in 2024 but am more focused on specifying my overall goal and intent clearly

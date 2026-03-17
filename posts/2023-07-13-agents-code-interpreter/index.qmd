@@ -252,7 +252,7 @@ Any data scientist that sees this the first time will probably have a small exis
 
 - Level 0: No AI assistance
 - Level 1: AI assistance that helps you write code, [Github Copilot]
-- Level 2: AI agent that helps you write code, can reason and debug itself, e.g. `gpt-3.5-turbo` + `langchain` [from a previous post](https://lawwu.github.io/posts/2023-07-12-langchain-agents/)
+- Level 2: AI agent that helps you write code, can reason and debug itself, e.g. `gpt-3.5-turbo` + `langchain` [from a previous post](https://lawrencewu.net/posts/2023-07-12-langchain-agents/)
 - Level 3: An even more intelligent AI agent that can delight you, [OpenAI's Code Interpreter]
 - Level 4: An AI agent that you would trust to run full data analyses, can query it's own data, train it's own models [doesn't exist yet]
 
