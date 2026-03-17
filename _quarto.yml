@@ -28,8 +28,6 @@ website:
         href: about.qmd
       - text: Subscribe
         href: subscribe.qmd
-      - icon: envelope
-        href: mailto:lawrencewu1+blog@gmail.com
       - icon: rss
         href: index.xml
 format:
