@@ -55,7 +55,7 @@ I am a Data Scientist & AI Harness Engineer developing Foundation Models and Age
 
 ## Subscribe {#subscribe}
 
-You can subscribe to my blog via [email newsletter](https://lawrencewu.substack.com/) or using the [RSS feed](https://lawwu.github.io/blog.xml).
+You can subscribe to my blog via [email newsletter](https://lawrencewu.substack.com/) or using the [RSS feed](https://lawrencewu.net/blog.xml).
 
 I try to send out a weekly newsletter with things I've written on this blog as well as other things I've been reading:
 
