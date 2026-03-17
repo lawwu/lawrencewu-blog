@@ -118,6 +118,6 @@ As we enter into this era of agentic knowledge work, I encourage every knowledge
 
 Other resources:
 
-- I started capturing examples of examples of agentic knowledge work in this [repository](https://github.com/lawwu/awesome-agentic-knowledge-work).
+- I started capturing examples of agentic knowledge work: [lawwu/awesome-agentic-knowledge-work](https://github.com/lawwu/awesome-agentic-knowledge-work).
 - Simon Willison has a new guide called [agentic engineering patterns](https://simonwillison.net/guides/agentic-engineering-patterns/) for new ways of working in this agentic knowledge era.
 - Anthropic published a piece on the [labor market impacts of AI](https://www.anthropic.com/research/labor-market-impacts)
