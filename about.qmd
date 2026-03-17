@@ -22,36 +22,9 @@ about:
       target: _blank
 ---
 
-::: {#hero-heading}
+## About Me
 
-```{=html}
-<p class="hero-role">Principal Data Scientist &amp; AI Harness Engineer</p>
-<div class="hero-stats-row">
-  <div class="hero-stat-item">
-    <span class="hero-stat-num">10+</span>
-    <span class="hero-stat-label">years ML</span>
-  </div>
-  <div class="hero-stat-divider"></div>
-  <div class="hero-stat-item">
-    <span class="hero-stat-num">60+</span>
-    <span class="hero-stat-label">posts</span>
-  </div>
-  <div class="hero-stat-divider"></div>
-  <div class="hero-stat-item">
-    <span class="hero-stat-num">UKG</span>
-    <span class="hero-stat-label">current</span>
-  </div>
-</div>
-<div class="hero-tags-row">
-  <span class="hero-tag hero-tag-accent">Claude Code</span>
-  <span class="hero-tag hero-tag-accent">AI Agents</span>
-  <span class="hero-tag">LLMs</span>
-  <span class="hero-tag">Machine Learning</span>
-  <span class="hero-tag">Python</span>
-</div>
-```
-
-I am a Data Scientist & AI Harness Engineer developing Foundation Models and Agentic ML at UKG. I have 10+ years of experiencing building machine learning systems. In recent years I have developed expertise in LLMs, Agentic Harnesses and adapting to new ways of working with coding agents like Claude Code and Codex. I'm a lifelong learner and enjoy sharing what I've learned with others through writing. I believe writing is thinking.
+I am a Data Scientist & AI Engineer developing Foundation Models and Agentic ML at UKG. I have 10+ years of experiencing building machine learning systems. In recent years I have developed expertise in LLMs, Agentic Harnesses and adapting to new ways of working with coding agents like Claude Code and Codex. I'm a lifelong learner and enjoy sharing what I've learned with others through writing. I believe writing is thinking.
 
 ## Subscribe {#subscribe}
 
@@ -75,6 +48,11 @@ I try to send out a weekly newsletter with things I've written on this blog as w
 
 ## Let's Connect
 
-I'm open to consulting opportunities and collaborations. Check out [Doxa Solutions](https://doxasolutions.ai){target="_blank"} or reach out via any of the links above.
+- [@law_wu](https://x.com/law_wu) on X/Twitter
+- [LinkedIn](https://www.linkedin.com/in/lawrencewu920/)
 
-:::
+I'm also open to consulting opportunities and collaborations. Check out [Doxa Solutions](https://doxasolutions.ai){target="_blank"} or reach out via any of the links above.
+
+## About This Site
+
+This site is made with [Quarto](https://quarto.org/) and [Jupyter](https://jupyter.org/) (for posts that are backed with code). The website is deployed via Github Actions to [Cloudflare Pages](https://pages.cloudflare.com/). You can find the source code at [lawwu/lawrencewu-blog](https://github.com/lawwu/lawrencewu-blog).
