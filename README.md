@@ -1,6 +1,7 @@
-# Lawrence Wu's Quarto Blog
+# Lawrence Wu's Blog
 
-- My blog built using [Quarto](https://quarto.org/) which I had heard about after following [nbdev](https://github.com/fastai/nbdev), [which now uses Quarto](https://www.fast.ai/posts/2022-07-28-nbdev2.html).
+Source for <https://lawrencewu.net>, built with [Quarto](https://quarto.org/).
+
 - I used Albert Rapp's [guide to starting a Quarto blog](https://albert-rapp.de/posts/13_quarto_blog_writing_guide/13_quarto_blog_writing_guide.html#interact-with-your-audience) which was very helpful
 - The Quarto documentation on "Creating a Website" was also helpful: <https://quarto.org/docs/websites/>
 
@@ -17,7 +18,7 @@ I used to run `quarto render` and commit the rendered files. Now, this blog is a
    - Sets up Quarto
    - Renders the Quarto documents and publishes to the `gh-pages` branch
 
-The rendered site is then served via GitHub Pages from the `gh-pages` branch.
+The rendered site is served via GitHub Pages from the `gh-pages` branch and available at <https://lawrencewu.net>.
 
 ### Manual Deployment
 
