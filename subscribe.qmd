@@ -1,0 +1,22 @@
+---
+title: "Subscribe"
+comments: false
+---
+
+You can subscribe to my blog via [email newsletter](https://lawrencewu.substack.com/) or using the [RSS feed](https://lawrencewu.net/index.xml).
+
+I try to send out a weekly newsletter with things I've written on this blog as well as other things I've been reading:
+
+```{=html}
+<div class="newsletter-callout">
+  <div class="newsletter-callout-icon">✉</div>
+  <div class="newsletter-callout-body">
+    <div class="newsletter-callout-title">Weekly newsletter</div>
+    <p class="newsletter-callout-desc">Things I've written, papers I've read, and tools worth knowing about — delivered weekly.</p>
+    <div class="newsletter-callout-actions">
+      <a href="https://lawrencewu.substack.com/subscribe" target="_blank" class="newsletter-btn-primary">Subscribe on Substack →</a>
+      <a href="https://lawrencewu.net/index.xml" class="newsletter-btn-secondary">RSS feed</a>
+    </div>
+  </div>
+</div>
+```
