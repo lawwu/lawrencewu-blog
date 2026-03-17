@@ -4,6 +4,8 @@ Source for <https://lawrencewu.net>, built with [Quarto](https://quarto.org/).
 
 - I used Albert Rapp's [guide to starting a Quarto blog](https://albert-rapp.de/posts/13_quarto_blog_writing_guide/13_quarto_blog_writing_guide.html#interact-with-your-audience) which was very helpful
 - The Quarto documentation on "Creating a Website" was also helpful: <https://quarto.org/docs/websites/>
+- From the beginning of the blog 2023-03-24 to 2026-03-16, the blog was hosted on Github Pages and the source code was at [lawwu/lawwu.github.io](https://github.com/lawwu/lawwu.github.io)
+- On 2026-03-16, I started self-hosting the blog at a new domain, <https://lawrencewu.net> and deploying to Cloudflare Pages.
 
 ## Deployment Process
 
