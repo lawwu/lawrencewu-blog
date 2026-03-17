@@ -46,3 +46,5 @@ I'm also open to consulting opportunities and collaborations. Check out [Doxa So
 ## About This Site
 
 This site is made with [Quarto](https://quarto.org/) and [Jupyter](https://jupyter.org/) (for posts that are backed with code). The website is deployed via Github Actions to [Cloudflare Pages](https://pages.cloudflare.com/). You can find the source code at [lawwu/lawrencewu-blog](https://github.com/lawwu/lawrencewu-blog).
+
+I also use Claude Code to help manage and administer the site. The writing is my own, except for some of the AI-generated summaries of talks.
