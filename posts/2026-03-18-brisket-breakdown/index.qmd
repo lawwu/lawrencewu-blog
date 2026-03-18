@@ -31,3 +31,18 @@ The general steps:
   - It takes some time to get used to this but it only takes <10 minutes doing this.
 
 This is the meat slicer I use to thinly slice the frozen meat: <https://amzn.to/41j2crj>.
+
+Note this is the first project I attempted to use Claude Cowork for. It helped me:
+
+- create 5 different versions of the video including accelerating one portion of the video. Was neat seeing it agentically explore the video by taking screenshots. 
+- prompted it to try and mask some speaking but that didn't work well.
+- helped me select thumbnails for the YouTube video (A/B testing 3 different title + thumbnails!)
+- created the chapters
+
+I still had to manually edit the video by adding titles.
+
+Here are some images from Cowork working:
+
+![](./images/brisket_video_cowork1.png)
+
+![](./images/brisket_video_cowork2.png)
