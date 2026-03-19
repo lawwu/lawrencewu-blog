@@ -28,6 +28,8 @@ website:
         href: about.qmd
       - text: Subscribe
         href: subscribe.qmd
+      - icon: youtube
+        href: https://www.youtube.com/@lawrence_wu
       - icon: rss
         href: index.xml
 format:
