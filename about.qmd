@@ -17,6 +17,10 @@ about:
       text: Twitter
       href: https://twitter.com/law_wu
       target: _blank
+    - icon: youtube
+      text: YouTube
+      href: https://www.youtube.com/@lawrence_wu
+      target: _blank
 ---
 
 ## About Me
@@ -36,6 +40,7 @@ I try to send out a weekly newsletter with things I've written on this blog as w
 ## Let's Connect
 
 - [@law_wu](https://x.com/law_wu) on X/Twitter
+- [Youtube](https://www.youtube.com/@lawrence_wu)
 - [LinkedIn](https://www.linkedin.com/in/lawrencewu920/)
 
 I'm also open to consulting opportunities and collaborations. Check out [Doxa Solutions](https://doxasolutions.ai){target="_blank"} or reach out via any of the links above.
