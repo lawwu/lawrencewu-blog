@@ -2,7 +2,7 @@
 title: "Skills Marketplaces"
 author: Lawrence Wu
 date: '2026-03-13'
-categories: [ai, "claude code"]
+categories: [ai, "claude code", "agentic harness", agents]
 ---
 
 I've enjoyed learning about agent skills over the past few months. I've learned a lot browsing some skills marketplaces and plugins. Some of my favorite have been:

@@ -3,7 +3,7 @@ title: Google Gemini and Function Calling
 author: Lawrence Wu
 date: '2023-12-26'
 date-modified: '2023-12-26'
-categories: [ai]
+categories: [ai, llms, tutorial]
 jupyter: python3
 format:
   html:

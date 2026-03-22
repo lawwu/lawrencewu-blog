@@ -2,7 +2,7 @@
 title: Andrew Ng & Harrison Chase Fireside Chat
 author: Lawrence Wu
 date: '2025-05-14'
-categories: [ai, events]
+categories: [ai, conference, agents, langchain]
 ---
 
 The questions and answers extracted from the fireside chat between Harrison Chase (LangChain) and Andrew Ng (AI Fund) at LangChain Interrupt 2025.

@@ -2,7 +2,7 @@
 title: LLM Agents with Langchain
 author: Lawrence Wu
 date: '2023-07-12'
-categories: [ai]
+categories: [ai, agents, langchain, tutorial]
 jupyter: python3
 format:
   html:

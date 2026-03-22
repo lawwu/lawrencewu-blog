@@ -2,7 +2,7 @@
 title: LLM in Production Conference Takeaways
 date: '2023-06-21'
 author: Lawrence Wu
-categories: [ai, events]
+categories: [ai, conference]
 ---
 
 I didn't get to attend the LLM in Production Conference but found these takeaways Demetrios Brinkmann shared in an email to be quite insightful:

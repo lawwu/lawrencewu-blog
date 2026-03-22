@@ -2,7 +2,7 @@
 title: "Claude Code Field Guide"
 author: Lawrence Wu
 date: '2026-03-02'
-categories: [ai, "claude code"]
+categories: [ai, "claude code", "agentic harness"]
 ---
 
 I just wrapped up 15 days of Claude Code Tips. You can find them all [here](https://lawrencewu.net/posts/2026-02-11-claude-code-agentic-coding/).

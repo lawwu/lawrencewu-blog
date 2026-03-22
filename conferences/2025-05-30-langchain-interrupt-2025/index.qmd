@@ -2,7 +2,7 @@
 title: "LangChain Interrupt Agent Conference 2025"
 author: "Lawrence Wu"
 date: "2025-05-30"
-categories: ["Conference", "LangChain"]
+categories: [conference, ai, langchain]
 ---
 
 Some content related to the LangChain Conference:
