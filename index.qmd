@@ -4,6 +4,7 @@ listing:
     - "posts/**/*.qmd"
     - "links/*.qmd"
     - "quotes/*.qmd"
+    - "projects/*.qmd"
   sort: "date desc"
   type: custom
   template: listing.ejs.md

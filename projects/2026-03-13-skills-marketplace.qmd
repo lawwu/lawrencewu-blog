@@ -1,0 +1,14 @@
+---
+title: "skills-marketplace"
+date: '2026-03-13'
+categories: [project, AI, agents, tools]
+github_url: "https://github.com/lawwu/skills-marketplace"
+project_url: "https://github.com/lawwu/skills-marketplace"
+image: "https://opengraph.github.com/repo/lawwu/skills-marketplace"
+stars: 0
+project_lang: "Python"
+---
+
+A Cookiecutter template for building an agent skills marketplace — scaffold the boilerplate for packaging, distributing, and discovering skills for AI agents.
+
+[View on GitHub →](https://github.com/lawwu/skills-marketplace)

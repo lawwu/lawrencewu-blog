@@ -1,0 +1,14 @@
+---
+title: "agentic-ml-plugin"
+date: '2026-03-18'
+categories: [project, AI, agents, claude code]
+github_url: "https://github.com/lawwu/agentic-ml-plugin"
+project_url: "https://github.com/lawwu/agentic-ml-plugin"
+image: "https://opengraph.github.com/repo/lawwu/agentic-ml-plugin"
+stars: 1
+project_lang: "Python"
+---
+
+An agentic machine learning plugin that lets AI assistants run ML workflows autonomously — data prep, training, evaluation — without needing to prompt each step manually.
+
+[View on GitHub →](https://github.com/lawwu/agentic-ml-plugin)

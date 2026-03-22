@@ -48,7 +48,7 @@ Use `.qmd` files (not `.md`) for all blog posts and conference summaries.
 - **Branches:** `main` (production), `feature/description` or `claude/description-xxxxx`
 - **Commit:** include `docs/` and `_freeze/`; exclude `.quarto/`, `_site/`
 - **Links:** never use bare URLs — always wrap in `<url>` or `[text](url)` form
-- **Images:** place in post directory, compress PNGs with `pngquant --quality 60-80`
+- **Images:** place in post directory, compress PNGs with `pngquant --quality 60-80` before committing
 - **Code blocks:** executable Python runs via Jupyter during render; use `freeze: false` to force re-execution
 
 ## Troubleshooting

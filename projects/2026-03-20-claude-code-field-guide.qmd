@@ -1,0 +1,14 @@
+---
+title: "claude-code-field-guide"
+date: '2026-03-20'
+categories: [project, AI, claude code, tools]
+github_url: "https://github.com/lawwu/claude-code-field-guide"
+project_url: "https://github.com/lawwu/claude-code-field-guide"
+image: "https://opengraph.github.com/repo/lawwu/claude-code-field-guide"
+stars: 5
+project_lang: ""
+---
+
+My best practices, favorite skills, plugins, tools and MCPs for Claude Code. A living document of what actually works when building with agentic coding tools.
+
+[View on GitHub →](https://github.com/lawwu/claude-code-field-guide)

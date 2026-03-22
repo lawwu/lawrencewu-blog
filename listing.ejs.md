@@ -8,6 +8,7 @@
   const dateStr = d.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
   const isLink = item.categories && item.categories.includes('linkblog');
   const isQuote = item.categories && item.categories.includes('quote');
+  const isProject = item.categories && item.categories.includes('project');
   // Pass description through as-is — <!-- desc(...) --> placeholders are resolved by
   // scripts/resolve-descriptions.py after render.
   const cleanDesc = item.description || '';
@@ -25,6 +26,37 @@
     <div class="plc-content">
       <h2 class="plc-title listing-title">
         <a href="<%- item.path %>" class="plc-title-link"><%- item.title %> &#x2197;</a>
+      </h2>
+
+      <% if (cleanDesc) { %>
+      <p class="plc-description listing-description"><%- cleanDesc %></p>
+      <% } %>
+
+      <% if (item.categories && item.categories.length > 0) { %>
+      <div class="plc-categories">
+        <% for (const cat of item.categories) { %>
+        <a class="plc-category listing-category quarto-category"
+           href="#"
+           onclick="window.quartoListingCategory && window.quartoListingCategory('<%- cat %>'); return false;"><%- cat %></a>
+        <% } %>
+      </div>
+      <% } %>
+    </div>
+  </div>
+
+</article>
+<% } else if (isProject) { %>
+<article class="plc-entry plc-project-entry" <%- metadataAttrs(item) %>>
+
+  <div class="plc-meta">
+    <span class="plc-type-badge plc-type-project">project</span>
+    <time class="plc-date listing-date" datetime="<%- item.date %>"><%- dateStr %></time>
+  </div>
+
+  <div class="plc-body">
+    <div class="plc-content">
+      <h2 class="plc-title listing-title">
+        <a href="<%- item.path %>" class="plc-title-link plc-project-title"><%- item.title %></a>
       </h2>
 
       <% if (cleanDesc) { %>
