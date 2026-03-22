@@ -1,0 +1,14 @@
+---
+title: "awesome-llamas"
+date: '2024-07-25'
+categories: [project, AI, LLM]
+github_url: "https://github.com/lawwu/awesome-llamas"
+project_url: "https://github.com/lawwu/awesome-llamas"
+image: "https://opengraph.github.com/repo/lawwu/awesome-llamas"
+stars: 18
+project_lang: ""
+---
+
+A curated list of resources for LLaMA 1 and LLaMA 2 — models, tools, fine-tuning guides, and community projects. Inspired by the awesome-* format.
+
+[View on GitHub →](https://github.com/lawwu/awesome-llamas)

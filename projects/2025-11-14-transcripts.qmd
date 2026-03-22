@@ -1,0 +1,14 @@
+---
+title: "transcripts"
+date: '2025-11-14'
+categories: [project, AI, tools]
+github_url: "https://github.com/lawwu/transcripts"
+project_url: "https://github.com/lawwu/transcripts"
+image: "https://opengraph.github.com/repo/lawwu/transcripts"
+stars: 15
+project_lang: "Python"
+---
+
+Transcripts for various YouTube channels, inspired by [Karpathy's Lexicap](https://karpathy.ai/lexicap/index.html). Useful for searching and reading through long-form AI content without watching the full video.
+
+[View on GitHub →](https://github.com/lawwu/transcripts)

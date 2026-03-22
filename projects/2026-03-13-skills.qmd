@@ -1,0 +1,14 @@
+---
+title: "skills"
+date: '2026-03-13'
+categories: [project, AI, agents, claude code]
+github_url: "https://github.com/lawwu/skills"
+project_url: "https://github.com/lawwu/skills"
+image: "https://opengraph.github.com/repo/lawwu/skills"
+stars: 0
+project_lang: "Python"
+---
+
+A collection of agent skills for Claude Code and other AI assistants — reusable, composable tasks that extend what agents can do out of the box.
+
+[View on GitHub →](https://github.com/lawwu/skills)

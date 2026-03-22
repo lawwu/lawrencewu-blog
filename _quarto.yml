@@ -6,6 +6,7 @@ project:
     - "*"
     - "!CLAUDE.md"
     - "!listing.ejs.md"
+    - "!projects-listing.ejs.md"
   post-render:
     - scripts/resolve-descriptions.py
 
@@ -32,6 +33,8 @@ website:
         href: links.qmd
       - text: Quotes
         href: quotes.qmd
+      - text: Projects
+        href: projects.qmd
       - text: About
         href: about.qmd
       - text: Subscribe
@@ -44,10 +47,10 @@ format:
   html:
     theme: [cosmo, custom.scss]
     css: styles.css
-    mainfont: "Georgia"
+    mainfont: "Inter"
     monofont: "JetBrains Mono"
-    fontsize: 1.05em
-    linestretch: 1.75
+    fontsize: 1.0rem
+    linestretch: 1.85
     light-dark: true
     include-after-body:
       - text: |

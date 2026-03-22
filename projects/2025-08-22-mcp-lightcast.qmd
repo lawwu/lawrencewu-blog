@@ -1,0 +1,14 @@
+---
+title: "mcp-lightcast"
+date: '2025-08-22'
+categories: [project, AI, MCP, tools]
+github_url: "https://github.com/lawwu/mcp-lightcast"
+project_url: "https://github.com/lawwu/mcp-lightcast"
+image: "https://opengraph.github.com/repo/lawwu/mcp-lightcast"
+stars: 2
+project_lang: "Python"
+---
+
+An MCP (Model Context Protocol) server for the Lightcast API, enabling AI assistants to query labor market data, job postings, and skills data directly.
+
+[View on GitHub →](https://github.com/lawwu/mcp-lightcast)

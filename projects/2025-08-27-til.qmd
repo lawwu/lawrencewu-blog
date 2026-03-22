@@ -1,0 +1,14 @@
+---
+title: "til"
+date: '2025-08-27'
+categories: [project, tools, writing]
+github_url: "https://github.com/lawwu/til"
+project_url: "https://lawwu.github.io/til/"
+image: "https://opengraph.github.com/repo/lawwu/til"
+stars: 1
+project_lang: "JavaScript"
+---
+
+"Today I Learned" — a running log of small things I've picked up across programming, data science, and tools. Inspired by Simon Willison's TIL format.
+
+[Browse TILs →](https://lawwu.github.io/til/) · [View on GitHub →](https://github.com/lawwu/til)
