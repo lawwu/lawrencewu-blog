@@ -1,0 +1,8 @@
+freeze: false
+title-block-banner: false
+author: 'Lawrence Wu'
+toc: false
+page-layout: article
+format:
+  html:
+    include-after-body: ../posts/footer.html

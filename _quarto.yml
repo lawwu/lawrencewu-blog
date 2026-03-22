@@ -6,6 +6,8 @@ project:
     - "*"
     - "!CLAUDE.md"
     - "!listing.ejs.md"
+  post-render:
+    - scripts/resolve-descriptions.py
 
 execute:
   freeze: auto
@@ -24,6 +26,12 @@ website:
     right:
       - text: Blog
         href: index.qmd
+      - text: Posts
+        href: posts.qmd
+      - text: Links
+        href: links.qmd
+      - text: Quotes
+        href: quotes.qmd
       - text: About
         href: about.qmd
       - text: Subscribe

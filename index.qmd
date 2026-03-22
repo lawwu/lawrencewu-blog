@@ -1,8 +1,12 @@
 ---
 listing:
-  contents: posts/**/*.qmd
+  contents:
+    - "posts/**/*.qmd"
+    - "links/*.qmd"
+    - "quotes/*.qmd"
   sort: "date desc"
-  type: default
+  type: custom
+  template: listing.ejs.md
   categories: true
   sort-ui: false
   filter-ui: false
