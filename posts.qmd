@@ -1,12 +1,9 @@
 ---
+title: "Posts"
 listing:
-  contents:
-    - "posts/**/*.qmd"
-    - "links/*.qmd"
-    - "quotes/*.qmd"
+  contents: posts/**/*.qmd
   sort: "date desc"
-  type: custom
-  template: listing.ejs.md
+  type: default
   categories: true
   sort-ui: false
   filter-ui: false
@@ -15,5 +12,5 @@ listing:
   feed: true
   image-align: right
 page-layout: full
-title-block-banner: false
+title-block-banner: true
 ---

@@ -1,0 +1,11 @@
+---
+title: "Karpathy on removing yourself as the bottleneck"
+date: '2026-03-22'
+categories: [quote, AI, agents]
+quote_source: "Andrej Karpathy"
+quote_source_url: "https://youtu.be/kwSVtQ7dziU?si=UQ-YXKS3YiIw-5xA&t=994"
+---
+
+> To get the most out of the tools that have become available now, you have to remove yourself as the bottleneck. You can't be there to prompt the next thing. You take yourself outside. You have to arrange things such that they're completely autonomous. And the more, you know, how can you maximize your token throughput and not be in the loop? This is the goal. And so I kind of mentioned that the name of the game now is to increase your leverage. I put in just very few tokens just once in a while, and a huge amount of stuff happens on my behalf. And so, auto-research, like I tweeted that, and I think people liked it and whatnot, but it doesn't. They haven't maybe worked through the implications of that. And for me, auto research is an example of an implication of that. Where it's like, I don't want to be the researcher in the loop, looking at results, et cetera. I'm holding the system back. So the question is, how do I refactor all the abstractions so that I'm not I have to arrange it once and hit go. The name of the game is how can you get more agents running for longer periods of time without your involvement, doing stuff on your behalf. And autoresearch is just, yeah, here's an objective, here's a metric, here's your boundaries of what you can and cannot do, and go.
+
+— [The End of Coding: Andrej Karpathy on Agents, AutoResearch, and the Loopy Era of AI](https://youtu.be/kwSVtQ7dziU?si=UQ-YXKS3YiIw-5xA&t=994) (No Priors)

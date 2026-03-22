@@ -1,0 +1,15 @@
+---
+title: "Karpathy on the evolving optimal setup"
+date: '2026-03-22'
+categories: [quote, AI, agents]
+quote_source: "Andrej Karpathy"
+quote_source_url: "https://x.com/karpathy/status/2027501331125239822"
+---
+
+> With improving capability, every point in time has an optimal setup that keeps changing and evolving and the community average tracks the point. None -> Tab -> Agent -> Parallel agents -> Agent Teams (?) -> ???
+>
+> If you're too conservative, you're leaving leverage on the table. If you're too aggressive, you're net creating more chaos than doing useful work.
+>
+> The art of the process is spending 80% of the time getting work done in the setup you're comfortable with and that actually works, and 20% exploration of what might be the next step up even if it doesn't work yet.
+
+— [@karpathy](https://x.com/karpathy/status/2027501331125239822)

@@ -1,0 +1,13 @@
+---
+title: "More People Should Do This: Link Blogging"
+date: '2026-03-22'
+categories: [linkblog, Writing]
+link_url: "https://simonwillison.net/2024/Dec/22/link-blog/"
+link_source: "Simon Willison"
+---
+
+[Original article by Simon Willison](https://simonwillison.net/2024/Dec/22/link-blog/) ↗
+
+> Maintaining a link blog is a low effort, high value way to contribute to internet life. You get to share things you find interesting, develop your voice, and create a public record of your intellectual interests.
+
+Simon has been running his linkblog since 2003 — over 7,600 entries. The argument for doing this is compelling: it's lower stakes than a full blog post, you're adding context rather than creating from scratch, and it builds a useful personal archive over time. I refactored my blog to add linkblog entries as well as quotes.

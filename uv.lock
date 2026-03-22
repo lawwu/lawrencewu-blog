@@ -782,6 +782,7 @@ name = "lawwu-blog"
 version = "0.1.0"
 source = { editable = "." }
 dependencies = [
+    { name = "beautifulsoup4" },
     { name = "jupyter" },
     { name = "pandas" },
     { name = "plotly" },
@@ -789,6 +790,7 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
+    { name = "beautifulsoup4", specifier = ">=4.12.0" },
     { name = "jupyter", specifier = ">=1.0.0" },
     { name = "pandas", specifier = ">=2.1.0" },
     { name = "plotly", specifier = ">=5.18.0" },
