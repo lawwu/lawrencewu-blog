@@ -46,3 +46,7 @@ Here are some images from Cowork working:
 ![](./images/brisket_video_cowork1.png)
 
 ![](./images/brisket_video_cowork2.png)
+
+Used some of the thumbnails Cowork run an A/B test on YouTube:
+
+![](./images/brisket_youtube_a_b_test.png)
