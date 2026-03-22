@@ -1,4 +1,20 @@
 ```{=html}
+<script>
+// metadataAttrs() wraps data attribute values in single quotes for custom listings,
+// which breaks quarto-listing.js's atob() call. List.js caches these values on init,
+// so we must fix them in the List.js item cache (not just the DOM).
+document.addEventListener('DOMContentLoaded', function() {
+  var list = window['quarto-listings'] && window['quarto-listings']['listing-listing'];
+  if (!list) return;
+  list.items.forEach(function(item) {
+    var vals = item.values();
+    var cats = vals.categories;
+    if (cats && cats.charAt(0) === "'" && cats.charAt(cats.length - 1) === "'") {
+      item.values({ categories: cats.slice(1, -1) });
+    }
+  });
+});
+</script>
 <div class="quarto-listing-container-custom">
 <div class="list quarto-listing-custom" id="quarto-listing-listing">
 
@@ -37,7 +53,7 @@
         <% for (const cat of item.categories) { %>
         <a class="plc-category listing-category quarto-category"
            href="#"
-           onclick="window.quartoListingCategory && window.quartoListingCategory('<%- cat %>'); return false;"><%- cat %></a>
+           onclick="window.quartoListingCategory && window.quartoListingCategory(btoa(encodeURIComponent('<%- cat.replace(/\\/g, '\\\\').replace(/'/g, "\\'") %>'))); return false;"><%- cat %></a>
         <% } %>
       </div>
       <% } %>
@@ -68,7 +84,7 @@
         <% for (const cat of item.categories) { %>
         <a class="plc-category listing-category quarto-category"
            href="#"
-           onclick="window.quartoListingCategory && window.quartoListingCategory('<%- cat %>'); return false;"><%- cat %></a>
+           onclick="window.quartoListingCategory && window.quartoListingCategory(btoa(encodeURIComponent('<%- cat.replace(/\\/g, '\\\\').replace(/'/g, "\\'") %>'))); return false;"><%- cat %></a>
         <% } %>
       </div>
       <% } %>
@@ -97,7 +113,7 @@
         <% for (const cat of item.categories) { %>
         <a class="plc-category listing-category quarto-category"
            href="#"
-           onclick="window.quartoListingCategory && window.quartoListingCategory('<%- cat %>'); return false;"><%- cat %></a>
+           onclick="window.quartoListingCategory && window.quartoListingCategory(btoa(encodeURIComponent('<%- cat.replace(/\\/g, '\\\\').replace(/'/g, "\\'") %>'))); return false;"><%- cat %></a>
         <% } %>
       </div>
       <% } %>
@@ -137,7 +153,7 @@
         <% for (const cat of item.categories) { %>
         <a class="plc-category listing-category quarto-category"
            href="#"
-           onclick="window.quartoListingCategory && window.quartoListingCategory('<%- cat %>'); return false;"><%- cat %></a>
+           onclick="window.quartoListingCategory && window.quartoListingCategory(btoa(encodeURIComponent('<%- cat.replace(/\\/g, '\\\\').replace(/'/g, "\\'") %>'))); return false;"><%- cat %></a>
         <% } %>
       </div>
       <% } %>

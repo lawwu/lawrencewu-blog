@@ -45,7 +45,7 @@
         <% for (const cat of item.categories.filter(c => c !== 'project')) { %>
         <a class="plc-category listing-category quarto-category"
            href="#"
-           onclick="window.quartoListingCategory && window.quartoListingCategory('<%- cat %>'); return false;"><%- cat %></a>
+           onclick="window.quartoListingCategory && window.quartoListingCategory(btoa(encodeURIComponent('<%- cat.replace(/\\/g, '\\\\').replace(/'/g, "\\'") %>'))); return false;"><%- cat %></a>
         <% } %>
       </div>
       <% } %>
