@@ -2,7 +2,7 @@
 title: State of GPT - Andrej Karpathy
 date: '2023-06-13'
 author: Lawrence Wu
-categories: [ai, summary]
+categories: [ai, llms, summary, fine-tuning]
 ---
 
 <!-- markdownlint-disable MD034 -->

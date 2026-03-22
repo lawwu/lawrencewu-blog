@@ -2,7 +2,7 @@
 title: AI Engineer Summit 2023
 author: Lawrence Wu
 date: '2023-10-10'
-categories: [ai, events]
+categories: [ai, conference, rag, agents]
 ---
 
 # AI Engineer Summit

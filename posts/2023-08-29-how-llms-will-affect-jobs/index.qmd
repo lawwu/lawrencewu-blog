@@ -2,7 +2,7 @@
 title: How LLMs will affect Jobs?
 author: Lawrence Wu
 date: '2023-08-29'
-categories: [ai, career]
+categories: [ai, career, llms]
 jupyter: python3
 format:
   html:

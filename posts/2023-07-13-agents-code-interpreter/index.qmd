@@ -3,7 +3,7 @@ title: Code Interpreter & Data Analysis
 author: Lawrence Wu
 date: '2023-07-13'
 date-modified: '2023-07-14'
-categories: [ai]
+categories: [ai, agents]
 image: code_interpreter.png
 jupyter: python3
 format:

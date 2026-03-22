@@ -2,7 +2,7 @@
 title: On Reading
 author: Lawrence Wu
 date: 2025-11-24
-categories: [books]
+categories: ["book review"]
 draft: true
 ---
 

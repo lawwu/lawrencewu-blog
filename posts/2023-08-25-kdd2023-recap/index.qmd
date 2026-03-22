@@ -2,7 +2,7 @@
 title: KDD 2023 - Recap
 author: Lawrence Wu
 date: '2023-08-25'
-categories: [ai, events]
+categories: [ai, conference]
 ---
 
 I attended [KDD 2023](https://kdd.org/kdd2023/) which was held in Long Beach, CA from Aug 6-10, 2023.

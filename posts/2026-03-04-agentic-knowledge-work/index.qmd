@@ -2,7 +2,7 @@
 title: "Agentic Knowledge Work & Agentic Machine Learning"
 author: Lawrence Wu
 date: '2026-03-08'
-categories: [ai, "claude code"]
+categories: [ai, "claude code", agents, "agentic harness", codex]
 ---
 
 Johannes Gutenberg invented the printing press in Germany around 1440. This new machine that had movable type could print 3,600 pages per day compared to 40 by hand. This is a 90x speedup. It certainly made mass printing books possible because the cost plummeted. But the effect wasn't merely that books got copied faster. The written word became important. Ideas could now spread rapidly. Skills like reading and writing became much more important in this era after the printing press. Society was fundamentally changed.
