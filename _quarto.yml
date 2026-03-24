@@ -16,7 +16,7 @@ execute:
 website:
   title: "Lawrence Wu's Blog"
   site-url: https://lawrencewu.net
-  description: "This is Lawrence Wu's personal website"
+  description: "Lawrence Wu's blog — AI, personal finance and life"
   open-graph: true
   google-analytics: "G-LN4GM4FVCJ"
   cookie-consent: true
