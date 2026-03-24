@@ -13,25 +13,25 @@ Here are the top 10 human skills I think are currently most valuable in the era 
 
 - Use AI, not just ChatGPT but coding agents like Claude Code with best models to see what is possible. Don't get discouraged if something isn't working.
 - Claude Code specifically is one of the most amazing pieces of technology. Every week I'm surprised, amazed and impressed by what it can do across any knowledge work for professional or personal purposes. If you are not technical, you can start using Claude Cowork. Pay $20 and use it for a month.
-- I sometimes think about paralells between when I was playing [Warcraft III - Frozen Throne](https://en.wikipedia.org/wiki/Warcraft_III:_The_Frozen_Throne) (probably because of [PeonPing](https://www.peonping.com/)) and the current era of agentic knowledge work. When I was gaming, I tried my best to master the tools: I knew every keyboard shortcut in the game. I understood what every unit did. I watch replays and knew what common strategies were and counters to those strategies were.
-- You need to know the mechanics of your coding agents of choice - skills, tools, thinking, system prompts, memory, and understanding new features when they are rolling out. Know the [difference between an LLM nad the agentic harness](https://lawrencewu.net/posts/2026-02-11-claude-code-agentic-coding/#day-10-llm-vs-agentic-harness).
+- I sometimes think about parallels between when I was playing [Warcraft III - Frozen Throne](https://en.wikipedia.org/wiki/Warcraft_III:_The_Frozen_Throne) (probably because of [PeonPing](https://www.peonping.com/)) and the current era of agentic knowledge work. When I was gaming, I tried my best to master the tools: I knew every keyboard shortcut in the game. I understood what every unit did. I watch replays and knew what common strategies were and counters to those strategies were.
+- You need to know the mechanics of your coding agents of choice - skills, tools, thinking, system prompts, memory, and understanding new features when they are rolling out. Know the [difference between an LLM and the agentic harness](https://lawrencewu.net/posts/2026-02-11-claude-code-agentic-coding/#day-10-llm-vs-agentic-harness).
 - It's also helpful to understand things like git and bash. This course can help you learn some of these programming-adjacent things: [The Missing Semester of Your CS Education](https://missing.csail.mit.edu/).
 
 ## 2. Reading
 
 - Reading speed matters a lot now given the amount of prose and code people are reviewing now. 
-- You also need to learn to varying your reading speed based on what you are reading and how important it is.
+- You also need to learn to vary your reading speed based on what you are reading and how important it is.
 
 ## 3. Writing
 	
 - Writing is thinking. It helps clarify what you think and what you value.
 - I [started running in 2024](https://lawrencewu.net/posts/2024-10-13-running-6-months/) because I wanted physical exercise. Reading is kind of like a mental exercise at an easy pace. Writing is a mental exercise at a more intense pace.
-- Through writing, you are specify you're intent to agents and humans. You can broadly sharing your ideas without needing to repeat yourself. 
+- Through writing, you are specifying your intent to agents and humans. You can broadly share your ideas without needing to repeat yourself.
 - As more AI generated content is produced, original human-produced content will stand out.
 
 ## 4. Understanding What is Possible with AI
 
-- It is vital to understand what is possible with AI. This is constantly a moving target. -
+- It is vital to understand what is possible with AI. This is constantly a moving target.
 - There are new versions of LLMs and agentic harnesses like Claude Code. People are finding new ways to use them. 
 - There are all kinds of models outside of large language models: image models, video models, realtime models and world models.
 - Understanding what it means to work in an agent-first way. Read articles like about [harness engineering](https://openai.com/index/harness-engineering/) to understand what teams are doing to push the limits of what is possible with current models and harnesses.
@@ -44,7 +44,7 @@ Here are the top 10 human skills I think are currently most valuable in the era 
 ## 6. Curiosity / Eagerness to Learn
 
 - A curious mind that wonders how things work goes a long way now. Having a little bit of understanding of what is possible in one area will go a long way because you can specify to an agent what you want.
-- An eagerness to learn is really important because of #3, the field is changing so fast you need to keep learning.
+- An eagerness to learn is really important because of #4, the field is changing so fast you need to keep learning.
 
 ## 7. Humility
 
@@ -54,7 +54,7 @@ Here are the top 10 human skills I think are currently most valuable in the era 
 
 ## 8. Coding / Programming 
 
-- It's still very valuable to know at least 1 programming language with some proficiency. The first programming langauge I used professionally was R. Then I moved to Python. These are two languages where understanding the language and the common libraries in these languages has helped me tremendously in working with coding agents today. It makes it possible to review the code agents are writing. 
+- It's still very valuable to know at least 1 programming language with some proficiency. The first programming language I used professionally was R. Then I moved to Python. These are two languages where understanding the language and the common libraries in these languages has helped me tremendously in working with coding agents today. It makes it possible to review the code agents are writing. 
 - It also makes it possible for me to specify what I want because I know certain terms, e.g. [can you turn this data from long to wide?](https://tidyr.tidyverse.org/articles/tidy-data.html).
 - I can observe what the agents are doing live, understand what they are doing and learn new ways of doing things.
 
