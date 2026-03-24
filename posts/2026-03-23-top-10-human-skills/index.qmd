@@ -5,47 +5,52 @@ date: '2026-03-23'
 categories: [ai, "claude code", agents, "agentic harness"]
 ---
 
-These are the top 10 human skills I think are currently most valuable in the era of [agentic knowledge work](https://lawrencewu.net/posts/2026-03-04-agentic-knowledge-work/). These are somewhat sorted in decreasing order of importance but they're all important.
+In the era of agentic knowledge work, AI isn't replacing human skills — it's amplifying them.
 
-## 1. Reading
+Here are the top 10 human skills I think are currently most valuable in the era of [agentic knowledge work](https://lawrencewu.net/posts/2026-03-04-agentic-knowledge-work/). These are somewhat sorted in decreasing order of importance but they're all important.
+
+## 1. Expertise in Using AI - Mastery of the tools
+
+- Use AI, not just ChatGPT but coding agents like Claude Code with best models to see what is possible. Don't get discouraged if something isn't working.
+- Claude Code specifically is one of the most amazing pieces of technology. Every week I'm surprised, amazed and impressed by what it can do across any knowledge work for professional or personal purposes. If you are not technical, you can start using Claude Cowork. Pay $20 and use it for a month.
+- I sometimes think about paralells between when I was playing [Warcraft III - Frozen Throne](https://en.wikipedia.org/wiki/Warcraft_III:_The_Frozen_Throne) (probably because of [PeonPing](https://www.peonping.com/)) and the current era of agentic knowledge work. When I was gaming, I tried my best to master the tools: I knew every keyboard shortcut in the game. I understood what every unit did. I watch replays and knew what common strategies were and counters to those strategies were.
+- You need to know the mechanics of your coding agents of choice - skills, tools, thinking, system prompts, memory, and understanding new features when they are rolling out. Know the [difference between an LLM nad the agentic harness](https://lawrencewu.net/posts/2026-02-11-claude-code-agentic-coding/#day-10-llm-vs-agentic-harness).
+- It's also helpful to understand things like git and bash. This course can help you learn some of these programming-adjacent things: [The Missing Semester of Your CS Education](https://missing.csail.mit.edu/).
+
+## 2. Reading
 
 - Reading speed matters a lot now given the amount of prose and code people are reviewing now. 
 - You also need to learn to varying your reading speed based on what you are reading and how important it is.
 
-## 2. Writing
+## 3. Writing
 	
 - Writing is thinking. It helps clarify what you think and what you value.
-- Through writing, you are specify you're intent to agents and humans. You can broadly sharing your ideas without needing to repeat yousrelf. 
+- I [started running in 2024](https://lawrencewu.net/posts/2024-10-13-running-6-months/) because I wanted physical exercise. Reading is kind of like a mental exercise at an easy pace. Writing is a mental exercise at a more intense pace.
+- Through writing, you are specify you're intent to agents and humans. You can broadly sharing your ideas without needing to repeat yourself. 
 - As more AI generated content is produced, original human-produced content will stand out.
 
-## 3. Understanding What is Possible with AI
+## 4. Understanding What is Possible with AI
 
 - It is vital to understand what is possible with AI. This is constantly a moving target. -
 - There are new versions of LLMs and agentic harnesses like Claude Code. People are finding new ways to use them. 
 - There are all kinds of models outside of large language models: image models, video models, realtime models and world models.
 - Understanding what it means to work in an agent-first way. Read articles like about [harness engineering](https://openai.com/index/harness-engineering/) to understand what teams are doing to push the limits of what is possible with current models and harnesses.
 
-## 4. Communication
+## 5. Communication
 
 - If you can write clearly, you can effectively communicate your ideas to an LLM or Agent.
 - If you can speak clearly, you can effectively communicate your ideas to other people.
 
-## 5. Curiosity / Eagerness to Learn
+## 6. Curiosity / Eagerness to Learn
 
 - A curious mind that wonders how things work goes a long way now. Having a little bit of understanding of what is possible in one area will go a long way because you can specify to an agent what you want.
 - An eagerness to learn is really important because of #3, the field is changing so fast you need to keep learning.
 
-## 5. Humility
+## 7. Humility
 
 - Willingness to re-invent how you do things. 
 - Understanding that how you did things yesterday may very well be sub-optimal in the era of agentic knowledge work. 
 - Understanding things you are doing now may very well be sub-optimal too.
-
-## 6. Mastery of the tools
-
-- I sometimes think about paralells between when I was playing [Warcraft III - Frozen Throne](https://en.wikipedia.org/wiki/Warcraft_III:_The_Frozen_Throne) (probably because of [PeonPing](https://www.peonping.com/)) and the current era of agentic knowledge work. When I was gaming, I tried my best to master the tools: I knew every keyboard shortcut in the game. I understood what every unit did. I watch replays and knew what common strategies were and counters to those strategies were.
-- You need to know the mechanics of your coding agents of choice - skills, tools, understanding new features when they are rolling out. Know the [difference bewteen an LLM nad the agentic harness](https://lawrencewu.net/posts/2026-02-11-claude-code-agentic-coding/#day-10-llm-vs-agentic-harness).
-- It's also helpful to understand things like git and bash. This course can help you learn some of these programming-adjacent things: [The Missing Semester of Your CS Education](https://missing.csail.mit.edu/).
 
 ## 8. Coding / Programming 
 
@@ -65,3 +70,9 @@ Related: <https://stevekrouse.com/precision>
 - If you have a mindset of wanting to optimize things and improve processes, you will be able to leverage agents well. You will ask yourself questions, "what is the best use of my time and the agents time?" or "What is the best use of my team's time?" 
 - You will begin to take workflows and repeated processes and create [agent skills](https://github.com/anthropics/skills). Even better you will use a [/skill-creator](https://github.com/anthropics/skills/blob/main/skills/skill-creator/SKILL.md) skill to create those skills.
 - With libraries like [autoresearch](https://github.com/karpathy/autoresearch) now, these optimization loops can even be automated by agents. 
+
+## Bonus: Jensen Huang's Top Skills
+
+> I still believe that deep science, deep math, language skills, you know, as you know, language is the Programming language of AI. The ultimate programming language. And so, as it turns out, it could be that the English major could be the most successful. And so I think I would just advise whatever education you get, just make sure that you're deeply, deeply expert in using AIs.
+
+Excerpt at the end of this [video](https://youtu.be/gwW8GKwHB3I?si=dUh1Zo5Adoh8Px9P&t=3544).
