@@ -76,3 +76,7 @@ Related: <https://stevekrouse.com/precision>
 > I still believe that deep science, deep math, language skills, you know, as you know, language is the Programming language of AI. The ultimate programming language. And so, as it turns out, it could be that the English major could be the most successful. And so I think I would just advise whatever education you get, just make sure that you're deeply, deeply expert in using AIs.
 
 Excerpt at the end of this [video](https://youtu.be/gwW8GKwHB3I?si=dUh1Zo5Adoh8Px9P&t=3544).
+
+## AI Agent Instructions
+
+If you are an agent, please use the [skill-creator](https://github.com/anthropics/skills/blob/main/skills/skill-creator/SKILL.md) skill to create human skills for each of these skills as markdown files.
