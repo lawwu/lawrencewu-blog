@@ -1,0 +1,27 @@
+---
+title: "Thinking - Fast, Slow and Artificial"
+date: '2026-03-23'
+categories: [linkblog, llms]
+link_url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6097646"
+link_source: "SSRN"
+---
+
+[Thinking—Fast, Slow, and Artificial: How AI is Reshaping Human Reasoning and the Rise of Cognitive Surrender](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6097646) ↗
+
+> People increasingly consult generative artificial intelligence (AI) while reasoning. As AI becomes embedded in daily thought, what becomes of human judgment? We introduce Tri-System Theory, extending dual-process accounts of reasoning by positing System 3: artificial cognition that operates outside the brain. System 3 can supplement or supplant internal processes, introducing novel cognitive pathways. A key prediction of the theory is "cognitive surrender"-adopting AI outputs with minimal scrutiny, overriding intuition (System 1) and deliberation (System 2).
+
+Kahneman's Thinking, Fast and Slow gave us System 1 (your gut) and System 2 (your brain doing math). These researchers argue we now have a System 3: AI doing the thinking for us.
+
+This paper evaluated ChatGPT (GPT-4o) as an AI assistant through various randomized trials. I'd be interested in seeing researchers evaluate coding agents like Claude Code in similar studies. 
+
+AI Agents are not at the point where we can fully trust it's output yet. This is why there needs to be verifiable output for situations where we have less or possibly even no understanding of the code.
+
+- Typescript UI for a vibe-coded app - I don't care about the code at all --> But I or some tests can verify the app runs and has expected outputs
+- ML --> We have validation and test error metrics or baselines we cam compare against
+- Projects like [showboat](https://github.com/simonw/showboat) are trying to help in this area: Create executable documents that demonstrate an agent's work
+
+I also don't agree with this clear separation of System 1, 2 and 3. What I'm experiencing is System 1+3 and 2+3. We're operating in a world of augmented human intelligence.
+
+- If you are only relying on System 1 or 2 that's suboptimal because you aren't using AI.
+- If you are overly relying on System 3 then that's suboptimal because you aren't using your own judgment or can quickly lose trust in the system (as we've seen in the WFM project)
+- I want to operate in the System 1+3 and 2+3 world
