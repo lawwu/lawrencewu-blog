@@ -46,7 +46,7 @@ Someone posted the `requirements.txt` file for Code Interpreter [here](https://g
 
 There's been a lot of chatter on whether Code Interpreter and models like it will take over data science and data analyst jobs. I don't think that will necessarily happen so soon. I think expert data analysts and data scientists with a tool like Code Interpreter can be much more productive. I haven't used Code Interpreter for very long but right now I see it as a very obedient and capable intern that has a surprising amount of knowledge. You wouldn't productionize code that an intern wrote without a thorough review, nor would you share the results of a data science interns analysis or model without also a thorough review. The same applies to Code Interpreter.
 
-But let me share the results of my first experiment with Code Interpeter and it's ability to do data analysis.
+But let me share the results of my first experiment with Code Interpreter and it's ability to do data analysis.
 
 # NBA Data Analysis (Part 1) - Anything interesting?
 
@@ -160,7 +160,7 @@ This plot is not very good as it's a side-by-side bar chat which makes it diffic
 
 This is also not a very good plot but it's a valiant attempt.
 
-![Relationship between differnet performance metrics](./nba-use-case-5.png)
+![Relationship between different performance metrics](./nba-use-case-5.png)
 
 ## Explaining itself
 
@@ -176,7 +176,7 @@ After a couple rounds of modification, I was able to get Code Interpreter to pro
 
 # NBA Data Analysis (Part 2) - Joining Data
 
-I found another dataset that had every player's draft year, round and number. I uploaded it to Code Interpreter. The LLM was smart enough to name the dataframe as `df_new` so it didn't overwride `df` from the previous analysis.
+I found another dataset that had every player's draft year, round and number. I uploaded it to Code Interpreter. The LLM was smart enough to name the dataframe as `df_new` so it didn't overwrite `df` from the previous analysis.
 
 ![New dataset uploaded](./nba-dataset-2.png)
 
@@ -222,7 +222,7 @@ The LLM is able to produce the following plot which is really interesting! It sh
 
 # NBA Analysis (Part 3) - Embeddings
 
-I had another idea to look at embeddings of players to see if it could generate similar players. So I asked Code Interpreter to generate embeddings for each player based on basketball statisics and physical attributes (weight, height).
+I had another idea to look at embeddings of players to see if it could generate similar players. So I asked Code Interpreter to generate embeddings for each player based on basketball statistics and physical attributes (weight, height).
 
 Keep in mind these are very simple poor-man's embeddings (PCA with 2 dimensions). If someone really wanted to generate real embeddings you could use OpenAI or sentence-transformers to generate larger more meaningful embeddings but Code Interpreter does not have network access to install new libraries.
 

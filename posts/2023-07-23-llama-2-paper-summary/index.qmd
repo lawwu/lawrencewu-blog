@@ -17,7 +17,7 @@ Note this write up isn't the only game in town:
 
 # Pretraining (2)
 
-They don't specify what data they use other than saying it is publicly available and they do not use any proprietary data from Meta's services. THe model was pre-trained on 2 trillion tokens.
+They don't specify what data they use other than saying it is publicly available and they do not use any proprietary data from Meta's services. The model was pre-trained on 2 trillion tokens.
 
 Given the training loss curves below it is clear they could easily keep training this model for better performance.
 
@@ -47,7 +47,7 @@ The authors note the importance of quality over quantity when it comes to datase
 
 # Reinforcement Learning with Human Feedback (3.2)
 
-I liked the author's succint definition of RLHF. Humans are selecting which model outputs they prefer and a reward model is trained that learns these human preferences.
+I liked the author's succinct definition of RLHF. Humans are selecting which model outputs they prefer and a reward model is trained that learns these human preferences.
 
 > RLHF is a model training procedure that is applied to a fine-tuned language model to further align model behavior with human preferences and instruction following. We collect data that represents empirically sampled human preferences, whereby human annotators select which of two model outputs they prefer. This human feedback is subsequently used to train a reward model, which learns patterns in the preferences of the human annotators and can then automate preference decisions.
 

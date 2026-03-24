@@ -81,7 +81,7 @@ Because language models are trained on all kinds of data, e.g. student solutions
 
 Become more accessible to fine-tuning a model:
 
-- Parameter Efficient Finetuning, e.g. LoRA - only trainng small sparse pieces of your model
+- Parameter Efficient Finetuning, e.g. LoRA - only training small sparse pieces of your model
 - Low-precision inference, e.g. bitsandbytes
 - Open source high quality models like LLaMA
 

@@ -19,3 +19,11 @@ repos:
         args: ["--config", ".markdownlint.yaml"]
         types: [file]
         files: \.(md|qmd)$
+
+  - repo: https://github.com/codespell-project/codespell
+    rev: v2.4.1
+    hooks:
+      - id: codespell
+        args: ["-I", ".codespellignore"]
+        types: [file]
+        files: \.(md|qmd)$

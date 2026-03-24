@@ -11,7 +11,7 @@ In this blog post, I'll introduce you to a list of useful applications, covering
 
 [Google Chrome](https://www.google.com/chrome/): I've tried other browsers but I still find myself going back to Chrome.
 
-[Workflowy](https://workflowy.com/): A simple yet powerful app for note-taking, outlining, and task management, Workflowy helps you organize your thoughts and projects using nested lists and intuitive keyboard shortcuts. It's simple at it's core as Workflowy is essentially an infinitely nested bulleted list. They've added additional features over the years like mirroring lists which I've found helpful. Notion may have more features but I haven't overcome the intertia needed to switch yet.
+[Workflowy](https://workflowy.com/): A simple yet powerful app for note-taking, outlining, and task management, Workflowy helps you organize your thoughts and projects using nested lists and intuitive keyboard shortcuts. It's simple at it's core as Workflowy is essentially an infinitely nested bulleted list. They've added additional features over the years like mirroring lists which I've found helpful. Notion may have more features but I haven't overcome the inertia needed to switch yet.
 
 [Todoist](https://todoist.com/): A great multi platform to-do list app. One of my favorite features is being able to type dates and/or times that Todoist will parse into a due date. Because of my poor memory, I need to write everything down. If it's task-related, it will go into Todoist. On a related note, the Reminders app on an Apple Watch is also useful for capturing todos on the go. I hold the crown to activate Siri and say "Remind me to do X at tomorrow at 10pm" and this reminder will pop-up at tomorrow 10pm on my iPhone.
 

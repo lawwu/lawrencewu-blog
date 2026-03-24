@@ -15,7 +15,7 @@ I'd like to observe how things have changed through these years across 3 areas:
 
 ## Nov 2022 - Dec 2023 - LangChain, Prompt Engineering, Github Copilot
 
-ChatGPT came out November 2022. It immediately showed the utility of large language models and providing a natural langauge interface to AI. Most people used and got familiar with the chat-based interface. Developers though wanted to call these models programmatically via an API. Libraries like [LangChain](https://github.com/langchain-ai/langchain) grew in popularity as LLM wrappers. They provided common interfaces to all the model providers: OpenAI, Google, Anthropic, etc.
+ChatGPT came out November 2022. It immediately showed the utility of large language models and providing a natural language interface to AI. Most people used and got familiar with the chat-based interface. Developers though wanted to call these models programmatically via an API. Libraries like [LangChain](https://github.com/langchain-ai/langchain) grew in popularity as LLM wrappers. They provided common interfaces to all the model providers: OpenAI, Google, Anthropic, etc.
 
 Harrison Chase actually released LangChain on [October 25, 2022](https://x.com/hwchase17/status/1584925380976091137) (before ChatGPT was released!). LangChain provided a TypeScript and Python interface to language model APIs. As a Python developer, I benefitted tremendously from this open source library. Just following the releases and keeping up with LangChain's blog was so educational. I owe a lot of my learnings that first year to LangChain and the team there.
 
