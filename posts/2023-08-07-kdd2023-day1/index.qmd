@@ -300,7 +300,7 @@ Raif Rustamov from Amazon gave this invited talk.
 ### Approach - Creative Optimality Gap (COG)
 
 - If we were to replace the video of class 0 to video of class 1, what would be the improvement in the outcome for the ad?
-- **Uplift or Heterogenous Treatment Effect modeling**
+- **Uplift or Heterogeneous Treatment Effect modeling**
 
 ### Benefits
 
@@ -363,7 +363,7 @@ Ruomeng Cui from Emory gave this talk.
 - First-difference DML
 - Others
 
-### Account for Knapsnack
+### Account for Knapsack
 
 - Tau does not capture economic efficiency
 - Need to account for how much capacity a customer is using. A customer going from 0 to 1 unit sales is much more valuable than a customer going from 19 to 20 units sold because the latter is not using much capacity.

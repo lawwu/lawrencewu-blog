@@ -421,7 +421,7 @@ chain.invoke({"input": "What is the weather in san francisco right now?"})
 
 # uses the wikipedia tool
 chain.invoke({"input": "What is langchain?"})
-# 'Page: LangChain\nSummary: LangChain is a framework designed to simplify the creation of applications using large language models (LLMs). As a language model integration framework, LangChain\'s use-cases largely overlap with those of language models in general, including document analysis and summarization, chatbots, and code analysis.\n\nPage: Prompt engineering\nSummary: Prompt engineering is the process of structuring text that can be interpreted and understood by a generative AI model. A prompt is natural language text describing the task that an AI should perform.A prompt for a text-to-text model can be a query such as "what is Fermat\'s little theorem?", a command such as "write a poem about leaves falling", a short statement of feedback (for example, "too verbose", "too formal", "rephrase again", "omit this word") or a longer statement including context, instructions, and input data. Prompt engineering may involve phrasing a query, specifying a style, providing relevant context or assigning a role to the AI such as "Act as a native French speaker". A prompt may include a few examples for a model to learn from, such as "maison -> house, chat -> cat, chien ->", an approach called few-shot learning.When communicating with a text-to-image or a text-to-audio model, a typical prompt is a description of a desired output such as "a high-quality photo of an astronaut riding a horse" or "Lo-fi slow BPM electro chill with organic samples". Prompting a text-to-image model may involve adding, removing, emphasizing and re-ordering words to achieve a desired subject, style, layout, lighting, and aesthetic.\n\nPage: Sentence embedding\nSummary: In natural language processing, a sentence embedding refers to a numeric representation of a sentence in the form of a vector of real numbers which encodes meaningful semantic information.State of the art embeddings are based on the learned hidden layer representation of dedicated sentence transformer models. BERT pioneered an approach involving the use of a dedicated [CLS] token preprended to the beginning of each sentence inputted into the model; the final hidden state vector of this token encodes information about the sentence and can be fine-tuned for use in sentence classification tasks. In practice however, BERT\'s sentence embedding with the [CLS] token achieves poor performance, often worse than simply averaging non-contextual word embeddings. SBERT later achieved superior sentence embedding performance by fine tuning BERT\'s [CLS] token embeddings through the usage of a siamese neural network architecture on the SNLI dataset. \nOther approaches are loosely based on the idea of distributional semantics applied to sentences. Skip-Thought trains an encoder-decoder structure for the task of neighboring sentences predictions. Though this has been shown to achieve worse performance than approaches such as InferSent or SBERT. \nAn alternative direction is to aggregate word embeddings, such as those returned by Word2vec, into sentence embeddings. The most straightforward approach is to simply compute the average of word vectors, known as continuous bag-of-words (CBOW). However, more elaborate solutions based on word vector quantization have also been proposed. One such approach is the vector of locally aggregated word embeddings (VLAWE), which demonstrated performance improvements in downstream text classification tasks.'
+# 'Page: LangChain\nSummary: LangChain is a framework designed to simplify the creation of applications using large language models (LLMs). As a language model integration framework, LangChain\'s use-cases largely overlap with those of language models in general, including document analysis and summarization, chatbots, and code analysis.\n\nPage: Prompt engineering\nSummary: Prompt engineering is the process of structuring text that can be interpreted and understood by a generative AI model. A prompt is natural language text describing the task that an AI should perform.A prompt for a text-to-text model can be a query such as "what is Fermat\'s little theorem?", a command such as "write a poem about leaves falling", a short statement of feedback (for example, "too verbose", "too formal", "rephrase again", "omit this word") or a longer statement including context, instructions, and input data. Prompt engineering may involve phrasing a query, specifying a style, providing relevant context or assigning a role to the AI such as "Act as a native French speaker". A prompt may include a few examples for a model to learn from, such as "maison -> house, chat -> cat, chien ->", an approach called few-shot learning.When communicating with a text-to-image or a text-to-audio model, a typical prompt is a description of a desired output such as "a high-quality photo of an astronaut riding a horse" or "Lo-fi slow BPM electro chill with organic samples". Prompting a text-to-image model may involve adding, removing, emphasizing and re-ordering words to achieve a desired subject, style, layout, lighting, and aesthetic.\n\nPage: Sentence embedding\nSummary: In natural language processing, a sentence embedding refers to a numeric representation of a sentence in the form of a vector of real numbers which encodes meaningful semantic information.State of the art embeddings are based on the learned hidden layer representation of dedicated sentence transformer models. BERT pioneered an approach involving the use of a dedicated [CLS] token prepended to the beginning of each sentence inputted into the model; the final hidden state vector of this token encodes information about the sentence and can be fine-tuned for use in sentence classification tasks. In practice however, BERT\'s sentence embedding with the [CLS] token achieves poor performance, often worse than simply averaging non-contextual word embeddings. SBERT later achieved superior sentence embedding performance by fine tuning BERT\'s [CLS] token embeddings through the usage of a siamese neural network architecture on the SNLI dataset. \nOther approaches are loosely based on the idea of distributional semantics applied to sentences. Skip-Thought trains an encoder-decoder structure for the task of neighboring sentences predictions. Though this has been shown to achieve worse performance than approaches such as InferSent or SBERT. \nAn alternative direction is to aggregate word embeddings, such as those returned by Word2vec, into sentence embeddings. The most straightforward approach is to simply compute the average of word vectors, known as continuous bag-of-words (CBOW). However, more elaborate solutions based on word vector quantization have also been proposed. One such approach is the vector of locally aggregated word embeddings (VLAWE), which demonstrated performance improvements in downstream text classification tasks.'
 ```
 
 You can also create a conversational agent that can use tools using the `AgentExecutor` class. I believe the `AgentExecutor` handles the message types and routing for you.
@@ -449,7 +449,7 @@ agent_executor.invoke({"input": "what is langchain?"})
 
 
 # Page: Sentence embedding
-# Summary: In natural language processing, a sentence embedding refers to a numeric representation of a sentence in the form of a vector of real numbers which encodes meaningful semantic information.State of the art embeddings are based on the learned hidden layer representation of dedicated sentence transformer models. BERT pioneered an approach involving the use of a dedicated [CLS] token preprended to the beginning of each sentence inputted into the model; the final hidden state vector of this token encodes information about the sentence and can be fine-tuned for use in sentence classification tasks. In practice however, BERT's sentence embedding with the [CLS] token achieves poor performance, often worse than simply averaging non-contextual word embeddings. SBERT later achieved superior sentence embedding performance by fine tuning BERT's [CLS] token embeddings through the usage of a siamese neural network architecture on the SNLI dataset.
+# Summary: In natural language processing, a sentence embedding refers to a numeric representation of a sentence in the form of a vector of real numbers which encodes meaningful semantic information.State of the art embeddings are based on the learned hidden layer representation of dedicated sentence transformer models. BERT pioneered an approach involving the use of a dedicated [CLS] token prepended to the beginning of each sentence inputted into the model; the final hidden state vector of this token encodes information about the sentence and can be fine-tuned for use in sentence classification tasks. In practice however, BERT's sentence embedding with the [CLS] token achieves poor performance, often worse than simply averaging non-contextual word embeddings. SBERT later achieved superior sentence embedding performance by fine tuning BERT's [CLS] token embeddings through the usage of a siamese neural network architecture on the SNLI dataset.
 # Other approaches are loosely based on the idea of distributional semantics applied to sentences. Skip-Thought trains an encoder-decoder structure for the task of neighboring sentences predictions. Though this has been shown to achieve worse performance than approaches such as InferSent or SBERT.
 # An alternative direction is to aggregate word embeddings, such as those returned by Word2vec, into sentence embeddings. The most straightforward approach is to simply compute the average of word vectors, known as continuous bag-of-words (CBOW). However, more elaborate solutions based on word vector quantization have also been proposed. One such approach is the vector of locally aggregated word embeddings (VLAWE), which demonstrated performance improvements in downstream text classification tasks.
 
@@ -746,7 +746,7 @@ How might we use AI to build products focused not just on working faster, but on
 CEO / CTO, New Computer / CDO, New Computer
 On building AI Products From First Principles.
 
-- Demo 1: Adapative Interface
+- Demo 1: Adaptive Interface
   - Image Stream: Post detection
   - Audio Stream: Voice Activity detection
   - Detect whether the user is at their keyboard, if not, start listening
@@ -764,7 +764,7 @@ How *YOU* can - and should - build great multimodal AI apps that go viral and sc
 - <https://github.com/Nutlope>
 - qrGPT
 - [roomGPT](https://github.com/Nutlope/roomGPT): doesn't use stable diffusion, uses a controlnet model
-- Review ihs nextJS architecture for some of his apps
+- Review his nextJS architecture for some of his apps
 - Use AI Tools to move faster:
   - Vercel AI SDK
   - v0.dev
@@ -776,7 +776,7 @@ How *YOU* can - and should - build great multimodal AI apps that go viral and sc
   - Make it free + open source
 - How does he keep these apps free?
   - Sponsors from the AI services like Replicate
-  - Make it look visually apealing - spend 80% of time on UI
+  - Make it look visually appealing - spend 80% of time on UI
 - Tech Stack: nextJS + Vercel
 - I don't work 24/7, I work in sprints
 - Build and good things will happen
@@ -843,7 +843,7 @@ CTO, Chroma
 In the last few months, we've seen an explosion of the use of retrieval in the context of AI. Document question answering, autonomous agents, and more use embeddings-based retrieval systems in a variety of ways. This talk will cover what we've learned building for these applications, the challenges developers face, and the future of retrieval in the context of AI.
 
 - Ways to improve RAG applications in the wild
-  - Human Feedback: support improvements using human fedback
+  - Human Feedback: support improvements using human feedback
   - Agent: support self updates from an agent
   - Agent with World Model:
   - Agent with World Model and Human Feedback: voyager (AI playing Minecraft)
@@ -851,12 +851,12 @@ In the last few months, we've seen an explosion of the use of retrieval in the c
 - Research result: embedding models trained on similar datasets for similar embedding sizes can be projected into each other's latent space with a simple linear transformation
 - Chunking
   - Things to consider
-    - embedding context legnth
+    - embedding context length
     - semantic content
     - natural language
   - Experimental
     - use model perplexity - use a model to predict chunk boundaries, e.g. next token prediction to see when perplexity is high to determine chunk cutoffs
-    - use info heirarchies
+    - use info hierarchies
     - use embedding continuity
 - Is the retrieval result relevant?
   - re-ranking
@@ -876,7 +876,7 @@ In this talk, we talk about core techniques for evaluating and improving your re
   - Insert data into the prompt
   - Fine-tuning
 - RAG: Data Ingestion, Data Querying (Retrieval + Synthesis)
-- Start with the easy stuff frist: Table Stakes
+- Start with the easy stuff first: Table Stakes
 - Table Stakes:
   - Chunk Sizes
     - tuning your chunk size can have outsized impacts on performance
@@ -945,7 +945,7 @@ Making Large Language Models Production-Ready with Guardrails.
     - LLMs are stochastic: same inputs does not lead to same outputs
 - What are other libraries that do this?
 - How do I prevent LLM hallucinations?
-  - Provenance Guardails: every LLM utterance should be grounded in a truth
+  - Provenance Guardrails: every LLM utterance should be grounded in a truth
     - embedding similarity
     - Classifier built on NLI models
     - LLM self reflection
@@ -993,6 +993,6 @@ Recapping the past year in AI, and what open questions are *worth pursuing* in t
   - It helps them!
   - There has never been a better time to learn program
   - LLMs flatten the learning curve
-- What can we bulid to bring the ability to automate tedious tasks with computers to as many people as possible?
+- What can we build to bring the ability to automate tedious tasks with computers to as many people as possible?
 
 ---

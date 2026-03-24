@@ -8,7 +8,7 @@ categories: [career, "personal finance"]
 
 My company, UKG, [announced layoffs](https://www.sun-sentinel.com/2024/07/a05/2200-layoffs-loom-for-technology-firm-ukg-in-south-florida-north-america-and-overseas/) last Wednesday (see an [industry expert's take](https://joshbersin.com/2024/07/ukg-14-reduction-in-force-a-growth-move-that-makes-sense/) on reasons why). 14% of the company was let go which is around 2,200 out of the 15,000 employees. Many of my teammates and friends were let go. I have been a part of companies that have had larger percentage layoffs (>30%). However, the sheer number of people that were affected is somewhat shocking. Considering the number of lives, families, and children that were disrupted is difficult to think about.
 
-I compiled a list of to-dos after one get's laid off. Note this list is compiled from the following sources ([Bogleheads Thread 1](https://www.bogleheads.org/forum/viewtopic.php?t=422426), [Bogleheads Thread 2](https://www.bogleheads.org/forum/viewtopic.php?t=431118), [HBR article](https://hbr.org/2022/11/what-to-do-after-being-laid-off)). Then I extracted, categorized and ranked each items with gpt-4o.
+I compiled a list of to-dos after one gets laid off. Note this list is compiled from the following sources ([Bogleheads Thread 1](https://www.bogleheads.org/forum/viewtopic.php?t=422426), [Bogleheads Thread 2](https://www.bogleheads.org/forum/viewtopic.php?t=431118), [HBR article](https://hbr.org/2022/11/what-to-do-after-being-laid-off)). Then I extracted, categorized and ranked each items with gpt-4o.
 
 # To-Dos After Getting Laid Off
 

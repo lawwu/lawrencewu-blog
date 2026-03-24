@@ -312,7 +312,7 @@ Ran my [second half-marathon](https://lawrencewu.net/posts/2025-02-02-second-hal
 
 ### Agentic Coding
 
-One of the big changes this year was the rise of agentic coding tools like Claude Code. I started using it in [July 2025](https://lawrencewu.net/posts/2025-07-18-starting-to-use-claude-code/) and have been using it almost daily since it came out. Anthropic has created an amazing tool. We've seen the underlying model improve. It's still hard to believe the intial release of Claude Code used Claude 3.7 Sonnet (I would've guessed this was last year)! We're now on Claude Opus 4.5. There has also been improvements in the Claude Code agentic harness too with todo lists, subagents, improvements to the system prompts, better tool calling, adding agent skills. Just look at the [CHANGELOG](https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md){target="_blank"} to look at all these improvements over time.
+One of the big changes this year was the rise of agentic coding tools like Claude Code. I started using it in [July 2025](https://lawrencewu.net/posts/2025-07-18-starting-to-use-claude-code/) and have been using it almost daily since it came out. Anthropic has created an amazing tool. We've seen the underlying model improve. It's still hard to believe the initial release of Claude Code used Claude 3.7 Sonnet (I would've guessed this was last year)! We're now on Claude Opus 4.5. There has also been improvements in the Claude Code agentic harness too with todo lists, subagents, improvements to the system prompts, better tool calling, adding agent skills. Just look at the [CHANGELOG](https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md){target="_blank"} to look at all these improvements over time.
 
 Some of the things I've used Claude Code for this year:
 
@@ -323,7 +323,7 @@ Some of the things I've used Claude Code for this year:
 - Writing documentation
 - Writing Confluence documentation using the [mcp-atlassian](https://github.com/sooperset/mcp-atlassian){target="_blank"} MCP Server
 - Creating MCP Servers using [FastMCP](https://github.com/jlowin/fastmcp){target="_blank"}
-- Adding graphs / visuals to my blg posts
+- Adding graphs / visuals to my blog posts
 - Creating Github Actions
 - Creating and maintaining Cookiecutter templates for Python libraries and services
 - Scraping Long Beach Marathon data to get the total finishers in the last 15 years for this [post](https://lawrencewu.net/posts/2025-10-30-first-marathon-reflections/#lesson-3-running-is-getting-popular)
@@ -347,7 +347,7 @@ There are many world class software developers that now use tools like Claude Co
 
 **Simon Willison** - prolific blogger and prolific user of LLMs, one of his posts he talked about [how Claude Opus 4.5 can create full datasette plugins now](https://simonwillison.net/2025/Oct/8/claude-datasette-plugins/){target="_blank"}.
 
-It's fun to see how things have evolved in the last year just looking at Anthropic's Claude and Claude Code releated announcements:
+It's fun to see how things have evolved in the last year just looking at Anthropic's Claude and Claude Code related announcements:
 
 - [Feb 24, 2025 - Initial Claude Code Release alongside Claude 3.7 Sonnet](https://www.anthropic.com/news/claude-3-7-sonnet){target="_blank"} - [repo](https://github.com/anthropics/claude-code){target="_blank"} though this doesn't have the source code
 - [April 3, 2025 - Anthropic announces their first developer conference](https://www.anthropic.com/news/Introducing-code-with-claude){target="_blank"} - which I summarized the talks [here](https://lawrencewu.net/posts/2025-08-14-claude-code-conference-summary/).

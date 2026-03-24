@@ -66,7 +66,7 @@ Example: My wife falls into this camp. ChatGPT has largely replaced her Google s
 - **Developers**: Design software and infrastructure assuming AI is part of the team—building AI agents, integrating LLMs, evaluating agents and other AI applications as well as fine-tuning models. Very familiar with LLM capabilities like structured output, reasoning models and multi-modality. Experimented with various agent frameworks, agent architectures and MCP.
 - **Non-developers**: Reimagine job roles around what AI can do: delegate, refine, and accelerate work with agents, workflows, and bespoke GPTs. Created scripts to automate some of their work or small applications using coding agents in an IDE or Replit.
 
-Example: Spotify's CEO Tobias Lutke has changed how his company hires because of AI. He wrote in a [memo](https://x.com/tobi/status/1909231499448401946) that employees have to prove they "cannot get what they watn done using AI" before asking for more headcount and resources.
+Example: Spotify's CEO Tobias Lutke has changed how his company hires because of AI. He wrote in a [memo](https://x.com/tobi/status/1909231499448401946) that employees have to prove they "cannot get what they want done using AI" before asking for more headcount and resources.
 
 ---
 

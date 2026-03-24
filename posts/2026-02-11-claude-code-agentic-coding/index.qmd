@@ -262,7 +262,7 @@ I've really liked Chip Huyen's sniffly project to visualize Claude Code stats. O
 I underestimated the importance of prompt caching. Cached tokens are 10% the cost of regular tokens (!). This means Claude Code structures static content first and dynamic content later in the prompt:
 
 1. System Prompt & Tools (global cache)
-2. CLAUDE.md (cached within a porject)
+2. CLAUDE.md (cached within a project)
 3. Session context (cached within a session)
 4. Conversation messages
 

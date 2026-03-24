@@ -300,7 +300,7 @@ Raif Rustamov from Amazon gave this invited talk.
 ### Approach - Creative Optimality Gap (COG)
 
 - If we were to replace the video of class 0 to video of class 1, what would be the improvement in the outcome for the ad?
-- **Uplift or Heterogenous Treatment Effect modeling**
+- **Uplift or Heterogeneous Treatment Effect modeling**
 
 ### Benefits
 
