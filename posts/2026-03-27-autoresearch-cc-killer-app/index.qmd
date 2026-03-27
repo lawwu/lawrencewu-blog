@@ -3,6 +3,7 @@ title: "autoresearch is a Claude Code Killer App"
 author: Lawrence Wu
 date: '2026-03-27'
 categories: [ai, "claude code"]
+image: images/autoresearch_progress.png
 ---
 
 Coding agents have enabled a lot of things. Many things are now possible that weren't possible before. Andrej Karpathy's repo [autoresearch](https://github.com/karpathy/autoresearch) is a prime example of this. It's an example of what automated intelligence can do. I think it's one of the first [killer apps](https://en.wikipedia.org/wiki/Killer_application) that coding agents like Claude Code unlocks.
@@ -24,6 +25,6 @@ I say this is a killer app for coding agents beacuse without them, autoresearch 
 
 There's already an [awesome-autorsearch](https://github.com/alvinunreal/awesome-autoresearch) repository collecting some of these exmaples.
 
-I've used it for models at UKG improving models we've trained by 15-20% - models I've worked on for months. The general problem with why we didn't see these improvements is it takes cognitive load and time to try different parameters. This is probably the first example of truly automated machine learning.
+I've used it for models at UKG improving models we've trained by 15-20% - models I've worked on for months. The general problem with why we didn't see these improvements is it takes cognitive load and time to try different parameters. A few years back there was always the promise of AutoML, this is probably the first example of truly automated machine learning.
 
 I've attempted to try to push toward automating the whole ML lifecycle in [agentic-ml-plugin](https://github.com/lawwu/agentic-ml-plugin) but autoresearch is by far the best implementation I've seen for the training/finetuning piece.
