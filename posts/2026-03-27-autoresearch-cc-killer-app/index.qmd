@@ -11,9 +11,10 @@ Coding agents have enabled a lot of things. Many things are now possible that we
 ![](./images/autoresearch_progress.png)
 
 He originally wrote it improve large language model training in his [nanochat](https://github.com/karpathy/nanochat) repo. But people figured out the general pattern can be used to optimize and improve anything. It works by
- - optimizing a single metric
- - in short training loops so 50-100 experiments can run in a short amount of time
- - all of this is done in an agent loop to take advantage of the intelligence of a model
+
+- optimizing a single metric
+- in short training loops so 50-100 experiments can run in a short amount of time
+- all of this is done in an agent loop to take advantage of the intelligence of a model
 
 It is absolutely trivial to use, just prompt Claude Code with:
 
@@ -21,9 +22,9 @@ It is absolutely trivial to use, just prompt Claude Code with:
 use karpathy's autoresearch automatically to improve this model
 ```
 
-I say this is a killer app for coding agents beacuse without them, autoresearch wouldn't work. You need both the language model for it's reasoning capability to know what to do, what research steps to take, what model parameters to tune and you need to have the agentic harness to write the code, run the code and use tools. It's amazing to see this all come together with Claude Code and autoresearch.
+I say this is a killer app for coding agents because without them, autoresearch wouldn't work. You need both the language model for it's reasoning capability to know what to do, what research steps to take, what model parameters to tune and you need to have the agentic harness to write the code, run the code and use tools. It's amazing to see this all come together with Claude Code and autoresearch.
 
-There's already an [awesome-autoresearch](https://github.com/alvinunreal/awesome-autoresearch) repository collecting some of these exmaples.
+There's already an [awesome-autoresearch](https://github.com/alvinunreal/awesome-autoresearch) repository collecting some of these examples.
 
 I've used it for models at UKG improving models we've trained by 15-20% - models I've worked on for months. The general problem with why we didn't see these improvements is it takes cognitive load and time to try different parameters. A few years back there was always the promise of AutoML, this is probably the first example of truly automated machine learning.
 
