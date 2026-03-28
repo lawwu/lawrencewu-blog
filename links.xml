@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>Lawrence Wu&#39;s Blog</title>
+<link>https://lawrencewu.net/links.html</link>
+<atom:link href="https://lawrencewu.net/links.xml" rel="self" type="application/rss+xml"/>
+<description>Lawrence Wu&#39;s blog — AI, personal finance and life</description>
+<generator>quarto-1.9.36</generator>
+<lastBuildDate>Mon, 23 Mar 2026 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Thinking - Fast, Slow and Artificial</title>
+  <dc:creator>Lawrence Wu</dc:creator>
+  <link>https://lawrencewu.net/links/2026-03-23-thinking-fast-slow-and-artifcial.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6097646">Thinking—Fast, Slow, and Artificial: How AI is Reshaping Human Reasoning and the Rise of Cognitive Surrender</a> ↗</p>
+<blockquote class="blockquote">
+<p>People increasingly consult generative artificial intelligence (AI) while reasoning. As AI becomes embedded in daily thought, what becomes of human judgment? We introduce Tri-System Theory, extending dual-process accounts of reasoning by positing System 3: artificial cognition that operates outside the brain. System 3 can supplement or supplant internal processes, introducing novel cognitive pathways. A key prediction of the theory is “cognitive surrender”-adopting AI outputs with minimal scrutiny, overriding intuition (System 1) and deliberation (System 2).</p>
+</blockquote>
+<p>Kahneman’s Thinking, Fast and Slow gave us System 1 (your gut) and System 2 (your brain doing math). These researchers argue we now have a System 3: AI doing the thinking for us.</p>
+<p>This paper evaluated ChatGPT (GPT-4o) as an AI assistant through various randomized trials. I’d be interested in seeing researchers evaluate coding agents like Claude Code in similar studies.</p>
+<p>AI Agents are not at the point where we can fully trust it’s output yet. This is why there needs to be verifiable output for situations where we have less or possibly even no understanding of the code.</p>
+<ul>
+<li>Typescript UI for a vibe-coded app - I don’t care about the code at all –&gt; But I or some tests can verify the app runs and has expected outputs</li>
+<li>ML –&gt; We have validation and test error metrics or baselines we cam compare against</li>
+<li>Projects like <a href="https://github.com/simonw/showboat">showboat</a> are trying to help in this area: Create executable documents that demonstrate an agent’s work</li>
+</ul>
+<p>I also don’t agree with this clear separation of System 1, 2 and 3. What I’m experiencing is System 1+3 and 2+3. We’re operating in a world of augmented human intelligence.</p>
+<ul>
+<li>If you are only relying on System 1 or 2 that’s suboptimal because you aren’t using AI.</li>
+<li>If you are overly relying on System 3 then that’s suboptimal because you aren’t using your own judgment or can quickly lose trust in the system (as we’ve seen in the WFM project)</li>
+<li>I want to operate in the System 1+3 and 2+3 world</li>
+</ul>
+
+
+
+ ]]></description>
+  <category>linkblog</category>
+  <category>llms</category>
+  <guid>https://lawrencewu.net/links/2026-03-23-thinking-fast-slow-and-artifcial.html</guid>
+  <pubDate>Mon, 23 Mar 2026 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>More People Should Do This: Link Blogging</title>
+  <dc:creator>Lawrence Wu</dc:creator>
+  <link>https://lawrencewu.net/links/2026-03-22-linkblog.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p><a href="https://simonwillison.net/2024/Dec/22/link-blog/">Original article by Simon Willison</a> ↗</p>
+<blockquote class="blockquote">
+<p>Maintaining a link blog is a low effort, high value way to contribute to internet life. You get to share things you find interesting, develop your voice, and create a public record of your intellectual interests.</p>
+</blockquote>
+<p>Simon has been running his linkblog since 2003 — over 7,600 entries. The argument for doing this is compelling: it’s lower stakes than a full blog post, you’re adding context rather than creating from scratch, and it builds a useful personal archive over time. I refactored my blog to add linkblog entries as well as quotes.</p>
+
+
+
+ ]]></description>
+  <category>linkblog</category>
+  <category>Writing</category>
+  <guid>https://lawrencewu.net/links/2026-03-22-linkblog.html</guid>
+  <pubDate>Sun, 22 Mar 2026 00:00:00 GMT</pubDate>
+</item>
+</channel>
+</rss>
