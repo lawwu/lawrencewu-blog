@@ -2,7 +2,7 @@
 title: "Field Trips to Amazon and Costco"
 author: Lawrence Wu
 date: '2026-01-16'
-categories: [personal]
+categories: [personal, costco]
 ---
 
 I've had the chance to take my kids on various field trips this year as we've been homeschooling them. Two of the more interesting ones were to Costco and Amazon. I love Costco, it's probably [my favorite retailer](https://lawrencewu.net/posts/2024-02-28-ode-to-costco/index.html). My family looks forward to going every time we go. Anything I can't get at Costco is likely bought from Amazon. Amazon is the second largest retailer in the US while Costco is #3 (Walmart is #1).

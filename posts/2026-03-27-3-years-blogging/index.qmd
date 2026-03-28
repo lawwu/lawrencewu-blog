@@ -1,0 +1,27 @@
+---
+title: "3 Years of Blogging"
+author: Lawrence Wu
+date: '2026-03-27'
+categories: [writing]
+---
+
+It's hard to believe it's been 3 years since I started this blog. The first post was [simply a list of useful Mac applications](https://lawrencewu.net/posts/2023-03-24-mac-apps/).
+
+I'm grateful for the ability to write. I have really come to see the value of writing more and more. [Writing](https://lawrencewu.net/posts/2026-03-23-top-10-human-skills/#writing) is in my top 10 list of human skills in the [agentic knowledge work era](https://lawrencewu.net/posts/2026-03-04-agentic-knowledge-work/).
+
+I thought I'd pick out some of my favorite posts from each year:
+
+## 2023
+
+- 2023-05-03: [LLMs, Work and the Future of Jobs](https://lawrencewu.net/posts/2023-05-05-llm-work-jobs/). At the time, Allen Downey encouraged all developers to use LLM-assistance in their development. This motivated me to use the best model at the time (GPT-4) in my day-to-day. And this was before all the improvements we've seen in AI since that point: better models (reasoning, GPT-5.3, Opus 4.6) and agents and agent harnesses like Claude Code.
+- 2023-06-24: [Being Able to Focus is a Superpower](https://lawrencewu.net/posts/2023-06-24-focus-is-a-superpower/). Still very relevant today.
+
+## 2024
+
+- 2024-02-28: [Ode to Costco](https://lawrencewu.net/posts/2024-02-28-ode-to-costco/). Still love Costco. Had the chance to go on a [field trip to Costco](https://lawrencewu.net/posts/2026-01-16-amazon-costco/) earlier this year too!
+- 2024-10-13: [Running Lessons & First Half Marathon](https://lawrencewu.net/posts/2024-10-13-running-6-months/). It's been about 2 years since running has become a regular habit. I do wish I read a [Little Theology of Exercise](https://lawrencewu.net/posts/2025-11-24-little-theology-of-exercise/) prior to getting into running though.
+
+## 2025
+
+- 2025-05-27: [Levels of AI Use](https://lawrencewu.net/posts/2025-05-27-levels-of-ai-use/)
+- 2025-07-18: [Starting to Use Claude Code](https://lawrencewu.net/posts/2025-07-18-starting-to-use-claude-code/)
