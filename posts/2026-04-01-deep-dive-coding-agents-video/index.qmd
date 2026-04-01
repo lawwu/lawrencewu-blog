@@ -1,0 +1,26 @@
+---
+title: "Deep Dive into Coding Agents like Claude Code - Tutorial Video"
+author: Lawrence Wu
+date: '2026-04-01'
+categories: [ai, "claude code", tutorial, video]
+---
+
+I did a [live AI tutorial for some friends a few weeks ago](https://lawrencewu.net/posts/2026-03-10-ai-tutorial/). The recording wasn't really good because my OBS settings were right.
+
+I created a better version of a tutorial called a Deep Dive into Coding Agents like Claude Code.
+
+{{< video https://www.youtube.com/watch?v=qWjw3cwJWlU >}} <!-- markdownlint-disable-line MD034 -->
+
+The diagram and markdown file shown in the video are [here](https://github.com/lawwu/deep-dive-coding-agents-claude-code).
+
+## Timestamps
+
+- [00:00:00](https://www.youtube.com/watch?v=qWjw3cwJWlU&t=0s) Introduction
+- [00:08:01](https://www.youtube.com/watch?v=qWjw3cwJWlU&t=481s) Agent Evolution (2022-2025)
+- [00:14:25](https://www.youtube.com/watch?v=qWjw3cwJWlU&t=865s) Coding Agents allow you to go deeper and broader
+- [00:22:39](https://www.youtube.com/watch?v=qWjw3cwJWlU&t=1359s) Claude Code Live Demo & Walkthrough
+- [00:27:08](https://www.youtube.com/watch?v=qWjw3cwJWlU&t=1628s) Claude Cowork vs. Claude Code Side-by-Side
+- [00:36:55](https://www.youtube.com/watch?v=qWjw3cwJWlU&t=2215s) Core Concepts
+- [00:48:40](https://www.youtube.com/watch?v=qWjw3cwJWlU&t=2920s) Skills
+- [00:50:03](https://www.youtube.com/watch?v=qWjw3cwJWlU&t=3003s) /skill-creator skill with Built-in Evals
+- [01:01:45](https://www.youtube.com/watch?v=qWjw3cwJWlU&t=3705s) Real-World Claude Code Examples
