@@ -5,7 +5,7 @@ date: '2026-04-01'
 categories: [ai, "claude code", tutorial, video]
 ---
 
-I did a [live AI tutorial for some friends a few weeks ago](https://lawrencewu.net/posts/2026-03-10-ai-tutorial/). The recording wasn't really good because my OBS settings were right.
+Knowledge work is changing fast. I think within a few years, most knowledge work (any work done on a computer) will be done better by an AI Agent or at least by a person managing AI Agents. I encourage every knowledge worker to start learning about AI. I did a [live AI tutorial for some friends a few weeks ago](https://lawrencewu.net/posts/2026-03-10-ai-tutorial/). The recording wasn't really good because my OBS settings were right.
 
 I created a better version of a tutorial called a Deep Dive into Coding Agents like Claude Code.
 
