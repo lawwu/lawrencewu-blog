@@ -1,7 +1,7 @@
 ---
 title: "skills"
 date: '2026-03-13'
-categories: [project, AI, agents, claude code]
+categories: [project, ai, agents, claude code]
 github_url: "https://github.com/lawwu/skills"
 project_url: "https://github.com/lawwu/skills"
 image: "https://opengraph.github.com/repo/lawwu/skills"

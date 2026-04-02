@@ -1,7 +1,7 @@
 ---
 title: "awesome-llamas"
 date: '2024-07-25'
-categories: [project, AI, LLM]
+categories: [project, ai, llm]
 github_url: "https://github.com/lawwu/awesome-llamas"
 project_url: "https://github.com/lawwu/awesome-llamas"
 image: "https://opengraph.github.com/repo/lawwu/awesome-llamas"

@@ -1,7 +1,7 @@
 ---
 title: "Karpathy on removing yourself as the bottleneck"
 date: '2026-03-22'
-categories: [quote, AI, agents]
+categories: [quote, ai, agents]
 quote_source: "Andrej Karpathy"
 quote_source_url: "https://youtu.be/kwSVtQ7dziU?si=UQ-YXKS3YiIw-5xA&t=994"
 ---

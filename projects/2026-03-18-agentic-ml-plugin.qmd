@@ -1,7 +1,7 @@
 ---
 title: "agentic-ml-plugin"
 date: '2026-03-18'
-categories: [project, AI, agents, claude code]
+categories: [project, ai, agents, claude code]
 github_url: "https://github.com/lawwu/agentic-ml-plugin"
 project_url: "https://github.com/lawwu/agentic-ml-plugin"
 image: "https://opengraph.github.com/repo/lawwu/agentic-ml-plugin"
