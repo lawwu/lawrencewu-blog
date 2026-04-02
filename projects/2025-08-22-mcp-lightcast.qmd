@@ -1,7 +1,7 @@
 ---
 title: "mcp-lightcast"
 date: '2025-08-22'
-categories: [project, AI, MCP, tools]
+categories: [project, ai, mcp, tools]
 github_url: "https://github.com/lawwu/mcp-lightcast"
 project_url: "https://github.com/lawwu/mcp-lightcast"
 image: "https://opengraph.github.com/repo/lawwu/mcp-lightcast"

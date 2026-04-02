@@ -1,7 +1,7 @@
 ---
 title: "skills-marketplace"
 date: '2026-03-13'
-categories: [project, AI, agents, tools]
+categories: [project, ai, agents, tools]
 github_url: "https://github.com/lawwu/skills-marketplace"
 project_url: "https://github.com/lawwu/skills-marketplace"
 image: "https://opengraph.github.com/repo/lawwu/skills-marketplace"

@@ -37,7 +37,7 @@ Create `posts/YYYY-MM-DD-slug/index.qmd` with frontmatter:
 title: "Post Title"
 author: "Lawrence Wu"
 date: '2025-01-01'
-categories: [AI, Machine Learning]
+categories: [ai, machine learning]
 ---
 ```
 

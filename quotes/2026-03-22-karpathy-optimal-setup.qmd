@@ -1,7 +1,7 @@
 ---
 title: "Karpathy on the evolving optimal setup"
 date: '2026-03-22'
-categories: [quote, AI, agents]
+categories: [quote, ai, agents]
 quote_source: "Andrej Karpathy"
 quote_source_url: "https://x.com/karpathy/status/2027501331125239822"
 ---
