@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>Lawrence Wu&#39;s Blog</title>
+<link>https://lawrencewu.net/quotes.html</link>
+<atom:link href="https://lawrencewu.net/quotes.xml" rel="self" type="application/rss+xml"/>
+<description>Lawrence Wu&#39;s blog — AI, personal finance and life</description>
+<generator>quarto-1.9.36</generator>
+<lastBuildDate>Sun, 22 Mar 2026 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Karpathy on the evolving optimal setup</title>
+  <dc:creator>Lawrence Wu</dc:creator>
+  <link>https://lawrencewu.net/quotes/2026-03-22-karpathy-optimal-setup.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<blockquote class="blockquote">
+<p>With improving capability, every point in time has an optimal setup that keeps changing and evolving and the community average tracks the point. None -&gt; Tab -&gt; Agent -&gt; Parallel agents -&gt; Agent Teams (?) -&gt; ???</p>
+<p>If you’re too conservative, you’re leaving leverage on the table. If you’re too aggressive, you’re net creating more chaos than doing useful work.</p>
+<p>The art of the process is spending 80% of the time getting work done in the setup you’re comfortable with and that actually works, and 20% exploration of what might be the next step up even if it doesn’t work yet.</p>
+</blockquote>
+<p>— <a href="https://x.com/karpathy/status/2027501331125239822"><span class="citation" data-cites="karpathy">@karpathy</span></a></p>
+
+
+
+ ]]></description>
+  <category>quote</category>
+  <category>ai</category>
+  <category>agents</category>
+  <guid>https://lawrencewu.net/quotes/2026-03-22-karpathy-optimal-setup.html</guid>
+  <pubDate>Sun, 22 Mar 2026 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Karpathy on removing yourself as the bottleneck</title>
+  <dc:creator>Lawrence Wu</dc:creator>
+  <link>https://lawrencewu.net/quotes/2026-03-22-karpathy-remove-yourself-as-bottleneck.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<blockquote class="blockquote">
+<p>To get the most out of the tools that have become available now, you have to remove yourself as the bottleneck. You can’t be there to prompt the next thing. You take yourself outside. You have to arrange things such that they’re completely autonomous. And the more, you know, how can you maximize your token throughput and not be in the loop? This is the goal. And so I kind of mentioned that the name of the game now is to increase your leverage. I put in just very few tokens just once in a while, and a huge amount of stuff happens on my behalf. And so, auto-research, like I tweeted that, and I think people liked it and whatnot, but it doesn’t. They haven’t maybe worked through the implications of that. And for me, auto research is an example of an implication of that. Where it’s like, I don’t want to be the researcher in the loop, looking at results, et cetera. I’m holding the system back. So the question is, how do I refactor all the abstractions so that I’m not I have to arrange it once and hit go. The name of the game is how can you get more agents running for longer periods of time without your involvement, doing stuff on your behalf. And autoresearch is just, yeah, here’s an objective, here’s a metric, here’s your boundaries of what you can and cannot do, and go.</p>
+</blockquote>
+<p>— <a href="https://youtu.be/kwSVtQ7dziU?si=UQ-YXKS3YiIw-5xA&amp;t=994">The End of Coding: Andrej Karpathy on Agents, AutoResearch, and the Loopy Era of AI</a> (No Priors)</p>
+
+
+
+ ]]></description>
+  <category>quote</category>
+  <category>ai</category>
+  <category>agents</category>
+  <guid>https://lawrencewu.net/quotes/2026-03-22-karpathy-remove-yourself-as-bottleneck.html</guid>
+  <pubDate>Sun, 22 Mar 2026 00:00:00 GMT</pubDate>
+</item>
+</channel>
+</rss>
