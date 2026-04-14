@@ -1,0 +1,82 @@
+---
+title: "AI Use Cases for Normal People - Tutorial Video"
+author: Lawrence Wu
+date: '2026-04-14'
+categories: [ai, tutorial, video]
+---
+
+In this 2-hour hands-on tutorial, I break down how AI coding agents actually work — starting from ChatGPT and building up to Claude Code, Skills, and real-world demos you can use today.
+
+No coding background required. If you've used ChatGPT, you'll understand this.
+
+{{< video https://www.youtube.com/watch?v=zh5twqQLsB4 >}} <!-- markdownlint-disable-line MD034 -->
+
+The slides and materials used in the video are [here](https://github.com/lawwu/ai-tutorials/tree/main/03-ai-use-cases-claude-cowork).
+
+## What You'll Learn
+
+- The difference between ChatGPT and coding agents like Claude Code
+- What "bash" is and why it gives AI superpowers
+- How Claude Code lives on your computer and reads your files
+- What Skills are and how to use them
+- Real demos: Excel data, dashboards, video editing, ML pipelines
+- How to talk to Claude using plain English (no coding needed)
+- Token costs, model choices (Opus vs Sonnet vs Haiku), and how to save money
+- How to run AI models locally on your own Mac
+
+## Timestamps
+
+- [00:00:00](https://www.youtube.com/watch?v=zh5twqQLsB4&t=0s) Intro — ChatGPT vs AI Coding Agents
+- [00:01:13](https://www.youtube.com/watch?v=zh5twqQLsB4&t=73s) What are agent frameworks? (LangChain, LangGraph)
+- [00:02:14](https://www.youtube.com/watch?v=zh5twqQLsB4&t=134s) Claude Code — what it is and when it came out
+- [00:02:48](https://www.youtube.com/watch?v=zh5twqQLsB4&t=168s) Demo: Using Claude Code in the terminal
+- [00:03:17](https://www.youtube.com/watch?v=zh5twqQLsB4&t=197s) What is bash? (plain English explanation)
+- [00:05:18](https://www.youtube.com/watch?v=zh5twqQLsB4&t=318s) The model vs. the harness — how Claude Code is built
+- [00:06:50](https://www.youtube.com/watch?v=zh5twqQLsB4&t=410s) The big difference: Claude Code lives on YOUR computer
+- [00:09:50](https://www.youtube.com/watch?v=zh5twqQLsB4&t=590s) Using AI to query databases (BigQuery example)
+- [00:11:35](https://www.youtube.com/watch?v=zh5twqQLsB4&t=695s) Demo: Claude Code edits videos (brisket video story)
+- [00:12:36](https://www.youtube.com/watch?v=zh5twqQLsB4&t=756s) Safety warning: prompt injection and what to watch out for
+- [00:14:17](https://www.youtube.com/watch?v=zh5twqQLsB4&t=857s) What are Skills? (giving Claude an instruction manual)
+- [00:17:23](https://www.youtube.com/watch?v=zh5twqQLsB4&t=1043s) Demo: My ML pipeline skills (find data → train → deploy)
+- [00:20:27](https://www.youtube.com/watch?v=zh5twqQLsB4&t=1227s) A skill that creates other skills
+- [00:22:15](https://www.youtube.com/watch?v=zh5twqQLsB4&t=1335s) 3 methods: base prompting vs. skills vs. full workflows
+- [00:25:25](https://www.youtube.com/watch?v=zh5twqQLsB4&t=1525s) Claude for Excel — no coding needed
+- [00:26:14](https://www.youtube.com/watch?v=zh5twqQLsB4&t=1574s) Demo: Processing Shannon's Excel data live
+- [00:38:08](https://www.youtube.com/watch?v=zh5twqQLsB4&t=2288s) Demo: Building an HTML dashboard from real data
+- [00:41:04](https://www.youtube.com/watch?v=zh5twqQLsB4&t=2464s) Claude explores the data and writes the merge script
+- [00:55:30](https://www.youtube.com/watch?v=zh5twqQLsB4&t=3330s) Demo: SQL skill for overtime hours calculations
+- [00:57:07](https://www.youtube.com/watch?v=zh5twqQLsB4&t=3427s) Where skills live — just plain text files!
+- [01:03:07](https://www.youtube.com/watch?v=zh5twqQLsB4&t=3787s) CLAUDE.md — giving Claude your project instructions
+- [01:05:24](https://www.youtube.com/watch?v=zh5twqQLsB4&t=3924s) Project instructions vs. user instructions (scoped settings)
+- [01:09:56](https://www.youtube.com/watch?v=zh5twqQLsB4&t=4196s) How this compares to ChatGPT's memory and instructions
+- [01:13:27](https://www.youtube.com/watch?v=zh5twqQLsB4&t=4407s) How long Claude Code has been out + what to learn next
+- [01:16:04](https://www.youtube.com/watch?v=zh5twqQLsB4&t=4564s) Claude as a conversational coding agent — just ask in English
+- [01:18:22](https://www.youtube.com/watch?v=zh5twqQLsB4&t=4702s) Live demo with Shannon's data
+- [01:19:00](https://www.youtube.com/watch?v=zh5twqQLsB4&t=4740s) Running multiple Claude instances at the same time
+- [01:20:25](https://www.youtube.com/watch?v=zh5twqQLsB4&t=4825s) Demo: Front-end design skill — building UIs automatically
+- [01:23:37](https://www.youtube.com/watch?v=zh5twqQLsB4&t=5017s) Choosing the right Claude model (Opus, Sonnet, Haiku)
+- [01:24:06](https://www.youtube.com/watch?v=zh5twqQLsB4&t=5046s) Token pricing explained — what does it actually cost?
+- [01:29:10](https://www.youtube.com/watch?v=zh5twqQLsB4&t=5350s) How transformers and tokens work (simple explanation)
+- [01:33:02](https://www.youtube.com/watch?v=zh5twqQLsB4&t=5582s) Doing the math: what did today's session actually cost?
+- [01:38:06](https://www.youtube.com/watch?v=zh5twqQLsB4&t=5886s) AI infrastructure — why companies are building power plants
+- [01:40:05](https://www.youtube.com/watch?v=zh5twqQLsB4&t=6005s) The Claude Code source code leak story
+- [01:42:26](https://www.youtube.com/watch?v=zh5twqQLsB4&t=6146s) Running Python and other languages inside Claude Code
+- [01:45:21](https://www.youtube.com/watch?v=zh5twqQLsB4&t=6321s) Claude's tools: read, edit, bash, grep
+- [01:47:58](https://www.youtube.com/watch?v=zh5twqQLsB4&t=6478s) Model cards — how to evaluate and grade AI models
+- [01:49:20](https://www.youtube.com/watch?v=zh5twqQLsB4&t=6560s) Chinese open source models and the competition
+- [01:49:51](https://www.youtube.com/watch?v=zh5twqQLsB4&t=6591s) Running AI models locally on your own computer
+- [01:50:42](https://www.youtube.com/watch?v=zh5twqQLsB4&t=6642s) Using your Mac's memory as a GPU
+- [01:55:22](https://www.youtube.com/watch?v=zh5twqQLsB4&t=6922s) Demo: Building a data pipeline visual with one prompt
+- [01:56:03](https://www.youtube.com/watch?v=zh5twqQLsB4&t=6963s) Plan mode vs. other approaches
+
+## Links
+
+- [Claude Code Tools Reference](https://code.claude.com/docs/en/tools-reference)
+- [Claude Code Auto Memory](https://code.claude.com/docs/en/memory#auto-memory)
+- [Claude Model Overview & Pricing](https://platform.claude.com/docs/en/about-claude/models/overview)
+- [Claude Opus 4.6 Announcement](https://www.anthropic.com/news/claude-opus-4-6)
+- [Tiktokenizer — see how tokens work](https://tiktokenizer.vercel.app/)
+- [knowledge-work-plugins — Finance Skills](https://github.com/anthropics/knowledge-work-plugins/blob/main/finance/skills/financial-statements/SKILL.md)
+- [skill-creator skill](https://github.com/anthropics/skills/tree/main/skills/skill-creator)
+- [agentic-ml-plugin](https://github.com/lawwu/agentic-ml-plugin)
+- [Kimi K2.5 Model Card](https://huggingface.co/moonshotai/Kimi-K2.5/tree/main)
