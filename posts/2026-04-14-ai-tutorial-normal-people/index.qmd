@@ -5,7 +5,7 @@ date: '2026-04-14'
 categories: [ai, tutorial, video]
 ---
 
-In this 2-hour hands-on tutorial, I break down how AI coding agents actually work — starting from ChatGPT and building up to Claude Code, Skills, and real-world demos you can use today.
+In this 2-hour hands-on tutorial, I break down how AI coding agents actually work — starting with Claude Cowork, how coding agents like this compare with ChatGPT and then building up to Claude Code, Skills, and real-world demos you can use today.
 
 No coding background required. If you've used ChatGPT, you'll understand this.
 
