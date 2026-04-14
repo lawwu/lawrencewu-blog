@@ -1,0 +1,14 @@
+---
+title: "Agent Skills and The Matrix Helicopter Scene"
+author: Lawrence Wu
+date: '2026-04-14'
+categories: [ai, "coding agents", "claude code"]
+---
+
+Agent Skills in coding agents like Claude Code and Codex always remind me of the helicopter scene from the Matrix. You are literally giving your agents new skills via files (amazingly just plaintext markdown files).
+
+{{< video https://www.youtube.com/shorts/blsjoSEHups >}} <!-- markdownlint-disable-line MD034 -->
+
+- [Agent Skills Docs](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview)
+- [Matrix Scene](https://www.youtube.com/watch?v=6AOpomu9V6Q)
+- [Anthropic Knowledge Work Skills](https://github.com/anthropics/knowledge-work-plugins)
