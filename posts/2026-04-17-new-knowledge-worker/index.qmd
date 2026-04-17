@@ -16,17 +16,21 @@ The diagrams and materials from this talk are [here](https://github.com/lawwu/ai
 
 ## Timestamps
 
-- [00:00:00](https://www.youtube.com/watch?v=UI0WfBkv4DM&t=0s) Introduction
-- [00:03:30](https://www.youtube.com/watch?v=UI0WfBkv4DM&t=210s) The Progression of AI: 2022 to 2026
-- [00:14:00](https://www.youtube.com/watch?v=UI0WfBkv4DM&t=840s) Introducing the Agentic AI Stack
-- [00:16:30](https://www.youtube.com/watch?v=UI0WfBkv4DM&t=990s) Layer 1 — The Model (Frontier vs. Open LLMs)
-- [00:20:00](https://www.youtube.com/watch?v=UI0WfBkv4DM&t=1200s) Layer 2 — The Harness (Claude Code, Codex & more)
-- [00:26:30](https://www.youtube.com/watch?v=UI0WfBkv4DM&t=1590s) Layer 3 — Memory (Markdown, CLAUDE.md, Obsidian)
-- [00:32:30](https://www.youtube.com/watch?v=UI0WfBkv4DM&t=1950s) Layer 4 — Skills, Connectors & Features
-- [00:37:30](https://www.youtube.com/watch?v=UI0WfBkv4DM&t=2250s) Live Demos (Agentic ML, Autoresearch, Codex Chief of Staff)
-- [00:43:30](https://www.youtube.com/watch?v=UI0WfBkv4DM&t=2610s) The New Knowledge Worker Mindset
-- [00:50:30](https://www.youtube.com/watch?v=UI0WfBkv4DM&t=3030s) Downsides & Pitfalls of AI
-- [00:54:30](https://www.youtube.com/watch?v=UI0WfBkv4DM&t=3270s) Q&A / Wrap-up
+- [00:00:00](https://www.youtube.com/watch?v=noSqIsPSsgo&t=0s) Introduction
+- [00:02:42](https://www.youtube.com/watch?v=noSqIsPSsgo&t=162s) The Progression of AI: 2022 to 2026
+- [00:11:06](https://www.youtube.com/watch?v=noSqIsPSsgo&t=666s) Introducing the Agentic AI Stack
+- [00:11:57](https://www.youtube.com/watch?v=noSqIsPSsgo&t=717s) Layer 1 — The Model (Frontier vs. Open LLMs)
+- [00:12:22](https://www.youtube.com/watch?v=noSqIsPSsgo&t=742s) Layer 2 — The Harness (Claude Code, Codex & more)
+- [00:13:52](https://www.youtube.com/watch?v=noSqIsPSsgo&t=832s) Layer 3 — Memory (Markdown, CLAUDE.md, Obsidian)
+- [00:16:33](https://www.youtube.com/watch?v=noSqIsPSsgo&t=993s) Layer 3 — Skills
+- [00:18:51](https://www.youtube.com/watch?v=noSqIsPSsgo&t=1131s) Layer 3 — Connectors & Other Features
+- [00:19:54](https://www.youtube.com/watch?v=noSqIsPSsgo&t=1194s) Layer 4 — Agentic Knowledge Work Use Cases
+- [00:24:26](https://www.youtube.com/watch?v=noSqIsPSsgo&t=1466s) Agentic Brains
+- [00:26:57](https://www.youtube.com/watch?v=noSqIsPSsgo&t=1617s) Demo: Codex Chief of Staff
+- [00:32:15](https://www.youtube.com/watch?v=noSqIsPSsgo&t=1935s) Mindset
+- [00:38:33](https://www.youtube.com/watch?v=noSqIsPSsgo&t=2313s) Read the Docs
+- [00:40:37](https://www.youtube.com/watch?v=noSqIsPSsgo&t=2437s) Downsides & Pitfalls of AI
+- [00:43:08](https://www.youtube.com/watch?v=noSqIsPSsgo&t=2588s) Q&A / Wrap-up
 
 ## Notes
 
