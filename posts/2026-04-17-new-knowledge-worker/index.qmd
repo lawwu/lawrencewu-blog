@@ -1,0 +1,41 @@
+---
+title: "The New Knowledge Worker: Thriving in the Age of AI Agents"
+author: Lawrence Wu
+date: '2026-04-17'
+categories: [ai, "claude code", "agentic ai", tutorial, video]
+image: images/agentic_stack.png
+---
+
+Knowledge work is changing fast. I gave a talk today about what it actually means to work effectively in 2026, when AI agents can write code, run research, manage memory, and coordinate with tools on your behalf.
+
+{{< video https://youtu.be/noSqIsPSsgo >}} <!-- markdownlint-disable-line MD034 -->
+
+The talk covers the **Agentic AI Stack** — the mental model I use to think about how humans and AI systems work together — and practical strategies for becoming a more effective knowledge worker in the age of agents.
+
+The diagrams and materials from this talk are [here](https://github.com/lawwu/ai-tutorials/tree/main/04-new-knowledge-worker).
+
+## Timestamps
+
+- [00:00:00](https://www.youtube.com/watch?v=UI0WfBkv4DM&t=0s) Introduction
+- [00:03:30](https://www.youtube.com/watch?v=UI0WfBkv4DM&t=210s) The Progression of AI: 2022 to 2026
+- [00:14:00](https://www.youtube.com/watch?v=UI0WfBkv4DM&t=840s) Introducing the Agentic AI Stack
+- [00:16:30](https://www.youtube.com/watch?v=UI0WfBkv4DM&t=990s) Layer 1 — The Model (Frontier vs. Open LLMs)
+- [00:20:00](https://www.youtube.com/watch?v=UI0WfBkv4DM&t=1200s) Layer 2 — The Harness (Claude Code, Codex & more)
+- [00:26:30](https://www.youtube.com/watch?v=UI0WfBkv4DM&t=1590s) Layer 3 — Memory (Markdown, CLAUDE.md, Obsidian)
+- [00:32:30](https://www.youtube.com/watch?v=UI0WfBkv4DM&t=1950s) Layer 4 — Skills, Connectors & Features
+- [00:37:30](https://www.youtube.com/watch?v=UI0WfBkv4DM&t=2250s) Live Demos (Agentic ML, Autoresearch, Codex Chief of Staff)
+- [00:43:30](https://www.youtube.com/watch?v=UI0WfBkv4DM&t=2610s) The New Knowledge Worker Mindset
+- [00:50:30](https://www.youtube.com/watch?v=UI0WfBkv4DM&t=3030s) Downsides & Pitfalls of AI
+- [00:54:30](https://www.youtube.com/watch?v=UI0WfBkv4DM&t=3270s) Q&A / Wrap-up
+
+## Notes
+
+<https://github.com/lawwu/ai-tutorials/blob/main/04-new-knowledge-worker/NOTES.md>
+
+## Resources
+
+- [Reflections on AI: 2022 to 2026](https://lawrencewu.net/posts/2026-02-16-reflections-on-ai-2022-2026/)
+- [Top 10 Human Skills in the Age of AI](https://lawrencewu.net/posts/2026-03-23-top-10-human-skills/)
+- [Karpathy's LLM Wiki](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f)
+- [gbrain](https://github.com/garrytan/gbrain)
+- [Claude Code Docs](https://code.claude.com/docs/en/features-overview)
