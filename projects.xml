@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>Lawrence Wu&#39;s Blog</title>
+<link>https://lawrencewu.net/projects.html</link>
+<atom:link href="https://lawrencewu.net/projects.xml" rel="self" type="application/rss+xml"/>
+<description>Lawrence Wu&#39;s blog — AI, personal finance and life</description>
+<generator>quarto-1.9.37</generator>
+<lastBuildDate>Fri, 20 Mar 2026 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>claude-code-field-guide</title>
+  <dc:creator>Lawrence Wu</dc:creator>
+  <link>https://lawrencewu.net/projects/2026-03-20-claude-code-field-guide.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>My best practices, favorite skills, plugins, tools and MCPs for Claude Code. A living document of what actually works when building with agentic coding tools.</p>
+<p><a href="https://github.com/lawwu/claude-code-field-guide">View on GitHub →</a></p>
+
+
+
+ ]]></description>
+  <category>project</category>
+  <category>ai</category>
+  <category>claude code</category>
+  <category>tools</category>
+  <guid>https://lawrencewu.net/projects/2026-03-20-claude-code-field-guide.html</guid>
+  <pubDate>Fri, 20 Mar 2026 00:00:00 GMT</pubDate>
+  <media:content url="https://opengraph.github.com/repo/lawwu/claude-code-field-guide" medium="image"/>
+</item>
+<item>
+  <title>agentic-ml-plugin</title>
+  <dc:creator>Lawrence Wu</dc:creator>
+  <link>https://lawrencewu.net/projects/2026-03-18-agentic-ml-plugin.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>An agentic machine learning plugin that lets AI assistants run ML workflows autonomously — data prep, training, evaluation — without needing to prompt each step manually.</p>
+<p><a href="https://github.com/lawwu/agentic-ml-plugin">View on GitHub →</a></p>
+
+
+
+ ]]></description>
+  <category>project</category>
+  <category>ai</category>
+  <category>agents</category>
+  <category>claude code</category>
+  <guid>https://lawrencewu.net/projects/2026-03-18-agentic-ml-plugin.html</guid>
+  <pubDate>Wed, 18 Mar 2026 00:00:00 GMT</pubDate>
+  <media:content url="https://opengraph.github.com/repo/lawwu/agentic-ml-plugin" medium="image"/>
+</item>
+<item>
+  <title>skills-marketplace</title>
+  <dc:creator>Lawrence Wu</dc:creator>
+  <link>https://lawrencewu.net/projects/2026-03-13-skills-marketplace.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>A Cookiecutter template for building an agent skills marketplace — scaffold the boilerplate for packaging, distributing, and discovering skills for AI agents.</p>
+<p><a href="https://github.com/lawwu/skills-marketplace">View on GitHub →</a></p>
+
+
+
+ ]]></description>
+  <category>project</category>
+  <category>ai</category>
+  <category>agents</category>
+  <category>tools</category>
+  <guid>https://lawrencewu.net/projects/2026-03-13-skills-marketplace.html</guid>
+  <pubDate>Fri, 13 Mar 2026 00:00:00 GMT</pubDate>
+  <media:content url="https://opengraph.github.com/repo/lawwu/skills-marketplace" medium="image"/>
+</item>
+<item>
+  <title>skills</title>
+  <dc:creator>Lawrence Wu</dc:creator>
+  <link>https://lawrencewu.net/projects/2026-03-13-skills.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>A collection of agent skills for Claude Code and other AI assistants — reusable, composable tasks that extend what agents can do out of the box.</p>
+<p><a href="https://github.com/lawwu/skills">View on GitHub →</a></p>
+
+
+
+ ]]></description>
+  <category>project</category>
+  <category>ai</category>
+  <category>agents</category>
+  <category>claude code</category>
+  <guid>https://lawrencewu.net/projects/2026-03-13-skills.html</guid>
+  <pubDate>Fri, 13 Mar 2026 00:00:00 GMT</pubDate>
+  <media:content url="https://opengraph.github.com/repo/lawwu/skills" medium="image"/>
+</item>
+<item>
+  <title>transcripts</title>
+  <dc:creator>Lawrence Wu</dc:creator>
+  <link>https://lawrencewu.net/projects/2025-11-14-transcripts.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Transcripts for various YouTube channels, inspired by <a href="https://karpathy.ai/lexicap/index.html">Karpathy’s Lexicap</a>. Useful for searching and reading through long-form AI content without watching the full video.</p>
+<p><a href="https://github.com/lawwu/transcripts">View on GitHub →</a></p>
+
+
+
+ ]]></description>
+  <category>project</category>
+  <category>ai</category>
+  <category>tools</category>
+  <guid>https://lawrencewu.net/projects/2025-11-14-transcripts.html</guid>
+  <pubDate>Fri, 14 Nov 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://opengraph.github.com/repo/lawwu/transcripts" medium="image"/>
+</item>
+<item>
+  <title>til</title>
+  <dc:creator>Lawrence Wu</dc:creator>
+  <link>https://lawrencewu.net/projects/2025-08-27-til.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>“Today I Learned” — a running log of small things I’ve picked up across programming, data science, and tools. Inspired by Simon Willison’s TIL format.</p>
+<p><a href="https://lawwu.github.io/til/">Browse TILs →</a> · <a href="https://github.com/lawwu/til">View on GitHub →</a></p>
+
+
+
+ ]]></description>
+  <category>project</category>
+  <category>tools</category>
+  <category>writing</category>
+  <guid>https://lawrencewu.net/projects/2025-08-27-til.html</guid>
+  <pubDate>Wed, 27 Aug 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://opengraph.github.com/repo/lawwu/til" medium="image"/>
+</item>
+<item>
+  <title>mcp-lightcast</title>
+  <dc:creator>Lawrence Wu</dc:creator>
+  <link>https://lawrencewu.net/projects/2025-08-22-mcp-lightcast.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>An MCP (Model Context Protocol) server for the Lightcast API, enabling AI assistants to query labor market data, job postings, and skills data directly.</p>
+<p><a href="https://github.com/lawwu/mcp-lightcast">View on GitHub →</a></p>
+
+
+
+ ]]></description>
+  <category>project</category>
+  <category>ai</category>
+  <category>mcp</category>
+  <category>tools</category>
+  <guid>https://lawrencewu.net/projects/2025-08-22-mcp-lightcast.html</guid>
+  <pubDate>Fri, 22 Aug 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://opengraph.github.com/repo/lawwu/mcp-lightcast" medium="image"/>
+</item>
+<item>
+  <title>awesome-llamas</title>
+  <dc:creator>Lawrence Wu</dc:creator>
+  <link>https://lawrencewu.net/projects/2024-07-25-awesome-llamas.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>A curated list of resources for LLaMA 1 and LLaMA 2 — models, tools, fine-tuning guides, and community projects. Inspired by the awesome-* format.</p>
+<p><a href="https://github.com/lawwu/awesome-llamas">View on GitHub →</a></p>
+
+
+
+ ]]></description>
+  <category>project</category>
+  <category>ai</category>
+  <category>llms</category>
+  <guid>https://lawrencewu.net/projects/2024-07-25-awesome-llamas.html</guid>
+  <pubDate>Thu, 25 Jul 2024 00:00:00 GMT</pubDate>
+  <media:content url="https://opengraph.github.com/repo/lawwu/awesome-llamas" medium="image"/>
+</item>
+</channel>
+</rss>
