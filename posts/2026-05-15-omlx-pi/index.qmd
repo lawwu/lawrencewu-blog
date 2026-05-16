@@ -187,3 +187,48 @@ From that flat list, two data structures are built in memory:
 I came across [lighteval](https://huggingface.co/docs/lighteval/index), a library that makes it easier to run LLM evals across different backends. I decided to run Qwen 3.5 on the [MMLU dataset](https://huggingface.co/datasets/lighteval/mmlu).
 
 I wound up using Claude Code to setup lighteval and run the eval for this local LLM (which is a little odd if you think about it). I did notice the Macbook making somewhat high-pitched squeaking sounds when the GPU was in use. I don't remember hearing this sound in earlier generations of Apple Silicon.
+
+### Setup
+
+lighteval supports several backends. Since omlx exposes an OpenAI-compatible `/v1` endpoint, the natural choice was the `litellm` backend:
+
+```bash
+lighteval endpoint litellm \
+  "model_name=openai/Qwen3.5-122B-A10B-4bit,base_url=http://localhost:8000/v1,api_key=..." \
+  "mmlu:abstract_algebra,mmlu:anatomy,..." \
+  --output-dir results/mmlu \
+  --save-details
+```
+
+### Scoring challenges
+
+Getting real accuracy numbers turned out to be trickier than expected. The built-in `mmlu:*` tasks use **exact match** on raw model output. This works fine for non-reasoning models that emit just `"B"`, but Qwen3.5 with thinking enabled outputs reasoning first — so the default `generation_size=5` and `stop_sequence=["\n"]` cut off the model mid-thought before it ever wrote the answer letter, giving a score of 0 across the board.
+
+The obvious fix would be **logprobs scoring** (score each choice A/B/C/D by log-probability, pick the max), which bypasses generation entirely. But lighteval's litellm backend raises `NotImplementedError` for `loglikelihood` — it's generative-only.
+
+So instead I wrote a custom task with a `generation_size=1024` and no stop sequence, plus a custom metric (`mc_acc`) that extracts the last standalone `A`/`B`/`C`/`D` from the model's response after stripping any `<think>...</think>` reasoning tags:
+
+```python
+def extract_letter(text):
+    text = re.sub(r"<think>.*?</think>", "", text, flags=re.DOTALL)
+    matches = re.findall(r"\b([A-D])\b", text.strip())
+    return matches[-1] if matches else ""
+```
+
+### Results
+
+I ran a full test across all 57 MMLU subtasks with 5 samples each (~285 total). At ~7 seconds per sample, a full run of the 14,000-question MMLU test set would take ~27 hours. I attempted it but stopped it partway through — lighteval only writes results to disk at the very end, so the in-progress responses were lost.
+
+The 5-sample test gives a noisy but directionally useful signal:
+
+| Acc | Subtasks |
+|-----|---------|
+| 1.00 | business_ethics, high_school_computer_science, high_school_geography, high_school_government_and_politics, management, marketing, miscellaneous, moral_scenarios, world_religions |
+| 0.80 | anatomy, college_medicine, econometrics, elementary_mathematics, global_facts, high_school_chemistry, high_school_european_history, high_school_macroeconomics, high_school_psychology, high_school_us_history, high_school_world_history, human_aging, human_sexuality, moral_disputes, nutrition, philosophy, prehistory, professional_law, security_studies, sociology |
+| 0.60 | astronomy, clinical_knowledge, college_biology, college_computer_science, college_physics, computer_security, conceptual_physics, formal_logic, high_school_microeconomics, high_school_statistics, international_law, logical_fallacies, machine_learning, professional_accounting, professional_medicine, public_relations, us_foreign_policy |
+| 0.40 | college_mathematics, electrical_engineering, high_school_biology, high_school_mathematics, high_school_physics, jurisprudence, medical_genetics, professional_psychology, virology |
+| 0.20 | abstract_algebra, college_chemistry |
+
+**Overall: 68.8%** across 285 samples (57 subtasks × 5).
+
+For context, well-known MMLU scores for comparable models: Qwen2.5-72B gets ~86%, Llama-3.1-70B gets ~79%. A 4-bit quantized MoE model running on laptop hardware at 68.8% feels pretty reasonable — though the 5-sample per subtask estimate is noisy enough that the real number could easily be a few points higher or lower.
