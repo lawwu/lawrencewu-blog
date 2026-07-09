@@ -1,0 +1,210 @@
+---
+title: "What to Watch from AI Engineer World's Fair 2026"
+author: "Lawrence Wu"
+date: '2026-07-09'
+categories: [ai, conference, youtube, agents]
+---
+
+AI Engineer World's Fair 2026 just wrapped in San Francisco, and the [AI Engineer YouTube channel](https://www.youtube.com/@aiDotEngineer/videos) has started posting talks. I wanted a quick way to decide what to watch first, so I pulled the current video metadata and ranked the posted talks by views per day. Note this post and all of the code associated with grabbing the data was written by GPT 5.5 (High) using the Codex harness.
+
+The raw view count alone is a little unfair because the uploads are staggered. A talk posted on June 9 has had a month to accumulate views; a talk posted on July 8 has had about a day. So the main ranking below is:
+
+```text
+views per day = views / max(1, days since upload)
+```
+
+As of July 9, 2026 at 3:46 PM Pacific, the early winners are:
+
+1. [What do we build now? - Theo Browne, @t3dotgg](https://www.youtube.com/watch?v=xUnRQ9vLXxo)
+2. [Field Guide to Fable - Thariq Shihipar, Anthropic](https://www.youtube.com/watch?v=9fubhllmsBU)
+3. [Building Great Agent Skills: The Missing Manual](https://www.youtube.com/watch?v=UNzCG3lw6O0)
+4. [The Future Is Domain-Specific Agents - Justin Schroeder, StandardAgents](https://www.youtube.com/watch?v=spNAUEgq_A8)
+5. [Building an ACP-Compatible Agent Live - Bennet Fenner, Zed](https://www.youtube.com/watch?v=HsxQICTLF84)
+
+## Method
+
+I included 77 posted conference-talk videos from June 8, 2026 onward. I excluded the 2026 vibe reel, the "6 Things to Know" preview, and scheduled premieres that did not have public view counts yet.
+
+The topic and summary fields are lightweight notes derived from the title, not transcript-level summaries. The popularity ranking is the reproducible part: YouTube metadata, upload date, views, and views per day.
+
+AI Engineer World's Fair 2026 ran June 29 to July 2, 2026 at Moscone West in San Francisco, according to the [conference schedule](https://www.ai.engineer/schedule).
+
+## Ranked Watchlist
+
+| Rank | Video | Topic | Summary | Views | Views/day |
+|---:|---|---|---|---:|---:|
+| 1 | [What do we build now? - Theo Browne, @t3dotgg](https://www.youtube.com/watch?v=xUnRQ9vLXxo) | AI product strategy | Theo Browne frames what is worth building now that AI has changed developer workflows and product expectations. | 25,835 | 25,835.0 |
+| 2 | [Field Guide to Fable - Thariq Shihipar, Anthropic](https://www.youtube.com/watch?v=9fubhllmsBU) | AI-native product design | A guide to Fable and the product/design patterns behind building with modern AI systems. | 47,730 | 15,910.0 |
+| 3 | [Building Great Agent Skills: The Missing Manual](https://www.youtube.com/watch?v=UNzCG3lw6O0) | Agent skills | Practical guidance for designing reusable skills that make agents more capable and dependable. | 93,712 | 9,371.2 |
+| 4 | [The Future Is Domain-Specific Agents - Justin Schroeder, StandardAgents](https://www.youtube.com/watch?v=spNAUEgq_A8) | Domain agents | Argues for agents specialized around concrete domains rather than generic assistants. | 28,792 | 2,879.2 |
+| 5 | [Building an ACP-Compatible Agent Live - Bennet Fenner, Zed](https://www.youtube.com/watch?v=HsxQICTLF84) | Agent protocols | A live build showing how an agent can integrate with the Agent Client Protocol ecosystem. | 2,533 | 2,533.0 |
+| 6 | [Teaching Coding Agents to do Spreadsheets - Nuno Campos, Witan Labs](https://www.youtube.com/watch?v=HEFSExa0xl0) | Spreadsheet agents | Covers how to make coding agents useful for spreadsheet-heavy work. | 2,202 | 2,202.0 |
+| 7 | [The Pipeline Is Dead - Iris ten Teije, Sky Valley Ambient Computing](https://www.youtube.com/watch?v=bRnoEpoK5m4) | Agentic workflows | Reframes traditional software pipelines around more dynamic, ambient AI workflows. | 4,225 | 2,112.5 |
+| 8 | [What if the harness mattered more than the model? - Aditya Bhargava, Etsy](https://www.youtube.com/watch?v=2e9ANoOEn28) | Evaluation harnesses | Makes the case that the surrounding harness can matter more than model choice for real results. | 4,059 | 2,029.5 |
+| 9 | [Stop Making Models Bigger, Make Them Behave - Kobie Crawford, Snorkel](https://www.youtube.com/watch?v=TNwJ1LMiENk) | Model behavior | Focuses on controlling and improving model behavior rather than only scaling model size. | 50,033 | 1,725.3 |
+| 10 | [We Cut 94% of AI Coding Tokens With a Local Code Index - Rajkumar Sakthivel, Tesco](https://www.youtube.com/watch?v=dRmWYHuIJxM) | Code indexing | Shows how local code indexing can sharply reduce token usage in AI coding workflows. | 17,220 | 1,565.5 |
+| 11 | [Your coding agent doesn't always follow your rules - Talha Sheikh, Checkout.com](https://www.youtube.com/watch?v=MpZzWMdmQCE) | Agent reliability | Discusses why coding agents drift from instructions and what that means for reliability. | 1,562 | 1,562.0 |
+| 12 | [Beyond the Harness: A Journey Towards Adaptative Engineering - Rajiv Chandegra, Annicha Labs](https://www.youtube.com/watch?v=qdZzND79mcg) | Adaptive engineering | Explores engineering systems that adapt beyond static evaluation harnesses. | 3,102 | 1,551.0 |
+| 13 | [I Run a Fleet of AI Agents Across Three Machines. Here's What Broke. - Kyle Jaejun Lee, KRAFTON](https://www.youtube.com/watch?v=4kYl2_mqmnQ) | Multi-agent operations | Lessons from running multiple agents across machines and dealing with the operational failures. | 1,502 | 1,502.0 |
+| 14 | [Think You Can Build a Game with AI? Think Again! - Danielle An & David Hoe, Meta](https://www.youtube.com/watch?v=grdoOC1BT1s) | AI game development | A reality check on the limits and challenges of building games with AI. | 1,300 | 1,300.0 |
+| 15 | [Turn 10,994 Notes Into Memory - Paul Iusztin, Decoding AI & Louis-François Bouchard, Towards AI](https://www.youtube.com/watch?v=ZRM_TfEZcIo) | Agent memory | Describes turning a large personal or organizational note corpus into useful agent memory. | 16,039 | 1,233.8 |
+| 16 | [Build AI Systems for Discernment, Not Approval - Angel Ortmann Lee, Duolingo](https://www.youtube.com/watch?v=CDqzWpwkSls) | AI product judgment | Advocates building AI systems that help users judge well instead of merely agreeing with them. | 2,461 | 1,230.5 |
+| 17 | [HTML is All You Need (for Agents to Make Graphics) - Amol Kapoor, Nori](https://www.youtube.com/watch?v=JRTAtZ5iBkU) | Agent-generated graphics | Argues that HTML is a strong substrate for agents producing visual outputs. | 12,917 | 1,174.3 |
+| 18 | [The Production AI Playbook: Deploying Agents at Enterprise Scale - Sandipan Bhaumik, Databricks](https://www.youtube.com/watch?v=ObTPqBGsEbA) | Enterprise agents | A production-oriented playbook for deploying and scaling agents in enterprise environments. | 23,125 | 1,101.2 |
+| 19 | [Your Attention Is the Bottleneck, Not Your Agents - Zack Proser, WorkOS](https://www.youtube.com/watch?v=so9l_MwS2yg) | Human-agent workflows | Focuses on human attention as the scarce resource in agent-driven work. | 28,651 | 1,023.2 |
+| 20 | [RAG is dead, right?? - Kuba Rogut, Turbopuffer](https://www.youtube.com/watch?v=UM6sFg_jdlE) | Retrieval / RAG | Re-examines whether RAG is obsolete and where retrieval still matters. | 30,214 | 1,007.1 |
+| 21 | [The Golden Age of AI Engineering - Alexander Embiricos & Romain Huet & Peter Steinberger, OpenAI](https://www.youtube.com/watch?v=pMggiOb18tc) | AI engineering | An OpenAI panel on the current moment for AI engineering and where the field is heading. | 979 | 979.0 |
+| 22 | [500 people vibe-coded for 30 days. I was one of them. - Sanja Grbic, Automattic](https://www.youtube.com/watch?v=UcYoMg-8-L8) | Vibe coding | Lessons from a month-long large-scale vibe-coding experiment. | 1,643 | 821.5 |
+| 23 | [Your agent is blindfolded - Johan Lajili, Poolside AI](https://www.youtube.com/watch?v=iRcX54EO5g8) | Agent observability | Argues agents need better visibility into their environment to act effectively. | 816 | 816.0 |
+| 24 | [MCP Apps: Primitives, discovery, and the Future of Software - Pietro Zullo, Manufact, Inc](https://www.youtube.com/watch?v=sAOBXCDiDOs) | MCP apps | Covers MCP app primitives, discovery, and how software interfaces may evolve. | 3,245 | 811.2 |
+| 25 | [Your AI Product Will Fail Unless You Can Explain It - Veronica Hylak, Hey AI](https://www.youtube.com/watch?v=d_Ftrl3vfV0) | Explainability | Positions explanation as a core product requirement for successful AI systems. | 3,222 | 805.5 |
+| 26 | [GTM Is You - Victoria Melnikova, Evil Martians](https://www.youtube.com/watch?v=G6IlDzj8OjA) | Go-to-market | A builder-oriented view of go-to-market where technical creators carry more of the motion. | 1,441 | 720.5 |
+| 27 | [Continual Learning for AI Agents: From Failures to Durable Improvements - Soheil Feizi, RELAI](https://www.youtube.com/watch?v=2IxD9OB3XuQ) | Continual learning | Looks at how agents can convert failures into durable improvements over time. | 2,855 | 713.8 |
+| 28 | [Running a Chess YouTube Channel entirely by AI - Stephan Steinfurt, TNG](https://www.youtube.com/watch?v=BqZrTdgBaPw) | AI media automation | Describes using AI to automate an entire chess YouTube channel workflow. | 637 | 637.0 |
+| 29 | [How we taught agents to use good retrieval - Hanna Lichtenberg, Mixedbread AI](https://www.youtube.com/watch?v=1IdzkRVmWAA) | Agent retrieval | Explains approaches for making agents use retrieval more effectively. | 1,247 | 623.5 |
+| 30 | [Recursive Coding Agents - Raymond Weitekamp, OpenProse](https://www.youtube.com/watch?v=3hXJI2q0Jz8) | Coding agents | Explores recursive coding-agent workflows and their implications for software creation. | 8,696 | 621.1 |
+| 31 | [The Missing Layer After Launch - Raphael Kalandadze, Wandero AI](https://www.youtube.com/watch?v=kZsf_Sfm7RU) | Post-launch AI systems | Discusses the operational/product layer needed after an AI product ships. | 2,357 | 589.2 |
+| 32 | [Shipping Production AI Inside Government - William Tarr, Ministry of Justice (DO NOT PUBLISH)](https://www.youtube.com/watch?v=qlHaO6laBlM) | Government AI | Covers the realities of shipping production AI in government contexts. | 542 | 542.0 |
+| 33 | [SWE-Marathon: Evaluating Coding Agents at Billion-Token Scale - Rishi Desai, Abundant AI](https://www.youtube.com/watch?v=Rx8f05JI_WA) | Coding-agent evals | Presents large-scale evaluation of coding agents over very long token horizons. | 1,081 | 540.5 |
+| 34 | [Build Systems, Not Code - Angie Jones, Agentic AI Foundation](https://www.youtube.com/watch?v=ZD9-4fW2HhM) | Systems engineering | Encourages thinking in systems rather than isolated code artifacts when building with AI. | 7,039 | 502.8 |
+| 35 | [Using Spec-Driven Development for Production Workflows - Erik Hanchett, AWS](https://www.youtube.com/watch?v=IddXPepIAS4) | Spec-driven development | Shows how specifications can drive more reliable AI-assisted production workflows. | 5,513 | 501.2 |
+| 36 | [AI System Design: From Idea to Production - Apoorva Joshi, MongoDB](https://www.youtube.com/watch?v=T0HhO4YtTfE) | AI system design | Walks through moving an AI system from concept to production. | 5,203 | 473.0 |
+| 37 | [Your LLM Deception Monitor Is Broken. The Fix Is in the Training Data - Sachin Kumar, LexisNexis](https://www.youtube.com/watch?v=IQkVMvXQKLY) | Safety monitoring | Argues that deception monitoring depends heavily on training-data quality. | 439 | 439.0 |
+| 38 | [The Agentic AI Engineer - Benedikt Sanftl, Mutagent](https://www.youtube.com/watch?v=pSto5YaNGUo) | Agentic engineering | Defines what changes when AI engineers work through agentic systems. | 4,360 | 436.0 |
+| 39 | [Building an Autonomous Engineering Org - Angie Jones, Agentic AI Foundation](https://www.youtube.com/watch?v=whue9_YquGA) | Autonomous engineering | Discusses the organizational patterns behind autonomous AI-assisted engineering. | 4,687 | 426.1 |
+| 40 | [The agent-ready web: Simplify user actions with WebMCP - Tara Agyemang, Google](https://www.youtube.com/watch?v=ghJmWQCIHRM) | Web agents | Shows how WebMCP can make websites more directly usable by agents. | 11,564 | 413.0 |
+| 41 | [Frontier results, on device - RL Nabors, Arize](https://www.youtube.com/watch?v=fWXJM-J0ZB8) | On-device AI | Covers frontier-quality AI results running closer to the device. | 4,035 | 403.5 |
+| 42 | [The Prompt Is Still a Punch Card - Ted Johnson, JoinIn AI](https://www.youtube.com/watch?v=hVJOnuhFmTA) | Prompting interfaces | Compares prompts to old low-level interfaces and suggests better abstractions are needed. | 2,662 | 380.3 |
+| 43 | [Agents Building Agents - Alfonso Graziano, Nearform](https://www.youtube.com/watch?v=aHhB3sjGjkI) | Recursive agents | Looks at agents that help create, improve, or coordinate other agents. | 3,968 | 360.7 |
+| 44 | [Respect The Process - Andrew Dumit, Watershed Technology Inc.](https://www.youtube.com/watch?v=CLttOU7n6sI) | Engineering process | Emphasizes process discipline in AI-enabled engineering workflows. | 679 | 339.5 |
+| 45 | [Why MCP and ChatGPT Apps Use Double Iframes - Frédéric Barthelet, Alpic](https://www.youtube.com/watch?v=c-2eEv2ou7Y) | App security architecture | Explains the iframe architecture behind MCP and ChatGPT app isolation. | 7,680 | 320.0 |
+| 46 | [Your Agent's Biggest Lie: "I Searched the Web" - Rafael Levi, Bright Data](https://www.youtube.com/watch?v=btxGmN8RvNU) | Web search agents | Explores failure modes in agent web-search claims and verification. | 7,010 | 318.6 |
+| 47 | [Deterministic Infra for Non-Deterministic AI Agents - Nishant Gupta, Meta Superintelligence Labs](https://www.youtube.com/watch?v=APh1Vx0oLmQ) | Agent infrastructure | Discusses infrastructure patterns for making stochastic agents more controllable. | 3,179 | 317.9 |
+| 48 | [The Log Is The Agent - Ishaan Sehgal, Omnara](https://www.youtube.com/watch?v=UPwGaM2MKHY) | Agent logs | Reframes logs as a central interface or state layer for agent behavior. | 4,357 | 311.2 |
+| 49 | [Why Eval++ Is the Next Great Compute Primitive - Sunil Pai & Matt Carey, Cloudflare](https://www.youtube.com/watch?v=SKDJo2CopRs) | AI evals | Makes the case for Eval++ and evaluation workloads as a major new compute primitive. | 9,134 | 294.6 |
+| 50 | [Why Can't Anyone Answer Questions About the Business? - Garrett Galow, WorkOS](https://www.youtube.com/watch?v=iUWwcG-C8OU) | Business intelligence | Looks at AI systems for answering real business questions from company context. | 8,178 | 292.1 |
+| 51 | [Why More Context Makes Your Agent Dumber and What to Do About It - Nupur Sharma, Qodo](https://www.youtube.com/watch?v=EcqMYoIV57A) | Long context | Explains why larger context windows can hurt agent performance and how to mitigate it. | 8,326 | 268.6 |
+| 52 | [Stop Writing Tone Instructions. Layer Them. - Isadora Martin-Dye, Isadora & Co](https://www.youtube.com/watch?v=ij-AU9dpJjc) | Prompt style control | Recommends layered tone systems instead of one-off tone instructions. | 2,678 | 206.0 |
+| 53 | [Structuring the Unstructured - Cedric Clyburn, Red Hat](https://www.youtube.com/watch?v=-x5GEVnkuRw) | Data structuring | Covers techniques for turning unstructured information into usable structured data. | 2,149 | 195.4 |
+| 54 | [Self Driving Products: Product Signals to Pull Requests - Joshua Snyder, PostHog](https://www.youtube.com/watch?v=zMiSRliEzv4) | Product automation | Connects product usage signals directly to AI-assisted code changes. | 5,651 | 194.9 |
+| 55 | [Road to 5 Million Tokens: Breaking Barriers in Long Context Training - Max Ryabinin, Together AI](https://www.youtube.com/watch?v=TUnPNY4E2fw) | Long-context training | Discusses long-context training and the path toward multi-million-token context lengths. | 5,778 | 186.4 |
+| 56 | [Your Agent Failed in Prod. Good Luck Reproducing It. - Tisha Chawla & Susheem Koul, Microsoft](https://www.youtube.com/watch?v=Lc8zRh9muoY) | Production debugging | Covers the reproducibility challenge when production agents fail. | 1,665 | 166.5 |
+| 57 | [Agents in Production: How OpenGov Built and Scaled OG Assist - Gabe De Mesa, OpenGov](https://www.youtube.com/watch?v=4uFVSLgD2Q4) | Production agents | A case study on building and scaling OpenGov's OG Assist. | 2,048 | 157.5 |
+| 58 | [You Can't Prompt the Room: The Last Skill AI Won't Replace - Balázs Horváth, VisualLabs](https://www.youtube.com/watch?v=6bmM45jkMDY) | Human skills | Argues for the continued importance of human facilitation and social skill. | 1,553 | 155.3 |
+| 59 | [A Genius With Amnesia - Victor Savkin, Nx](https://www.youtube.com/watch?v=jVjt-2g8NMY) | Agent memory | Uses the amnesia metaphor to discuss why capable AI needs persistent context. | 1,978 | 152.2 |
+| 60 | [The Prompt is the Platform - Dominik Tornow, Resonate HQ](https://www.youtube.com/watch?v=DqtmZE6Hl0g) | Prompt platforms | Frames prompts as a platform layer for AI applications and workflows. | 1,468 | 146.8 |
+| 61 | [Using RL Agent to Detect and Remediate ETL Pipeline Failures - Anna Marie Benzon](https://www.youtube.com/watch?v=LrGCT7G_rU8) | RL for data pipelines | Shows reinforcement-learning agents applied to ETL failure detection and remediation. | 1,463 | 146.3 |
+| 62 | [Your Agent Is Wasting Tokens and You Don't Know It - Erik Hanchett, AWS](https://www.youtube.com/watch?v=uiP88SpCi1Q) | Token efficiency | Highlights hidden token waste in agent systems and ways to reduce it. | 1,600 | 145.5 |
+| 63 | [You Might Not Need 50 Diffusion Steps - Ziv Ilan, Nvidia](https://www.youtube.com/watch?v=gHs5ZiY80PM) | Diffusion efficiency | Discusses reducing diffusion inference steps while preserving useful output quality. | 3,342 | 145.3 |
+| 64 | [Browser Agents Don't Need Better Models. They Need Better Eyes. - Kushan Raj, ARK](https://www.youtube.com/watch?v=JnubYCYunk8) | Browser agents | Argues browser agents need better perception of pages more than better base models. | 1,497 | 136.1 |
+| 65 | [Voice In, Visuals Out: The Agony and the Ecstasy - Allen Pike, Forestwalk Labs](https://www.youtube.com/watch?v=65X0pQ6Lmbg) | Multimodal UX | Covers challenges and promise in voice-to-visual AI workflows. | 1,264 | 114.9 |
+| 66 | [Production Evals For Agentic AI Systems - Nishant Gupta, Meta Superintelligence Labs](https://www.youtube.com/watch?v=vljxQZfJ9wY) | Agent evals | Discusses evaluation methods for production-grade agentic AI systems. | 1,567 | 111.9 |
+| 67 | [The 100-Tool Agent Is a Trap - Sohail Shaikh & Ankush Rastogi, Prosodica](https://www.youtube.com/watch?v=vh2VGuQ3zhY) | Tool use | Warns against overloading agents with too many tools and argues for better tool design. | 1,142 | 103.8 |
+| 68 | [OpenClaw in Your Hand: Building a Physical AI Terminal - Lech Kalinowski, Callstack](https://www.youtube.com/watch?v=akk6KRlcwW4) | Physical AI devices | Shows a handheld or physical AI terminal concept built around OpenClaw. | 1,131 | 102.8 |
+| 69 | [AI-Driven Multi-Document Correlation for Financial Compliance - Varsha Shah, Independent](https://www.youtube.com/watch?v=Iwe_RY-fYgI) | Compliance AI | Applies AI to correlating multiple documents for financial compliance workflows. | 1,098 | 99.8 |
+| 70 | [The Miranda Hypothesis: How Hamilton Poisoned Persona Evals - Jacob E. Thomas, Results Gen](https://www.youtube.com/watch?v=IJXjTLPzvAU) | Persona evals | Examines how cultural artifacts can bias or distort persona evaluations. | 1,142 | 81.6 |
+| 71 | [User Signal Dies at the Retrieval Boundary - Sonam Pankaj, StarlightSearch](https://www.youtube.com/watch?v=Jx4ZFEAq6bY) | Retrieval signals | Discusses preserving user intent and signals across retrieval system boundaries. | 865 | 78.6 |
+| 72 | [When All Context Matters: Extended Cache Augmented Generation - Luis Romero-Sevilla, Orbis](https://www.youtube.com/watch?v=XovaGv4f39A) | Cache-augmented generation | Covers using extended cache techniques when broad context matters. | 849 | 77.2 |
+| 73 | [Research to Reality: Bringing Frontier ML Research to Production - Vaidas Razgaitis, Higharc](https://www.youtube.com/watch?v=OXMMN-XbxwA) | ML productionization | Discusses translating frontier ML research into production systems. | 788 | 71.6 |
+| 74 | [Bypassing the Multimodal Tax: Hybrid RAG, SQL RRF & UI Telemetry - Abed Matini, Ogilvy](https://www.youtube.com/watch?v=Akm1sqvWG4A) | Hybrid retrieval | Combines RAG, SQL, reciprocal-rank fusion, and UI telemetry for multimodal workflows. | 783 | 71.2 |
+| 75 | [GPU Cloud Deployment Without Leaving Your IDE - Audry Hsu, RunPod](https://www.youtube.com/watch?v=zDGHt0LB-dA) | GPU developer tools | Shows how GPU cloud deployment can move into the developer's IDE workflow. | 1,798 | 59.9 |
+| 76 | [From Transcription to Live Music: Gemini's Audio Stack - Thor Schaeff, Google DeepMind](https://www.youtube.com/watch?v=Bc6Ojl2XS1w) | Audio models | Covers Gemini audio capabilities from transcription through live music use cases. | 1,795 | 59.8 |
+| 77 | [Sovereign Escape Velocity: Ownership w Open Models - Gus Martins, & Ian Ballantyne, Google DeepMind](https://www.youtube.com/watch?v=SS-A8sE7hkw) | Open models | Discusses ownership, sovereignty, and strategic implications of open models. | 1,691 | 58.3 |
+
+## Code to Replicate the Ranking
+
+This script uses [`yt-dlp`](https://github.com/yt-dlp/yt-dlp) to fetch the channel's current video metadata, filters to recent posted conference talks, and ranks by views per day. Install `yt-dlp` first if needed:
+
+```bash
+uv tool install yt-dlp
+```
+
+Then run:
+
+```python
+import datetime as dt
+import json
+import subprocess
+
+CHANNEL_URL = "https://www.youtube.com/@aiDotEngineer/videos"
+REFERENCE_DATE = dt.date(2026, 7, 9)
+PLAYLIST_END = 90
+
+EXCLUDE_TITLE_SUBSTRINGS = [
+    "Vibe Reel",
+    "Things to Know about AIE",
+]
+
+cmd = [
+    "yt-dlp",
+    "--playlist-end",
+    str(PLAYLIST_END),
+    "--skip-download",
+    "--ignore-errors",
+    "--print",
+    "%()j",
+    CHANNEL_URL,
+]
+
+proc = subprocess.run(
+    cmd,
+    check=False,
+    text=True,
+    capture_output=True,
+    timeout=420,
+)
+
+rows = []
+for line in proc.stdout.splitlines():
+    if not line.startswith("{"):
+        continue
+
+    video = json.loads(line)
+    title = video.get("title") or ""
+    upload_date = video.get("upload_date")
+    view_count = video.get("view_count")
+
+    if not upload_date or view_count is None:
+        continue
+    if upload_date < "20260608":
+        continue
+    if any(skip in title for skip in EXCLUDE_TITLE_SUBSTRINGS):
+        continue
+
+    uploaded = dt.datetime.strptime(upload_date, "%Y%m%d").date()
+    days_since_upload = max(1, (REFERENCE_DATE - uploaded).days)
+    views_per_day = view_count / days_since_upload
+
+    rows.append(
+        {
+            "title": title,
+            "url": video.get("webpage_url")
+            or f"https://www.youtube.com/watch?v={video.get('id')}",
+            "upload_date": uploaded.isoformat(),
+            "views": view_count,
+            "days_since_upload": days_since_upload,
+            "views_per_day": views_per_day,
+            "duration_minutes": round((video.get("duration") or 0) / 60, 1),
+        }
+    )
+
+rows.sort(key=lambda row: row["views_per_day"], reverse=True)
+
+print("| Rank | Video | Uploaded | Views | Days | Views/day |")
+print("|---:|---|---:|---:|---:|---:|")
+
+for rank, row in enumerate(rows, start=1):
+    print(
+        "| {rank} | [{title}]({url}) | {upload_date} | "
+        "{views:,} | {days_since_upload} | {views_per_day:,.1f} |".format(
+            rank=rank,
+            **row,
+        )
+    )
+```
+
+A couple of notes:
+
+- `--ignore-errors` lets the script skip scheduled premieres that do not have watchable metadata yet.
+- `PLAYLIST_END = 90` was enough for this snapshot because the recent conference batch appeared in the first 90 channel videos.
+- The views are a snapshot. Re-running the script later will produce different view counts and a different views/day ranking.
