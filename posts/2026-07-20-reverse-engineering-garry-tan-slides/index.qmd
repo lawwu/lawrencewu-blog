@@ -7,7 +7,7 @@ resources:
   - slides.html
 ---
 
-I was going back through my [AI Engineer World's Fair 2026 watch list](../2026-07-09-aie-2026-youtube-popularity/index.qmd) and re-watched [Garry Tan's "The New Physics of Business"](https://www.youtube.com/watch?v=eBUyTS7SzV4) keynote. About four minutes in, he says:
+I was going back through my [AI Engineer World's Fair 2026 watch list](https://lawrencewu.net/posts/2026-07-09-aie-2026-youtube-popularity/) and re-watched [Garry Tan's "The New Physics of Business"](https://www.youtube.com/watch?v=eBUyTS7SzV4) keynote. About four minutes in, he says:
 
 > "Sorry, there's no slides. I have no slides."
 
