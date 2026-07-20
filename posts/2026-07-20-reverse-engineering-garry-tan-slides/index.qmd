@@ -1,0 +1,43 @@
+---
+title: "Reverse-Engineering Slides for a Talk That Had None"
+author: "Lawrence Wu"
+date: '2026-07-20'
+categories: [ai, conference, "claude code", agents]
+resources:
+  - slides.html
+---
+
+I was going back through my [AI Engineer World's Fair 2026 watch list](../2026-07-09-aie-2026-youtube-popularity/index.qmd) and re-watched [Garry Tan's "The New Physics of Business"](https://www.youtube.com/watch?v=eBUyTS7SzV4) keynote. About four minutes in, he says:
+
+> "Sorry, there's no slides. I have no slides."
+
+No deck, the whole time. Just Garry, a mic, and 20 minutes of dense material about AI-native orgs, skill files, and "company brains." I thought it'd be a fun experiment to see if Claude Code could reverse-engineer a slide deck purely from the talk itself — no slides to work from, just the words.
+
+## How it went
+
+I pointed Claude Code (Sonnet 5) at the YouTube link and asked it to reconstruct slides. My prompt was:
+
+> Gary tan's talk doesn't have slides even though I think it should, can you reverse engineer some slides for his talk? <https://www.youtube.com/watch?v=eBUyTS7SzV4>
+
+It:
+
+1. Opened the video in a browser (via the Claude Code browser MCP tools), expanded the description, and pulled YouTube's auto-generated **transcript panel** rather than trying to guess at content from memory — every claim in the resulting deck is traceable back to a timestamp in the actual talk.
+2. Cross-referenced the transcript against the video's own chapter markers and "key takeaways" blurb to build an outline: the 400x productivity claim, the "skill file = employee" org mapping, latent vs. deterministic space, the "company brain" concept, and the closing "we can boil the ocean now" line.
+3. Used its `frontend-slides` skill to generate a single self-contained HTML file — no build step, no dependencies, just one file with inline CSS/JS. I let it make its own creative call on visual style rather than going through the usual mood/preview picker, and it landed on a dark theme with YC-orange accents (`Fraunces` for the big serif statements, `JetBrains Mono` for kickers and timestamps) — a nod to the fact this is literally a company brain and markdown-employees talk.
+4. Verified the result in an actual browser — checked title, stat, quote, and card-grid slide types for overflow and layout bugs before calling it done.
+
+Every slide is tagged with the timestamp range it's drawn from, and the title slide is upfront that this is a reconstruction, not Garry's actual deck (because there wasn't one).
+
+## The result
+
+<p>
+<a href="slides.html" target="_blank" rel="noopener"><strong>→ View the slides</strong></a>
+</p>
+
+It's a normal HTML page — arrow keys, space, scroll, or swipe to move between slides, click the dots on the right to jump around.
+
+## Why this is interesting
+
+The mechanically interesting part isn't the slides themselves, it's that the whole pipeline — watch a video, pull its transcript, structure the content, design and build a polished artifact, verify it renders correctly — ran without me touching a slide tool, a design tool, or a video player by hand. A few years ago this would've been: transcribe by hand (or pay for it), outline in a doc, open Keynote, pick a template, lay out 20 slides, export. Here it was one prompt and a follow-up to publish it.
+
+That's basically the exact thing Garry's talk is about.
