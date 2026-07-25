@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The New Physics of Business — Garry Tan (reconstructed slides)</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;0,9..144,900;1,9..144,500;1,9..144,600&family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+/* ===========================================
+   THEME — YC orange on near-black, terminal/markdown motif
+   This whole deck is a joke on itself: Garry Tan literally
+   said "I have no slides." These are reverse-engineered
+   from the transcript. Change --accent to restyle everything.
+   =========================================== */
+:root{
+    --bg:#0b0a08;
+    --bg-2:#161209;
+    --panel:#1c170f;
+    --panel-border:rgba(255,255,255,0.08);
+    --text-primary:#f4eee2;
+    --text-secondary:#b6ab9a;
+    --text-faint:#7d7364;
+    --accent:#ff6a1a;
+    --accent-soft:rgba(255,106,26,0.14);
+    --accent-line:rgba(255,106,26,0.4);
+
+    --font-serif:'Fraunces', serif;
+    --font-mono:'JetBrains Mono', monospace;
+    --font-sans:'Space Grotesk', sans-serif;
+
+    --ease-out-expo:cubic-bezier(0.16,1,0.3,1);
+    --duration-normal:0.7s;
+
+    --title-size:clamp(2rem,6vw,4.6rem);
+    --h2-size:clamp(1.3rem,3.6vw,2.6rem);
+    --h3-size:clamp(1rem,2.4vw,1.6rem);
+    --body-size:clamp(0.85rem,1.5vw,1.15rem);
+    --small-size:clamp(0.65rem,1vw,0.85rem);
+    --stat-size:clamp(4rem,15vw,10rem);
+
+    --slide-padding:clamp(1.5rem,5vw,5rem);
+    --content-gap:clamp(0.6rem,2vw,1.8rem);
+}
+
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+    background:var(--bg);
+    color:var(--text-primary);
+    font-family:var(--font-sans);
+}
+
+/* ===========================================
+   VIEWPORT FITTING: MANDATORY BASE STYLES
+   =========================================== */
+html, body{ height:100%; overflow-x:hidden; }
+html{ scroll-snap-type:y mandatory; scroll-behavior:smooth; }
+.slide{
+    width:100vw; height:100vh; height:100dvh;
+    overflow:hidden;
+    scroll-snap-align:start;
+    display:flex; flex-direction:column;
+    position:relative;
+}
+.slide-content{
+    flex:1; display:flex; flex-direction:column;
+    justify-content:center;
+    max-height:100%; overflow:hidden;
+    padding:var(--slide-padding);
+}
+.card,.container,.content-box{ max-width:min(90vw,1000px); max-height:min(80vh,700px); }
+.feature-list,.bullet-list{ gap:clamp(0.4rem,1vh,1rem); }
+.feature-list li,.bullet-list li{ font-size:var(--body-size); line-height:1.4; }
+.grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr)); gap:clamp(0.5rem,1.5vw,1rem); }
+img,.image-container{ max-width:100%; max-height:min(50vh,400px); object-fit:contain; }
+
+@media (max-height:700px){
+    :root{
+        --slide-padding:clamp(0.75rem,3vw,2rem);
+        --content-gap:clamp(0.4rem,1.5vw,1rem);
+        --title-size:clamp(1.25rem,4.5vw,2.5rem);
+        --h2-size:clamp(1rem,3vw,1.75rem);
+        --stat-size:clamp(3rem,12vw,6rem);
+    }
+}
+@media (max-height:600px){
+    :root{
+        --slide-padding:clamp(0.5rem,2.5vw,1.5rem);
+        --content-gap:clamp(0.3rem,1vw,0.75rem);
+        --title-size:clamp(1.1rem,4vw,2rem);
+        --body-size:clamp(0.7rem,1.2vw,0.95rem);
+        --stat-size:clamp(2.4rem,10vw,4.5rem);
+    }
+    .nav-dots,.keyboard-hint,.decorative{ display:none; }
+}
+@media (max-height:500px){
+    :root{
+        --slide-padding:clamp(0.4rem,2vw,1rem);
+        --title-size:clamp(1rem,3.5vw,1.5rem);
+        --h2-size:clamp(0.9rem,2.5vw,1.25rem);
+        --body-size:clamp(0.65rem,1vw,0.85rem);
+    }
+}
+@media (max-width:600px){
+    :root{ --title-size:clamp(1.25rem,7vw,2.5rem); }
+    .grid{ grid-template-columns:1fr; }
+    .split{ grid-template-columns:1fr !important; }
+    .cases{ grid-template-columns:1fr !important; }
+}
+@media (prefers-reduced-motion:reduce){
+    *,*::before,*::after{ animation-duration:0.01ms !important; transition-duration:0.2s !important; }
+    html{ scroll-behavior:auto; }
+}
+
+/* ===========================================
+   BACKGROUND ATMOSPHERE — graph-paper grid + warm glow
+   =========================================== */
+.slide::before{
+    content:"";
+    position:absolute; inset:0;
+    background:
+        radial-gradient(ellipse 60% 45% at 15% 8%, var(--accent-soft) 0%, transparent 60%),
+        radial-gradient(ellipse 50% 40% at 90% 95%, rgba(255,106,26,0.08) 0%, transparent 60%),
+        linear-gradient(135deg,#0b0a08 0%,#171209 55%,#0b0a08 100%);
+    z-index:0;
+}
+.slide::after{
+    content:"";
+    position:absolute; inset:0;
+    background-image:
+        linear-gradient(rgba(255,255,255,0.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.035) 1px, transparent 1px);
+    background-size:46px 46px;
+    mask-image:radial-gradient(ellipse 80% 70% at 50% 50%, black 40%, transparent 90%);
+    z-index:0;
+}
+.slide > *{ position:relative; z-index:1; }
+
+/* ===========================================
+   REVEAL ANIMATION
+   =========================================== */
+.reveal{
+    opacity:0; transform:translateY(26px);
+    transition:opacity var(--duration-normal) var(--ease-out-expo),
+               transform var(--duration-normal) var(--ease-out-expo);
+}
+.slide.visible .reveal{ opacity:1; transform:translateY(0); }
+.reveal:nth-child(1){ transition-delay:0.05s; }
+.reveal:nth-child(2){ transition-delay:0.16s; }
+.reveal:nth-child(3){ transition-delay:0.27s; }
+.reveal:nth-child(4){ transition-delay:0.38s; }
+.reveal:nth-child(5){ transition-delay:0.49s; }
+.reveal:nth-child(6){ transition-delay:0.6s; }
+.grid .reveal:nth-child(1){ transition-delay:0.1s; }
+.grid .reveal:nth-child(2){ transition-delay:0.22s; }
+.grid .reveal:nth-child(3){ transition-delay:0.34s; }
+.grid .reveal:nth-child(4){ transition-delay:0.46s; }
+
+/* ===========================================
+   SHARED TYPOGRAPHY / COMPONENTS
+   =========================================== */
+.kicker{
+    font-family:var(--font-mono);
+    text-transform:uppercase;
+    letter-spacing:0.18em;
+    font-size:var(--small-size);
+    color:var(--accent);
+    margin-bottom:clamp(0.6rem,2vh,1.2rem);
+    display:flex; align-items:center; gap:0.6em;
+}
+.kicker::before{ content:"//"; opacity:0.55; }
+
+h1,h2,h3{ font-family:var(--font-serif); font-weight:600; line-height:1.08; letter-spacing:-0.01em; }
+h1{ font-size:var(--title-size); }
+h2{ font-size:var(--h2-size); }
+h3{ font-size:var(--h3-size); }
+em{ font-style:italic; color:var(--accent); font-weight:500; }
+
+p.body-text{ font-size:var(--body-size); color:var(--text-secondary); line-height:1.55; max-width:52ch; }
+
+.slide-index{
+    position:absolute; top:clamp(1rem,3vh,2rem); left:var(--slide-padding);
+    font-family:var(--font-mono); font-size:var(--small-size);
+    color:var(--text-faint); letter-spacing:0.08em; z-index:2;
+}
+.slide-index b{ color:var(--accent); }
+
+.ts{
+    position:absolute; bottom:clamp(1rem,3vh,2rem); right:var(--slide-padding);
+    font-family:var(--font-mono); font-size:var(--small-size);
+    color:var(--text-faint); z-index:2;
+    border-left:2px solid var(--accent-line); padding-left:0.6em;
+}
+
+/* ===========================================
+   PROGRESS BAR + NAV DOTS
+   =========================================== */
+.progress-bar{
+    position:fixed; top:0; left:0; height:3px; width:0%;
+    background:var(--accent); z-index:9999;
+    box-shadow:0 0 12px var(--accent);
+    transition:width 0.15s ease-out;
+}
+.nav-dots{
+    position:fixed; right:clamp(0.8rem,2vw,1.6rem); top:50%; transform:translateY(-50%);
+    display:flex; flex-direction:column; gap:10px; z-index:9998;
+}
+.nav-dots button{
+    width:7px; height:7px; border-radius:50%;
+    background:rgba(255,255,255,0.18); border:none; cursor:pointer;
+    padding:0; transition:all 0.3s var(--ease-out-expo);
+}
+.nav-dots button.active{ background:var(--accent); box-shadow:0 0 8px var(--accent); height:20px; border-radius:4px; }
+.keyboard-hint{
+    position:fixed; bottom:clamp(0.8rem,2vh,1.4rem); left:50%; transform:translateX(-50%);
+    font-family:var(--font-mono); font-size:var(--small-size); color:var(--text-faint);
+    z-index:9998; letter-spacing:0.05em; opacity:0.7;
+}
+
+/* ===========================================
+   TITLE SLIDE
+   =========================================== */
+.title-slide .slide-content{ align-items:flex-start; max-width:min(920px,88vw); margin:0 auto; width:100%; }
+.terminal-line{
+    font-family:var(--font-mono); font-size:clamp(0.75rem,1.6vw,1rem);
+    color:var(--text-secondary); margin-bottom:1.4rem;
+    display:flex; align-items:center; gap:0.5em;
+}
+.terminal-line .prompt{ color:var(--accent); }
+.cursor{
+    display:inline-block; width:0.55em; height:1.1em; background:var(--accent);
+    animation:blink 1s steps(1) infinite; vertical-align:text-bottom;
+}
+@keyframes blink{ 50%{ opacity:0; } }
+.title-slide h1{ margin-bottom:0.5rem; }
+.title-slide h1 .accent-word{ font-style:italic; color:var(--accent); }
+.title-slide .subtitle{
+    font-family:var(--font-sans); font-size:clamp(1rem,2.2vw,1.4rem);
+    color:var(--text-secondary); margin-top:0.8rem;
+}
+.title-slide .event{
+    font-family:var(--font-mono); font-size:var(--small-size); color:var(--text-faint);
+    margin-top:0.4rem; letter-spacing:0.05em;
+}
+.title-note{
+    margin-top:clamp(1.5rem,4vh,3rem);
+    padding:clamp(0.8rem,2vh,1.2rem) clamp(1rem,2vw,1.4rem);
+    border:1px solid var(--panel-border); border-left:3px solid var(--accent);
+    background:rgba(255,255,255,0.02);
+    max-width:56ch;
+    font-family:var(--font-mono); font-size:var(--small-size); color:var(--text-secondary);
+    line-height:1.6;
+}
+.title-note a{ color:var(--accent); text-decoration:none; border-bottom:1px dotted var(--accent-line); }
+
+/* ===========================================
+   STAT SLIDE
+   =========================================== */
+.stat-slide .slide-content{ align-items:center; text-align:center; }
+.stat-number{
+    font-family:var(--font-serif); font-weight:900; font-style:italic;
+    font-size:var(--stat-size); color:var(--accent); line-height:0.9;
+    text-shadow:0 0 60px var(--accent-soft);
+}
+.stat-label{ font-family:var(--font-sans); font-size:var(--h3-size); color:var(--text-primary); margin-top:0.6rem; }
+.stat-compare{
+    display:flex; gap:clamp(1rem,4vw,3rem); margin-top:clamp(1.5rem,4vh,2.5rem);
+    justify-content:center; flex-wrap:wrap;
+}
+.stat-compare .col{ max-width:280px; text-align:left; }
+.stat-compare .col .yr{ font-family:var(--font-mono); color:var(--accent); font-size:var(--small-size); letter-spacing:0.1em; }
+.stat-compare .col p{ font-size:var(--body-size); color:var(--text-secondary); margin-top:0.3rem; line-height:1.5; }
+.footnote{ margin-top:clamp(1rem,3vh,1.8rem); font-family:var(--font-mono); font-size:var(--small-size); color:var(--text-faint); max-width:60ch; text-align:center; }
+
+/* ===========================================
+   QUOTE SLIDE
+   =========================================== */
+.quote-slide .slide-content{ align-items:center; text-align:center; max-width:min(880px,86vw); margin:0 auto; }
+.quote-mark{
+    font-family:var(--font-serif); font-size:clamp(3rem,10vw,7rem); color:var(--accent-line);
+    line-height:0.5; margin-bottom:0.4rem; font-style:italic;
+}
+blockquote{
+    font-family:var(--font-serif); font-style:italic; font-weight:500;
+    font-size:clamp(1.3rem,3.4vw,2.3rem); line-height:1.32; color:var(--text-primary);
+}
+blockquote em{ font-style:italic; }
+.attribution{
+    margin-top:clamp(1rem,3vh,1.6rem); font-family:var(--font-mono); font-size:var(--small-size);
+    color:var(--text-faint); letter-spacing:0.05em;
+}
+.sub-stats{
+    margin-top:clamp(1.4rem,4vh,2.2rem); display:flex; gap:clamp(1rem,3vw,2.4rem); flex-wrap:wrap; justify-content:center;
+}
+.sub-stats .chip{
+    border:1px solid var(--panel-border); background:var(--panel);
+    padding:0.6em 1em; border-radius:6px; font-size:var(--small-size); color:var(--text-secondary);
+    font-family:var(--font-mono); text-align:left; max-width:340px;
+}
+.sub-stats .chip b{ color:var(--accent); display:block; font-size:1.1em; margin-bottom:0.2em; }
+
+/* ===========================================
+   CARD GRID (org anatomy mapping)
+   =========================================== */
+.cards-slide .slide-content{ max-width:min(1100px,92vw); margin:0 auto; width:100%; }
+.cards-slide h2{ max-width:80ch; }
+.card-grid{
+    display:grid; grid-template-columns:repeat(2,1fr); gap:clamp(0.7rem,1.8vw,1.2rem);
+    margin-top:clamp(1rem,3vh,1.6rem);
+}
+.map-card{
+    border:1px solid var(--panel-border); background:var(--panel);
+    border-radius:10px; padding:clamp(0.8rem,2vh,1.3rem) clamp(1rem,2vw,1.4rem);
+    position:relative; overflow:hidden;
+}
+.map-card::before{ content:""; position:absolute; top:0; left:0; width:3px; height:100%; background:var(--accent); }
+.map-card .from{ font-family:var(--font-mono); font-size:var(--small-size); color:var(--text-faint); }
+.map-card .arrow{ color:var(--accent); margin:0 0.4em; }
+.map-card .to{ font-family:var(--font-mono); font-size:var(--small-size); color:var(--accent); }
+.map-card h3{ margin-top:0.35em; font-size:clamp(1rem,2vw,1.35rem); }
+.map-card p{ font-size:clamp(0.7rem,1.3vw,0.92rem); color:var(--text-secondary); margin-top:0.35em; line-height:1.45; }
+
+/* ===========================================
+   LIST SLIDE
+   =========================================== */
+.list-slide .slide-content{ max-width:min(880px,88vw); margin:0 auto; width:100%; }
+.list-slide h2{ margin-bottom:clamp(0.8rem,2.5vh,1.3rem); max-width:80ch; }
+.bullets{ list-style:none; display:flex; flex-direction:column; gap:clamp(0.55rem,1.6vh,0.95rem); }
+.bullets li{
+    font-size:var(--body-size); color:var(--text-secondary); line-height:1.5;
+    padding-left:1.4em; position:relative; max-width:70ch;
+}
+.bullets li::before{ content:"→"; position:absolute; left:0; color:var(--accent); font-family:var(--font-mono); }
+.bullets li b{ color:var(--text-primary); font-weight:600; }
+
+/* ===========================================
+   SPLIT SLIDE (latent vs deterministic)
+   =========================================== */
+.split-slide .slide-content{ max-width:min(1100px,92vw); margin:0 auto; width:100%; }
+.split{ display:grid; grid-template-columns:1fr 1fr; gap:clamp(1rem,2.5vw,2rem); margin-top:clamp(1rem,3vh,1.6rem); }
+.split .panel{ border:1px solid var(--panel-border); border-radius:10px; padding:clamp(1rem,2.5vh,1.6rem); background:var(--panel); }
+.split .panel.latent{ border-top:3px solid var(--accent); }
+.split .panel.deterministic{ border-top:3px solid var(--text-faint); }
+.split .panel .label{ font-family:var(--font-mono); font-size:var(--small-size); letter-spacing:0.1em; color:var(--accent); }
+.split .panel.deterministic .label{ color:var(--text-secondary); }
+.split .panel h3{ margin-top:0.3em; }
+.split .panel p{ margin-top:0.5em; font-size:clamp(0.75rem,1.4vw,0.95rem); color:var(--text-secondary); line-height:1.5; }
+.split-caption{ margin-top:clamp(1rem,3vh,1.6rem); font-family:var(--font-mono); font-size:var(--small-size); color:var(--text-faint); max-width:70ch; }
+
+/* ===========================================
+   CASE STUDY CARDS
+   =========================================== */
+.cases-slide .slide-content{ max-width:min(1000px,90vw); margin:0 auto; width:100%; }
+.cases{ display:grid; grid-template-columns:1fr 1fr; gap:clamp(0.8rem,2vw,1.4rem); margin-top:clamp(1rem,3vh,1.6rem); }
+.case-card{ border:1px solid var(--panel-border); background:var(--panel); border-radius:10px; padding:clamp(1rem,2.5vh,1.5rem); }
+.case-card .name{ font-family:var(--font-mono); font-size:var(--small-size); color:var(--text-faint); text-transform:uppercase; letter-spacing:0.08em; }
+.case-card .headline{ font-family:var(--font-serif); font-style:italic; font-weight:600; font-size:clamp(1.4rem,3vw,2rem); color:var(--accent); margin-top:0.25em; }
+.case-card .desc{ margin-top:0.4em; font-size:clamp(0.75rem,1.4vw,0.92rem); color:var(--text-secondary); line-height:1.5; }
+.cases-line{ margin-top:clamp(1rem,3vh,1.5rem); font-family:var(--font-serif); font-style:italic; font-size:clamp(1rem,2.2vw,1.4rem); color:var(--text-primary); text-align:center; }
+.cases-note{ margin-top:0.6rem; font-family:var(--font-mono); font-size:calc(var(--small-size) * 0.85); color:var(--text-faint); text-align:center; }
+
+/* ===========================================
+   CLOSING SLIDE
+   =========================================== */
+.closing-slide .slide-content{ align-items:center; text-align:center; max-width:min(900px,88vw); margin:0 auto; }
+.closing-slide h1{ font-style:italic; }
+.closing-slide .lines{ margin-top:clamp(1rem,3vh,1.6rem); font-family:var(--font-mono); color:var(--text-secondary); font-size:var(--body-size); line-height:1.9; }
+.closing-slide .credit{
+    margin-top:clamp(1.6rem,4vh,2.4rem); font-family:var(--font-mono); font-size:calc(var(--small-size)*0.9);
+    color:var(--text-faint);
+}
+.closing-slide .credit a{ color:var(--accent); text-decoration:none; border-bottom:1px dotted var(--accent-line); }
+
+</style>
+</head>
+<body>
+
+<div class="progress-bar" id="progressBar"></div>
+<nav class="nav-dots" id="navDots"></nav>
+<div class="keyboard-hint">↑ ↓ / space / swipe to navigate</div>
+
+<!-- ============================================================
+     SLIDE 1 — TITLE
+     ============================================================ -->
+<section class="slide title-slide">
+    <div class="slide-index"><b>01</b> / 20</div>
+    <div class="slide-content">
+        <p class="terminal-line reveal"><span class="prompt">$</span> find ./talk -name "*.slides"<br></p>
+        <p class="terminal-line reveal" style="margin-top:-1rem;">no matches. reconstructing from transcript.md <span class="cursor"></span></p>
+        <h1 class="reveal">The New Physics<br>of <span class="accent-word">Business</span></h1>
+        <p class="subtitle reveal">Garry Tan — President, Y Combinator</p>
+        <p class="event reveal">AI Engineer World's Fair · Keynote · 2026</p>
+        <div class="title-note reveal">
+            This deck doesn't exist. Garry Tan gave this talk with nothing behind him —
+            <em style="color:var(--text-primary); font-style:normal;">"Sorry, there's no slides. I have no slides."</em> (4:23).
+            What follows is reverse-engineered from the transcript of
+            <a href="https://www.youtube.com/watch?v=eBUyTS7SzV4" target="_blank" rel="noopener">the talk on YouTube</a>.
+        </div>
+    </div>
+</section>
+
+<!-- ============================================================
+     SLIDE 2 — THE HOOK
+     ============================================================ -->
+<section class="slide quote-slide">
+    <div class="slide-index">02 / 20</div>
+    <div class="slide-content">
+        <p class="kicker reveal">The question on the table</p>
+        <div class="quote-mark reveal">"</div>
+        <blockquote class="reveal">Are we ready for the <em>revolution</em>?</blockquote>
+        <p class="attribution reveal">— opening line, 0:21</p>
+        <p class="body-text reveal" style="margin:1.4rem auto 0; text-align:center;">
+            YC is trying to build companies where <b style="color:var(--text-primary)">one person does what used to take a thousand people</b> —
+            not as a metaphor. Mechanically.
+        </p>
+    </div>
+    <span class="ts">0:52 – 1:13</span>
+</section>
+
+<!-- ============================================================
+     SLIDE 3 — THE 400x NUMBER
+     ============================================================ -->
+<section class="slide stat-slide">
+    <div class="slide-index">03 / 20</div>
+    <div class="slide-content">
+        <p class="kicker reveal" style="justify-content:center;">the number he got "torn apart on the internet" for</p>
+        <div class="stat-number reveal">400x</div>
+        <p class="stat-label reveal">more output — same person, same hours, actually fewer</p>
+        <div class="stat-compare reveal">
+            <div class="col">
+                <div class="yr">2013</div>
+                <p>YC partner, near-full-time engineer. ~14 usable logical lines of code a day, at full effort.</p>
+            </div>
+            <div class="col">
+                <div class="yr">2026</div>
+                <p>Runs YC full-time. Same person. Weirdly, fewer hours — he has a 5pm kid pickup now.</p>
+            </div>
+        </div>
+        <p class="footnote reveal">Stress-tested against his own skepticism: even at the most pathological "bloated code" discount, the floor is 8x. Middle estimate, ~40x.</p>
+    </div>
+    <span class="ts">1:32 – 2:50</span>
+</section>
+
+<!-- ============================================================
+     SLIDE 4 — LEVERAGE QUOTE + YC DATA
+     ============================================================ -->
+<section class="slide quote-slide">
+    <div class="slide-index">04 / 20</div>
+    <div class="slide-content">
+        <div class="quote-mark reveal">"</div>
+        <blockquote class="reveal">The 2x people and the 100x people are using the <em>exact same Claude</em>. The leverage is not in the weights — it's in how you wire the work.</blockquote>
+        <p class="attribution reveal">— 3:06</p>
+        <div class="sub-stats reveal">
+            <div class="chip"><b>25%</b>of Winter '25 batch companies had codebases 95% AI-generated — now the fastest-growing, most profitable batch in YC history</div>
+            <div class="chip"><b>94 companies</b>have crossed $100M in revenue from a seed check, in YC's history</div>
+        </div>
+    </div>
+    <span class="ts">3:17 – 3:45</span>
+</section>
+
+<!-- ============================================================
+     SLIDE 5 — ANATOMY OF AN AI-NATIVE ORG (heart of the talk)
+     ============================================================ -->
+<section class="slide cards-slide">
+    <div class="slide-index">05 / 20</div>
+    <div class="slide-content">
+        <p class="kicker reveal">the heart of the talk — "steal this"</p>
+        <h2 class="reveal">Everything you've learned building with agents maps to an organization</h2>
+        <div class="card-grid">
+            <div class="map-card reveal">
+                <span class="from">SKILL FILE</span><span class="arrow">→</span><span class="to">EMPLOYEE</span>
+                <h3>One job, written down</h3>
+                <p>One capability, written clearly enough that someone (or something) can execute it.</p>
+            </div>
+            <div class="map-card reveal">
+                <span class="from">RESOLVER TABLE</span><span class="arrow">→</span><span class="to">ORG CHART</span>
+                <h3>Who handles what</h3>
+                <p>A task comes in and the resolver decides who handles it and where it goes.</p>
+            </div>
+            <div class="map-card reveal">
+                <span class="from">FILING RULES</span><span class="arrow">→</span><span class="to">PROCESS</span>
+                <h3>Is it in compliance</h3>
+                <p>Whether the resolver is actually working, and whether the work follows the rules.</p>
+            </div>
+            <div class="map-card reveal">
+                <span class="from">TRIGGER EVALS</span><span class="arrow">→</span><span class="to">PERF. REVIEW</span>
+                <h3>Does it actually fire</h3>
+                <p>A test confirming that, e.g., editing a test file actually loads tests.md as it should.</p>
+            </div>
+        </div>
+    </div>
+    <span class="ts">4:11 – 5:35</span>
+</section>
+
+<!-- ============================================================
+     SLIDE 6 — WORKFORCE MADE OF MARKDOWN
+     ============================================================ -->
+<section class="slide quote-slide">
+    <div class="slide-index">06 / 20</div>
+    <div class="slide-content">
+        <div class="quote-mark reveal">"</div>
+        <blockquote class="reveal">When you sit down with Claude Code or Codex, you're not writing software. You're hiring, training, and managing <em>a workforce made of markdown</em>.</blockquote>
+        <p class="attribution reveal">— 5:58</p>
+    </div>
+    <span class="ts">5:44 – 6:10</span>
+</section>
+
+<!-- ============================================================
+     SLIDE 7 — CASE STUDIES: REVENUE PER HEAD
+     ============================================================ -->
+<section class="slide cases-slide">
+    <div class="slide-index">07 / 20</div>
+    <div class="slide-content">
+        <p class="kicker reveal">real-world impact</p>
+        <h2 class="reveal">Revenue-per-head that didn't exist before</h2>
+        <div class="cases">
+            <div class="case-card reveal">
+                <div class="name">Emergence · AI app builder · Summer '24</div>
+                <div class="headline">15 people</div>
+                <div class="desc">Public launch to 9-figure ARR in 8 months. Only 15 people when they crossed $15M ARR.</div>
+            </div>
+            <div class="case-card reveal">
+                <div class="name">Winter '24 batch company</div>
+                <div class="headline">$60M ARR</div>
+                <div class="desc">Roughly 40 people. That ratio, Tan argues, "did not exist before."</div>
+            </div>
+        </div>
+        <p class="cases-line reveal">"Not in software. Not in oil. Not in railroads. Never."</p>
+        <p class="cases-note reveal">Company name per auto-generated transcript — may not be exact.</p>
+    </div>
+    <span class="ts">6:14 – 6:38</span>
+</section>
+
+<!-- ============================================================
+     SLIDE 8 — EVERYONE'S AN AGENT MANAGER
+     ============================================================ -->
+<section class="slide list-slide">
+    <div class="slide-index">08 / 20</div>
+    <div class="slide-content">
+        <p class="kicker reveal">the extension most engineering talks miss</p>
+        <h2 class="reveal">It's not just engineers</h2>
+        <ul class="bullets">
+            <li class="reveal">AI-native companies encode <b>sales, support, ops, and finance</b> as skills — written procedures their agents execute.</li>
+            <li class="reveal">They hire engineers whose job is to <b>maintain those skills</b> — and do the work skills can't do yet.</li>
+            <li class="reveal">At YC: media staff, event staff, finance — people who've <b>never opened a terminal</b> — now write skill files and cron jobs.</li>
+            <li class="reveal">One finance staffer collapsed ~100 Excel workbooks into a single app. <b>"She's not a programmer. She's a manager of agents now — and everyone at YC is."</b></li>
+        </ul>
+    </div>
+    <span class="ts">6:46 – 8:17</span>
+</section>
+
+<!-- ============================================================
+     SLIDE 9 — LATENT VS DETERMINISTIC SPACE
+     ============================================================ -->
+<section class="slide split-slide">
+    <div class="slide-index">09 / 20</div>
+    <div class="slide-content">
+        <p class="kicker reveal">where almost every AI engineering bug comes from</p>
+        <h2 class="reveal">Two places computation happens</h2>
+        <div class="split">
+            <div class="panel latent reveal">
+                <div class="label">LATENT SPACE</div>
+                <h3>The LLM</h3>
+                <p>Taste. Judgment. Understanding what a human means when they say something vague. Non-deterministic — steered with the markdown file.</p>
+            </div>
+            <div class="panel deterministic reveal">
+                <div class="label">DETERMINISTIC SPACE</div>
+                <h3>The code</h3>
+                <p>Where agents write TypeScript, or Elixir, or whatever. Exact math and logic — it must not live in the context window.</p>
+            </div>
+        </div>
+        <p class="split-caption reveal">Nearly every bug is computation happening on the wrong side of this line.</p>
+    </div>
+    <span class="ts">8:41 – 9:37</span>
+</section>
+
+<!-- ============================================================
+     SLIDE 10 — STARTUP SCHOOL SEATING EXAMPLE
+     ============================================================ -->
+<section class="slide list-slide">
+    <div class="slide-index">10 / 20</div>
+    <div class="slide-content">
+        <p class="kicker reveal">example</p>
+        <h2 class="reveal">Seating 800 people perfectly — in ten minutes</h2>
+        <p class="body-text reveal" style="max-width:64ch; margin-bottom:1rem;">
+            Startup School: seat 800 people so the person to your left and right is the best possible person for you to meet.
+        </p>
+        <ul class="bullets">
+            <li class="reveal">The <b>combinatorics</b> — an 800-seat multi-dimensional array — runs in deterministic space. It must not live in the context window.</li>
+            <li class="reveal">The <b>matching judgment</b> — who should sit next to whom — is latent space.</li>
+            <li class="reveal">By hand, this used to take a month. Now: a couple hundred dollars of tokens and about ten minutes.</li>
+        </ul>
+    </div>
+    <span class="ts">9:37 – 10:48</span>
+</section>
+
+<!-- ============================================================
+     SLIDE 11 — HUMAN MEMORY LIMIT
+     ============================================================ -->
+<section class="slide stat-slide">
+    <div class="slide-index">11 / 20</div>
+    <div class="slide-content">
+        <p class="kicker reveal" style="justify-content:center;">Miller's Law</p>
+        <div class="stat-number reveal">7 ± 2</div>
+        <p class="stat-label reveal">the entire working memory of a human being</p>
+        <p class="footnote reveal">Every org chart, every checklist, every filing cabinet humanity has ever built is a prosthetic for that limit.</p>
+        <div class="sub-stats reveal" style="margin-top:2rem;">
+            <div class="chip"><b>~1,000,000 tokens</b>an AI agent's working memory — about three Harry Potter books, open at once, searchable and synthesizable across all three in seconds</div>
+        </div>
+    </div>
+    <span class="ts">10:57 – 12:05</span>
+</section>
+
+<!-- ============================================================
+     SLIDE 12 — "YOUR COMPANY IS A LIBRARY"
+     ============================================================ -->
+<section class="slide quote-slide">
+    <div class="slide-index">12 / 20</div>
+    <div class="slide-content">
+        <div class="quote-mark reveal">"</div>
+        <blockquote class="reveal">Three books is a lot, but it's also very little. Your company is not three books. Your company is <em>a library</em> — every email, every meeting, every decision, its reasoning, every post-mortem.</blockquote>
+        <p class="attribution reveal">— 12:25</p>
+        <p class="body-text reveal" style="margin:1.2rem auto 0; text-align:center;">
+            The question that determines whether your agents are geniuses or goldfish: <b style="color:var(--text-primary)">who decides which three books are open on the desk.</b> That's context engineering.
+        </p>
+    </div>
+    <span class="ts">12:25 – 12:53</span>
+</section>
+
+<!-- ============================================================
+     SLIDE 13 — COMPANY BRAIN = LIBRARY + LIBRARIAN
+     ============================================================ -->
+<section class="slide list-slide">
+    <div class="slide-index">13 / 20</div>
+    <div class="slide-content">
+        <p class="kicker reveal">"this is just RAG" — yes, and</p>
+        <h2 class="reveal">A company brain is the library plus the librarian</h2>
+        <p class="body-text reveal" style="max-width:66ch; margin-bottom:0.8rem;">
+            Retrieval is the primitive — the same way Postgres is just B-trees. The hard part is everything around it:
+        </p>
+        <ul class="bullets">
+            <li class="reveal">What gets written down in the first place, into the knowledge wiki</li>
+            <li class="reveal">How it gets <b>enriched and linked</b></li>
+            <li class="reveal">What's promoted to hot memory vs. filed as cold reference</li>
+            <li class="reveal">Who <b>arbitrates</b> when two facts disagree</li>
+        </ul>
+        <p class="footnote reveal" style="text-align:left; margin-top:1rem;">Retrieval is easy. Being worth retrieving from is the product.</p>
+    </div>
+    <span class="ts">12:56 – 13:28</span>
+</section>
+
+<!-- ============================================================
+     SLIDE 14 — GBRAIN
+     ============================================================ -->
+<section class="slide stat-slide">
+    <div class="slide-index">14 / 20</div>
+    <div class="slide-content">
+        <p class="kicker reveal" style="justify-content:center;">built in the open — "GBrain"</p>
+        <div class="stat-number reveal" style="font-size:clamp(3rem,10vw,6.5rem);">~220,000</div>
+        <p class="stat-label reveal">pages, written mostly by his agents — from email, meetings, 20 years of notes</p>
+        <p class="footnote reveal" style="max-width:70ch;">
+            Before he even finishes reading a founder's crisis email, his agent has already pulled every prior conversation with that founder — plus what worked for three portfolio companies that hit the same wall.
+        </p>
+        <p class="footnote reveal" style="margin-top:0.6rem; font-family:var(--font-serif); font-style:italic; color:var(--text-primary); font-size:var(--h3-size);">
+            "That's the difference between an assistant and a colleague."
+        </p>
+    </div>
+    <span class="ts">13:29 – 14:21</span>
+</section>
+
+<!-- ============================================================
+     SLIDE 15 — FAILURE MODES & HYGIENE
+     ============================================================ -->
+<section class="slide split-slide">
+    <div class="slide-index">15 / 20</div>
+    <div class="slide-content">
+        <p class="kicker reveal">stress-testing his own pitch</p>
+        <h2 class="reveal">Company brains fail in specific ways</h2>
+        <div class="split">
+            <div class="panel deterministic reveal">
+                <div class="label" style="color:var(--text-secondary);">WITHOUT HYGIENE</div>
+                <h3>A garbage dump with great search</h3>
+                <p>Retrieval surfaces stale facts with total confidence. A bad skill file encodes a bad process forever.</p>
+            </div>
+            <div class="panel latent reveal">
+                <div class="label">THE FIX: MEMORY + HYGIENE</div>
+                <h3>Provenance and pruning</h3>
+                <p>Provenance on every fact. Contradiction checks when new info collides with old. A librarian — human plus agent — whose job is pruning.</p>
+            </div>
+        </div>
+        <p class="split-caption reveal">Treat the brain like production infrastructure and it compounds. Treat it like a dumping ground and you get a confident agent that's wrong in ways nobody can trace.</p>
+    </div>
+    <span class="ts">14:21 – 15:04</span>
+</section>
+
+<!-- ============================================================
+     SLIDE 16 — SKILLIFY (the discipline)
+     ============================================================ -->
+<section class="slide quote-slide">
+    <div class="slide-index">16 / 20</div>
+    <div class="slide-content">
+        <p class="kicker reveal">Garry's signature move</p>
+        <h2 class="reveal" style="margin-bottom:0.6rem;">Never do one-off work</h2>
+        <p class="body-text reveal" style="text-align:center; margin:0 auto;">
+            Do the task. Don't like the output? Fix it. Then — before you move on — <b style="color:var(--text-primary)">skillify it</b>: turn what you just did into a reusable skill.
+        </p>
+        <div class="quote-mark reveal" style="margin-top:1.6rem;">"</div>
+        <blockquote class="reveal" style="font-size:clamp(1.2rem,3vw,1.9rem);">If you have to ask for something twice, <em>you failed</em>.</blockquote>
+    </div>
+    <span class="ts">15:13 – 16:24</span>
+</section>
+
+<!-- ============================================================
+     SLIDE 17 — COMPOUNDS VS AMNESIA
+     ============================================================ -->
+<section class="slide quote-slide">
+    <div class="slide-index">17 / 20</div>
+    <div class="slide-content">
+        <div class="quote-mark reveal">"</div>
+        <blockquote class="reveal">The organization that captures what it learns gets smarter every single day. The one that doesn't <em>wakes up every morning with amnesia</em>.</blockquote>
+        <p class="attribution reveal">— 16:26</p>
+        <p class="body-text reveal" style="margin:1.2rem auto 0; text-align:center;">Model quality is rented. The brain you build, you own.</p>
+    </div>
+    <span class="ts">16:26 – 16:40</span>
+</section>
+
+<!-- ============================================================
+     SLIDE 18 — BUILD THE AI-NATIVE COMPANY
+     ============================================================ -->
+<section class="slide list-slide">
+    <div class="slide-index">18 / 20</div>
+    <div class="slide-content">
+        <p class="kicker reveal">the answer to "what do we build now"</p>
+        <h2 class="reveal">Build the AI-native company — not one that just uses AI</h2>
+        <ul class="bullets">
+            <li class="reveal">A <b>thin team</b></li>
+            <li class="reveal"><b>Skill files</b> for everything</li>
+            <li class="reveal">The founder <b>still in the code</b></li>
+            <li class="reveal">A library and a librarian — <b>from day one</b></li>
+        </ul>
+        <p class="footnote reveal" style="text-align:left; margin-top:1.2rem; max-width:68ch;">
+            "Open Claw is the Ferrari — I'll always recommend it. But Codex is a really good Honda, it'll do 90% of this. Use whatever. The concepts are the point, not my repos."
+        </p>
+    </div>
+    <span class="ts">16:41 – 18:17</span>
+</section>
+
+<!-- ============================================================
+     SLIDE 19 — ABUNDANCE + THE EPILEPSY STORY
+     ============================================================ -->
+<section class="slide quote-slide">
+    <div class="slide-index">19 / 20</div>
+    <div class="slide-content">
+        <div class="quote-mark reveal">"</div>
+        <blockquote class="reveal">Abundance is not a policy paper. It is <em>shipped software</em>.</blockquote>
+        <p class="attribution reveal">— 18:56</p>
+        <p class="body-text reveal" style="margin:1.4rem auto 0; text-align:center; max-width:64ch;">
+            A friend with a son who has a rare form of epilepsy built an <b style="color:var(--text-primary)">80,000-markdown-file</b> company brain for one small boy — pushing to the edge of what humanity knows about his son's exact condition.
+            No lab. No grant. No permission. A father, a laptop, and a library.
+        </p>
+    </div>
+    <span class="ts">19:04 – 19:28</span>
+</section>
+
+<!-- ============================================================
+     SLIDE 20 — CLOSING CTA
+     ============================================================ -->
+<section class="slide closing-slide">
+    <div class="slide-index">20 / 20</div>
+    <div class="slide-content">
+        <h1 class="reveal">We can <em>boil the ocean</em> now.</h1>
+        <p class="body-text reveal" style="text-align:center; margin:1rem auto 0; max-width:60ch;">
+            Every archive too big to read. Every dataset too gnarly to clean. Every ocean you were told not to boil.
+        </p>
+        <p class="lines reveal">go boil the ocean.<br>go write that test.<br>go ship that skill.</p>
+        <p class="credit reveal">
+            Reconstructed from <a href="https://www.youtube.com/watch?v=eBUyTS7SzV4" target="_blank" rel="noopener">"The New Physics of Business" — Garry Tan, AI Engineer World's Fair</a>. Not an official deck — the talk had none.
+        </p>
+    </div>
+</section>
+
+<script>
+/* ===========================================
+   SLIDE PRESENTATION CONTROLLER
+   Handles reveal animations, keyboard/touch/wheel nav,
+   progress bar, and nav dots.
+   =========================================== */
+class SlidePresentation {
+    constructor(){
+        this.slides = Array.from(document.querySelectorAll('.slide'));
+        this.currentSlide = 0;
+        this.isScrolling = false;
+        this.setupIntersectionObserver();
+        this.setupKeyboardNav();
+        this.setupWheelNav();
+        this.setupTouchNav();
+        this.setupProgressBar();
+        this.setupNavDots();
+    }
+
+    setupIntersectionObserver(){
+        const observer = new IntersectionObserver((entries)=>{
+            entries.forEach(entry=>{
+                if(entry.isIntersecting && entry.intersectionRatio > 0.5){
+                    entry.target.classList.add('visible');
+                    this.currentSlide = this.slides.indexOf(entry.target);
+                    this.updateNavDots();
+                }
+            });
+        }, { threshold:[0,0.5,1] });
+        this.slides.forEach(s=>observer.observe(s));
+    }
+
+    goTo(index){
+        index = Math.max(0, Math.min(this.slides.length-1, index));
+        this.slides[index].scrollIntoView({behavior:'smooth'});
+    }
+
+    setupKeyboardNav(){
+        document.addEventListener('keydown', (e)=>{
+            if(['ArrowDown','PageDown',' '].includes(e.key)){
+                e.preventDefault(); this.goTo(this.currentSlide+1);
+            } else if(['ArrowUp','PageUp'].includes(e.key)){
+                e.preventDefault(); this.goTo(this.currentSlide-1);
+            } else if(e.key==='Home'){
+                this.goTo(0);
+            } else if(e.key==='End'){
+                this.goTo(this.slides.length-1);
+            }
+        });
+    }
+
+    setupWheelNav(){
+        let wheelLock=false;
+        window.addEventListener('wheel', (e)=>{
+            if(wheelLock) return;
+            if(Math.abs(e.deltaY) < 12) return;
+            wheelLock = true;
+            this.goTo(this.currentSlide + (e.deltaY>0?1:-1));
+            setTimeout(()=>wheelLock=false, 700);
+        }, {passive:true});
+    }
+
+    setupTouchNav(){
+        let touchStartY = 0;
+        window.addEventListener('touchstart', (e)=>{ touchStartY = e.touches[0].clientY; }, {passive:true});
+        window.addEventListener('touchend', (e)=>{
+            const dy = touchStartY - e.changedTouches[0].clientY;
+            if(Math.abs(dy) > 50){ this.goTo(this.currentSlide + (dy>0?1:-1)); }
+        }, {passive:true});
+    }
+
+    setupProgressBar(){
+        const bar = document.getElementById('progressBar');
+        window.addEventListener('scroll', ()=>{
+            const max = document.documentElement.scrollHeight - window.innerHeight;
+            const pct = max>0 ? (window.scrollY/max)*100 : 0;
+            bar.style.width = pct+'%';
+        }, {passive:true});
+    }
+
+    setupNavDots(){
+        const nav = document.getElementById('navDots');
+        this.slides.forEach((_, i)=>{
+            const btn = document.createElement('button');
+            btn.setAttribute('aria-label', 'Go to slide '+(i+1));
+            btn.addEventListener('click', ()=>this.goTo(i));
+            nav.appendChild(btn);
+        });
+        this.dots = Array.from(nav.children);
+        this.updateNavDots();
+    }
+
+    updateNavDots(){
+        if(!this.dots) return;
+        this.dots.forEach((d,i)=>d.classList.toggle('active', i===this.currentSlide));
+    }
+}
+
+new SlidePresentation();
+</script>
+</body>
+</html>
