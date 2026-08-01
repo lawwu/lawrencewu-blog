@@ -1,3 +1,8 @@
+> [!IMPORTANT]
+> **This repository is deprecated (August 2026).** The blog moved into the
+> [`lawrencewu-net`](https://github.com/lawwu/lawrencewu-net) monorepo, under `apps/blog/`.
+> Read the blog at <https://lawrencewu.net>. This repository is archived and read-only.
+
 # Lawrence Wu's Blog
 
 Source for <https://lawrencewu.net>, built with [Quarto](https://quarto.org/).
